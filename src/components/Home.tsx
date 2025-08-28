@@ -64,6 +64,15 @@ export default function SeasonStats() {
             View Battle Groups
           </button>
         </Link>
+        {/* Button to Spreadsheet */}
+      <div className="flex justify-center sm:justify-start mb-6">
+        <Link href="/spreadsheet">
+          <button className="px-4 py-2 rounded-lg bg-green-500 hover:bg-green-600 text-black font-semibold transition-colors">
+            View Spreadsheet
+          </button>
+        </Link>
+      </div>
+
       </div>
 
       {/* Alliance Totals */}
