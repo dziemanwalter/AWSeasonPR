@@ -2,6 +2,14 @@ import fs from "fs";
 import path from "path";
 import { parse } from "csv-parse/sync";
 
+interface Player {
+  name: string;
+  kills: number;
+  deaths: number;
+  killsPerNode: Record<string, number>;
+  deathsPerNode: Record<string, number>;
+}
+
 const playerNameCells = [
   "KH2", "FR2", "HZ2", "GV2", "EN2", "JD2", "DJ2", "BB2", "CF2",
   "LL2", "TN2", "SJ2","VV2", "UR2", "ZH2", "WZ2", "AAL2", "RF2",
@@ -9,25 +17,21 @@ const playerNameCells = [
   "AQP2", "AJR2", "ASX2", "AND2"
 ];
 
-export async function GET() {
+export async function GET(): Promise<Response> {
   try {
     const csvFilePath = path.join(process.cwd(), "C.Av PR aDR.csv");
     const fileContent = fs.readFileSync(csvFilePath, "utf-8");
+    const records: string[][] = parse(fileContent, { skip_empty_lines: true });
 
-    const records = parse(fileContent, { skip_empty_lines: true });
-
-    // Rows 4–53 (0-indexed: 3–52) correspond to nodes 50–1
-    const nodeRows = records.slice(3, 53);
-
-    const players: any[] = [];
+    const nodeRows = records.slice(3, 53); // Rows 4–53
+    const players: Player[] = [];
 
     let totalAllianceKills = 0;
     let totalAllianceDeaths = 0;
 
-    // Loop over player columns
     for (const cell of playerNameCells) {
       const col = columnLetterToIndex(cell.replace(/\d+/, ""));
-      const name = records[1][col]; // Row 2 (index 1) has player names
+      const name = records[1][col];
       if (!name) continue;
 
       const killsPerNode: Record<string, number> = {};
@@ -35,9 +39,8 @@ export async function GET() {
       let totalKills = 0;
       let totalDeaths = 0;
 
-      // Loop nodes
       nodeRows.forEach((row, idx) => {
-        const nodeNumber = (50 - idx).toString(); // nodes 50 → 1
+        const nodeNumber = (50 - idx).toString();
         const kills = parseFloat(row[col] || "0");
         const deaths = parseFloat(row[col + 1] || "0");
         killsPerNode[nodeNumber] = kills;
@@ -54,7 +57,7 @@ export async function GET() {
         kills: totalKills,
         deaths: totalDeaths,
         killsPerNode,
-        deathsPerNode
+        deathsPerNode,
       });
     }
 
@@ -62,16 +65,18 @@ export async function GET() {
       JSON.stringify({ players, totalAllianceKills, totalAllianceDeaths }),
       { headers: { "Content-Type": "application/json" } }
     );
-  } catch (error: any) {
-    return new Response(
-      JSON.stringify({ error: error.message }),
-      { status: 500, headers: { "Content-Type": "application/json" } }
-    );
+  } catch (error: unknown) {
+    const errorMessage =
+      error instanceof Error ? error.message : String(error);
+    return new Response(JSON.stringify({ error: errorMessage }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 }
 
-// Helper to convert column letter (e.g., "BB") to 0-index
-function columnLetterToIndex(letter: string) {
+// Helper: column letters to 0-based index (e.g., "BB" → 53)
+function columnLetterToIndex(letter: string): number {
   let col = 0;
   for (let i = 0; i < letter.length; i++) {
     col *= 26;
