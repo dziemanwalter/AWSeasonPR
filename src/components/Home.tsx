@@ -60,14 +60,14 @@ export default function SeasonStats() {
       {/* Button to Battle Groups */}
       <div className="flex justify-center sm:justify-start mb-6">
         <Link href="/battle-groups">
-          <button className="px-4 py-2 rounded-lg bg-yellow-500 hover:bg-yellow-600 text-black font-semibold transition-colors">
+          <button className="px-4 py-2 rounded-lg bg-slate-500 hover:bg-slate-700 text-white font-semibold transition-colors">
             View Battle Groups
           </button>
         </Link>
         {/* Button to Spreadsheet */}
       <div className="flex justify-center sm:justify-start mb-6">
         <Link href="/spreadsheet">
-          <button className="px-4 py-2 rounded-lg bg-green-500 hover:bg-green-600 text-black font-semibold transition-colors">
+          <button className="px-4 py-2 rounded-lg bg-teal-600 hover:bg-teal-800 text-white font-semibold transition-colors">
             View Spreadsheet
           </button>
         </Link>
