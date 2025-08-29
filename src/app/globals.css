@@ -5,5 +5,13 @@
   color: #fbbf24;
   font-weight: bold;
 }
+/* Remove up/down arrows for number inputs */
+input.no-arrows::-webkit-outer-spin-button,
+input.no-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-/* Additional custom styles can be added here */
+input.no-arrows {
+  -moz-appearance: textfield; /* Firefox */
+}

@@ -1,4 +1,4 @@
-import Home from '../components/Home';
+import Home from './Home';
 import './globals.css';
 
 export default function Page() {

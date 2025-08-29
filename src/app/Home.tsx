@@ -68,7 +68,7 @@ export default function SeasonStats() {
       <div className="flex justify-center sm:justify-start mb-6">
         <Link href="/spreadsheet">
           <button className="px-4 py-2 rounded-lg bg-teal-600 hover:bg-teal-800 text-white font-semibold transition-colors">
-            View Spreadsheet
+            K/D Entry Page
           </button>
         </Link>
       </div>

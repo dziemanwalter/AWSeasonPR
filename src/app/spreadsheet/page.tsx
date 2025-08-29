@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -9,37 +9,33 @@ interface PlayerAPI {
   battlegroup?: string;
 }
 
-interface BaseRow {
-  label: string;
-  section: "Paths Set 1" | "Paths Set 2" | "Nodes";
+interface NodeEntry {
+  node?: number;
+  deaths?: number;
 }
 
-interface PathRow extends BaseRow {
-  player1: string;
-  defender1: string;
-  attacker1: string;
-  deaths1: number;
-  player2: string;
-  defender2: string;
-  attacker2: string;
-  deaths2: number;
-  notes: string;
-}
-
-interface NodeRow extends BaseRow {
+interface PlayerRow {
   player: string;
-  defender: string;
-  attacker: string;
-  deaths: number;
-  notes: string;
+  entries: NodeEntry[];
+  active: boolean;
 }
 
-type RowData = PathRow | NodeRow;
-
-export default function SpreadsheetPage() {
-  const [rows, setRows] = useState<RowData[]>([]);
+export default function NodeTrackerPage() {
   const [players, setPlayers] = useState<PlayerAPI[]>([]);
   const [selectedBG, setSelectedBG] = useState<"BG1" | "BG2" | "BG3">("BG1");
+  const [rows, setRows] = useState<PlayerRow[]>([]);
+  const [nodeKills, setNodeKills] = useState<Record<number, number>>({});
+  const totalKills = Object.values(nodeKills).reduce((sum, val) => sum + val, 0);
+
+const totalDeaths = rows.reduce(
+  (sum, row) =>
+    sum +
+    row.entries.reduce((rowSum, entry) => rowSum + (entry.deaths ?? 0), 0),
+  0
+);
+
+
+  const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const fetchPlayers = async () => {
@@ -55,76 +51,87 @@ export default function SpreadsheetPage() {
   }, []);
 
   useEffect(() => {
-    const initial: RowData[] = [];
-
-    for (let i = 1; i <= 9; i++) {
-      initial.push({
-        section: "Paths Set 1",
-        label: `Path ${i}`,
-        player1: "",
-        defender1: "",
-        attacker1: "",
-        deaths1: 0,
-        player2: "",
-        defender2: "",
-        attacker2: "",
-        deaths2: 0,
-        notes: "",
-      });
-    }
-
-    for (let i = 1; i <= 9; i++) {
-      initial.push({
-        section: "Paths Set 2",
-        label: `Path ${i}`,
-        player1: "",
-        defender1: "",
-        attacker1: "",
-        deaths1: 0,
-        player2: "",
-        defender2: "",
-        attacker2: "",
-        deaths2: 0,
-        notes: "",
-      });
-    }
-
-    for (let i = 37; i <= 50; i++) {
-      initial.push({
-        section: "Nodes",
-        label: `Node ${i}`,
-        player: "", // start as empty string
-        defender: "",
-        attacker: "",
-        deaths: 0,
-        notes: "",
-      });
-    }
-
-    setRows(initial);
+    setRows(
+      Array.from({ length: 10 }).map(() => ({
+        player: "",
+        entries: Array.from({ length: 10 }).map(() => ({})),
+        active: false,
+      }))
+    );
   }, []);
 
-  const sectionDisplayNames: Record<RowData["section"], string> = {
-    "Paths Set 1": "Section 1",
-    "Paths Set 2": "Section 2",
-    Nodes: "Boss Fights",
+  const filteredPlayers = players.filter((p) => p.battlegroup === selectedBG);
+
+  // Only show players not already selected in other rows
+  const getAvailablePlayers = (rowIndex: number) => {
+    const selectedPlayers = rows
+      .filter((_, i) => i !== rowIndex)
+      .map((r) => r.player)
+      .filter(Boolean);
+    return filteredPlayers.filter((p) => !selectedPlayers.includes(p.name));
   };
 
-  const handleChange = <T extends RowData>(
-    index: number,
-    field: keyof T,
-    value: string | number
-  ) => {
+  const handlePlayerChange = (rowIndex: number, value: string) => {
     setRows((prev) =>
-      prev.map((row, i) => (i === index ? { ...row, [field]: value } as RowData : row))
+      prev.map((row, i) => (i === rowIndex ? { ...row, player: value, active: true } : row))
     );
   };
 
-  const handleSubmit = () => {
-    console.log("Submitted rows:", rows);
+  const handleEntryChange = (
+    rowIndex: number,
+    entryIndex: number,
+    field: "node" | "deaths",
+    value: number | undefined
+  ) => {
+    setRows((prev) =>
+      prev.map((row, i) => {
+        if (i === rowIndex) {
+          const newEntries = [...row.entries];
+          newEntries[entryIndex] = { ...newEntries[entryIndex], [field]: value };
+          return { ...row, entries: newEntries };
+        }
+        return row;
+      })
+    );
+
+    // Update node kills internally
+    setNodeKills(() => {
+      const allEntries = rows.flatMap((r, idx) =>
+        idx === rowIndex
+          ? r.entries.map((e, i) =>
+              i === entryIndex ? { ...e, [field]: value ?? 0 } : e
+            )
+          : r.entries
+      );
+
+      const newKills: Record<number, number> = {};
+      allEntries.forEach((e) => {
+        if (e.node) newKills[e.node] = (newKills[e.node] || 0) + 1;
+      });
+      return newKills;
+    });
   };
 
-  const filteredPlayers = players.filter((p) => p.battlegroup === selectedBG);
+  const handleFocusRow = (rowIndex: number) => {
+    setRows((prev) =>
+      prev.map((row, i) => (i === rowIndex ? { ...row, active: true } : row))
+    );
+  };
+
+  const handleBlurRow = (rowIndex: number) => {
+    setTimeout(() => {
+      const rowEl = rowRefs.current[rowIndex];
+      if (rowEl && !rowEl.contains(document.activeElement)) {
+        setRows((prev) =>
+          prev.map((row, i) => (i === rowIndex ? { ...row, active: false } : row))
+        );
+      }
+    }, 400); // 400ms delay handles mobile dropdown
+  };
+
+  const handleSubmit = () => {
+    console.log("Submitted data:", rows);
+  };
 
   return (
     <main className="p-4 sm:p-6 bg-gray-900 text-white min-h-screen">
@@ -148,208 +155,91 @@ export default function SpreadsheetPage() {
         </div>
       </div>
 
-      <h1 className="text-2xl font-bold mb-4 text-center">War Planner Spreadsheet</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center">Kill and Death Tracker</h1>
 
-      <div className="overflow-x-auto">
-        <table className="w-full border-collapse text-xs sm:text-sm">
-          <thead className="bg-gray-700 text-center">
-            <tr>
-              <th className="p-1 sm:p-2">Label</th>
-              <th className="p-1 sm:p-2">Player / Roles</th>
-              <th className="p-1 sm:p-2">Notes</th>
-            </tr>
-          </thead>
+      <div className="space-y-4">
+        {rows.map((row, rowIndex) => (
+          <div
+            key={rowIndex}
+            ref={(el) => {rowRefs.current[rowIndex] = el}}
+            className="bg-gray-800 p-3 rounded flex flex-col sm:flex-row sm:items-start gap-4 flex-wrap"
+          >
+            {/* Player dropdown */}
+            <select
+              value={row.player}
+              onChange={(e) => handlePlayerChange(rowIndex, e.target.value)}
+              onFocus={() => handleFocusRow(rowIndex)}
+              onBlur={() => handleBlurRow(rowIndex)}
+              className="bg-gray-700 p-1 rounded w-full sm:w-36 text-center flex-shrink-0"
+            >
+              <option value="" disabled>
+                Player
+              </option>
+              {getAvailablePlayers(rowIndex).map((p) => (
+                <option key={p.name} value={p.name}>
+                  {p.name}
+                </option>
+              ))}
+            </select>
 
-          {(Object.keys(sectionDisplayNames) as RowData["section"][]).map((section) => (
-            <tbody key={section}>
-              <tr>
-                <td colSpan={3} className="bg-gray-800 font-semibold text-center p-2">
-                  {sectionDisplayNames[section]}
-                </td>
-              </tr>
-
-              {rows
-                .filter((row) => row.section === section)
-                .map((row, idx) => {
-                  const rowIndex = rows.findIndex((r) => r === row);
-
-                  if (row.section === "Nodes") {
-                    const node = row as NodeRow;
-                    return (
-                      <tr key={node.label} className="even:bg-gray-900 odd:bg-gray-800">
-                        <td className="p-1 sm:p-2">{node.label}</td>
-                        <td className="p-1 sm:p-2">
-                          <div className="flex flex-col sm:flex-row gap-2">
-                            {/* Player Dropdown with placeholder */}
-                            <select
-                              value={node.player}
-                              onChange={(e) => handleChange<NodeRow>(rowIndex, "player", e.target.value)}
-                              className="bg-gray-700 p-1 rounded flex-1 text-center"
-                              required
-                            >
-                              <option value="" disabled>
-                                Player
-                              </option>
-                              {filteredPlayers.map((p) => (
-                                <option key={p.name} value={p.name}>
-                                  {p.name}
-                                </option>
-                              ))}
-                            </select>
-
-                            <input
-                              type="text"
-                              placeholder="Defender"
-                              value={node.defender}
-                              onChange={(e) => handleChange<NodeRow>(rowIndex, "defender", e.target.value)}
-                              className="bg-gray-700 p-1 rounded flex-1 text-center"
-                            />
-                            <input
-                              type="text"
-                              placeholder="Attacker"
-                              value={node.attacker}
-                              onChange={(e) => handleChange<NodeRow>(rowIndex, "attacker", e.target.value)}
-                              className="bg-gray-700 p-1 rounded flex-1 text-center"
-                            />
-                            <input
-                              type="number"
-                              value={node.deaths === 0 ? "" : node.deaths}
-                              onChange={(e) =>
-                                handleChange<NodeRow>(
-                                  rowIndex,
-                                  "deaths",
-                                  e.target.value === "" ? 0 : Number(e.target.value)
-                                )
-                              }
-                              className="bg-gray-700 text-center rounded h-8 w-12 sm:w-16 p-1"
-                              min={0}
-                            />
-                          </div>
-                        </td>
-                        <td className="p-1 sm:p-2">
-                          <input
-                            type="text"
-                            placeholder="Enter notes..."
-                            value={node.notes}
-                            onChange={(e) => handleChange<NodeRow>(rowIndex, "notes", e.target.value)}
-                            className="bg-gray-700 p-1 rounded w-full text-left"
-                          />
-                        </td>
-                      </tr>
-                    );
-                  } else {
-                    const path = row as PathRow;
-                    return (
-                      <tr key={path.label} className="even:bg-gray-900 odd:bg-gray-800">
-                        <td className="p-1 sm:p-2">{path.label}</td>
-                        <td className="p-1 sm:p-2">
-                          <div className="flex flex-col sm:flex-row gap-2 w-full">
-                            {/* First Set Player Dropdown */}
-                            <select
-                              value={path.player1}
-                              onChange={(e) => handleChange<PathRow>(rowIndex, "player1", e.target.value)}
-                              className="bg-gray-700 p-1 rounded flex-1 text-center"
-                              required
-                            >
-                              <option value="" disabled>
-                                Player
-                              </option>
-                              {filteredPlayers.map((p) => (
-                                <option key={p.name} value={p.name}>
-                                  {p.name}
-                                </option>
-                              ))}
-                            </select>
-                            <input
-                              type="text"
-                              placeholder="Defender"
-                              value={path.defender1}
-                              onChange={(e) => handleChange<PathRow>(rowIndex, "defender1", e.target.value)}
-                              className="bg-gray-700 p-1 rounded flex-1 text-center"
-                            />
-                            <input
-                              type="text"
-                              placeholder="Attacker"
-                              value={path.attacker1}
-                              onChange={(e) => handleChange<PathRow>(rowIndex, "attacker1", e.target.value)}
-                              className="bg-gray-700 p-1 rounded flex-1 text-center"
-                            />
-                            <input
-                              type="number"
-                              value={path.deaths1 === 0 ? "" : path.deaths1}
-                              onChange={(e) =>
-                                handleChange<PathRow>(
-                                  rowIndex,
-                                  "deaths1",
-                                  e.target.value === "" ? 0 : Number(e.target.value)
-                                )
-                              }
-                              className="bg-gray-700 text-center rounded h-8 w-12 sm:w-16 p-1"
-                              min={0}
-                            />
-
-                            {/* Second Set Player Dropdown */}
-                            <select
-                              value={path.player2}
-                              onChange={(e) => handleChange<PathRow>(rowIndex, "player2", e.target.value)}
-                              className="bg-gray-700 p-1 rounded flex-1 text-center"
-                              required
-                            >
-                              <option value="" disabled>
-                                Player
-                              </option>
-                              {filteredPlayers.map((p) => (
-                                <option key={p.name} value={p.name}>
-                                  {p.name}
-                                </option>
-                              ))}
-                            </select>
-                            <input
-                              type="text"
-                              placeholder="Defender"
-                              value={path.defender2}
-                              onChange={(e) => handleChange<PathRow>(rowIndex, "defender2", e.target.value)}
-                              className="bg-gray-700 p-1 rounded flex-1 text-center"
-                            />
-                            <input
-                              type="text"
-                              placeholder="Attacker"
-                              value={path.attacker2}
-                              onChange={(e) => handleChange<PathRow>(rowIndex, "attacker2", e.target.value)}
-                              className="bg-gray-700 p-1 rounded flex-1 text-center"
-                            />
-                            <input
-                              type="number"
-                              value={path.deaths2 === 0 ? "" : path.deaths2}
-                              onChange={(e) =>
-                                handleChange<PathRow>(
-                                  rowIndex,
-                                  "deaths2",
-                                  e.target.value === "" ? 0 : Number(e.target.value)
-                                )
-                              }
-                              className="bg-gray-700 text-center rounded h-8 w-12 sm:w-16 p-1"
-                              min={0}
-                            />
-                          </div>
-                        </td>
-                        <td className="p-1 sm:p-2">
-                          <input
-                            type="text"
-                            placeholder="Enter notes..."
-                            value={path.notes}
-                            onChange={(e) => handleChange<PathRow>(rowIndex, "notes", e.target.value)}
-                            className="bg-gray-700 p-1 rounded w-full text-left"
-                          />
-                        </td>
-                      </tr>
-                    );
-                  }
-                })}
-            </tbody>
-          ))}
-        </table>
+            {/* Node/Deaths inputs */}
+            <div className="flex flex-wrap gap-2 flex-1">
+              {row.entries
+                .filter((entry, idx) => {
+                  const isFilled = entry.node !== undefined || entry.deaths !== undefined;
+                  const firstEmpty =
+                    row.active &&
+                    idx <= row.entries.findIndex((e) => !e.node && !e.deaths);
+                  return isFilled || firstEmpty;
+                })
+                .map((entry, entryIndex) => (
+                  <div key={entryIndex} className="flex gap-1">
+                    <input
+                      type="number"
+                      min={1}
+                      max={50}
+                      placeholder="Node 1-50"
+                      value={entry.node ?? ""}
+                      onFocus={() => handleFocusRow(rowIndex)}
+                      onBlur={() => handleBlurRow(rowIndex)}
+                      onChange={(e) =>
+                        handleEntryChange(
+                          rowIndex,
+                          entryIndex,
+                          "node",
+                          e.target.value === "" ? undefined : Number(e.target.value)
+                        )
+                      }
+                      className="bg-gray-700 p-1 rounded w-24 text-center no-arrows"
+                    />
+                    <input
+                      type="number"
+                      min={0}
+                      placeholder="Deaths"
+                      value={entry.deaths ?? ""}
+                      onFocus={() => handleFocusRow(rowIndex)}
+                      onBlur={() => handleBlurRow(rowIndex)}
+                      onChange={(e) =>
+                        handleEntryChange(
+                          rowIndex,
+                          entryIndex,
+                          "deaths",
+                          e.target.value === "" ? undefined : Number(e.target.value)
+                        )
+                      }
+                      className="bg-gray-700 p-1 rounded w-20 text-center no-arrows"
+                    />
+                  </div>
+                ))}
+            </div>
+          </div>
+        ))}
       </div>
+      <div className="flex justify-center mt-4 gap-6 text-lg font-semibold">
+  <div>Total Kills: {totalKills}</div>
+  <div>Total Deaths: {totalDeaths}</div>
+</div>
+
 
       <div className="flex justify-center mt-4">
         <Button onClick={handleSubmit} variant="outline" className="hover:bg-white hover:text-black">
