@@ -22,20 +22,12 @@ interface PlayerRow {
 
 export default function NodeTrackerPage() {
   const [players, setPlayers] = useState<PlayerAPI[]>([]);
-  const [selectedBG, setSelectedBG] = useState<"BG1" | "BG2" | "BG3">("BG1");
+  const [selectedBG, setSelectedBG] = useState<"" | "BG1" | "BG2" | "BG3">("");
   const [rows, setRows] = useState<PlayerRow[]>([]);
   const [nodeKills, setNodeKills] = useState<Record<number, number>>({});
-  const totalKills = Object.values(nodeKills).reduce((sum, val) => sum + val, 0);
-
-const totalDeaths = rows.reduce(
-  (sum, row) =>
-    sum +
-    row.entries.reduce((rowSum, entry) => rowSum + (entry.deaths ?? 0), 0),
-  0
-);
-
 
   const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const inputRefs = useRef<(HTMLInputElement | null)[][]>([]);
 
   useEffect(() => {
     const fetchPlayers = async () => {
@@ -58,22 +50,24 @@ const totalDeaths = rows.reduce(
         active: false,
       }))
     );
+    inputRefs.current = Array.from({ length: 10 }, () =>
+      Array.from({ length: 10 }, () => null)
+    );
   }, []);
 
   const filteredPlayers = players.filter((p) => p.battlegroup === selectedBG);
 
-  // Only show players not already selected in other rows
-  const getAvailablePlayers = (rowIndex: number) => {
-    const selectedPlayers = rows
-      .filter((_, i) => i !== rowIndex)
-      .map((r) => r.player)
-      .filter(Boolean);
-    return filteredPlayers.filter((p) => !selectedPlayers.includes(p.name));
-  };
+  const handleBGChange = (bg: "BG1" | "BG2" | "BG3") => {
+    setSelectedBG(bg);
+    const filtered = players.filter((p) => p.battlegroup === bg);
 
-  const handlePlayerChange = (rowIndex: number, value: string) => {
     setRows((prev) =>
-      prev.map((row, i) => (i === rowIndex ? { ...row, player: value, active: true } : row))
+      prev.map((row, i) => ({
+        ...row,
+        player: filtered[i]?.name || "",
+        entries: row.entries,
+        active: !!filtered[i],
+      }))
     );
   };
 
@@ -83,18 +77,26 @@ const totalDeaths = rows.reduce(
     field: "node" | "deaths",
     value: number | undefined
   ) => {
-    setRows((prev) =>
-      prev.map((row, i) => {
+    setRows((prev) => {
+      const newRows = prev.map((row, i) => {
         if (i === rowIndex) {
           const newEntries = [...row.entries];
           newEntries[entryIndex] = { ...newEntries[entryIndex], [field]: value };
           return { ...row, entries: newEntries };
         }
         return row;
-      })
-    );
+      });
 
-    // Update node kills internally
+      // Scroll the row horizontally so the active input is visible
+      const inputEl = inputRefs.current[rowIndex][entryIndex];
+      if (inputEl && newRows[rowIndex].active) {
+        inputEl.scrollIntoView({ behavior: "smooth", inline: "end", block: "nearest" });
+      }
+
+      return newRows;
+    });
+
+    // Update total kills
     setNodeKills(() => {
       const allEntries = rows.flatMap((r, idx) =>
         idx === rowIndex
@@ -103,7 +105,6 @@ const totalDeaths = rows.reduce(
             )
           : r.entries
       );
-
       const newKills: Record<number, number> = {};
       allEntries.forEach((e) => {
         if (e.node) newKills[e.node] = (newKills[e.node] || 0) + 1;
@@ -123,31 +124,56 @@ const totalDeaths = rows.reduce(
       const rowEl = rowRefs.current[rowIndex];
       if (rowEl && !rowEl.contains(document.activeElement)) {
         setRows((prev) =>
-          prev.map((row, i) => (i === rowIndex ? { ...row, active: false } : row))
+          prev.map((row, i) => {
+            if (i === rowIndex) {
+              // Keep only filled entries and first pair
+              const cleanedEntries = row.entries.map((e, idx) =>
+                idx === 0 || e.node || e.deaths ? e : {}
+              );
+              return { ...row, active: false, entries: cleanedEntries };
+            }
+            return row;
+          })
         );
       }
-    }, 400); // 400ms delay handles mobile dropdown
+    }, 150);
   };
 
   const handleSubmit = () => {
     console.log("Submitted data:", rows);
   };
 
+  const totalKills = Object.values(nodeKills).reduce((sum, val) => sum + val, 0);
+  const totalDeaths = rows.reduce(
+    (sum, row) =>
+      sum +
+      row.entries.reduce((rowSum, entry) => rowSum + (entry.deaths ?? 0), 0),
+    0
+  );
+
   return (
-    <main className="p-4 sm:p-6 bg-gray-900 text-white min-h-screen">
-      <div className="flex flex-col sm:flex-row sm:justify-between gap-2 mb-4">
+    <main className="p-2 bg-gray-900 text-white min-h-screen">
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-1 mb-2 text-sm">
         <Link href="/">
-          <Button variant="outline" className="hover:bg-white hover:text-black">
-            ← Back to Home
+          <Button
+            variant="outline"
+            className="hover:bg-white hover:text-black text-xs px-2 py-1"
+          >
+            ← Home
           </Button>
         </Link>
-        <div className="flex items-center gap-2">
-          <span>Choose Battlegroup:</span>
+        <div className="flex items-center gap-1 text-xs">
+          <span>Battlegroup:</span>
           <select
             value={selectedBG}
-            onChange={(e) => setSelectedBG(e.target.value as "BG1" | "BG2" | "BG3")}
-            className="bg-gray-700 text-white p-1 rounded"
+            onChange={(e) =>
+              handleBGChange(e.target.value as "BG1" | "BG2" | "BG3")
+            }
+            className="bg-gray-700 text-white p-1 rounded text-xs"
           >
+            <option value="" disabled>
+              Select
+            </option>
             <option value="BG1">BG1</option>
             <option value="BG2">BG2</option>
             <option value="BG3">BG3</option>
@@ -155,50 +181,39 @@ const totalDeaths = rows.reduce(
         </div>
       </div>
 
-      <h1 className="text-2xl font-bold mb-4 text-center">Kill and Death Tracker</h1>
+      <h1 className="text-xl font-bold mb-2 text-center">Node Tracker</h1>
 
-      <div className="space-y-4">
+      <div className="space-y-1">
         {rows.map((row, rowIndex) => (
           <div
             key={rowIndex}
-            ref={(el) => {rowRefs.current[rowIndex] = el}}
-            className="bg-gray-800 p-3 rounded flex flex-col sm:flex-row sm:items-start gap-4 flex-wrap"
+            ref={(el) => { rowRefs.current[rowIndex] = el }}
+            className="bg-gray-800 p-1 rounded flex gap-1 overflow-x-auto"
           >
-            {/* Player dropdown */}
-            <select
-              value={row.player}
-              onChange={(e) => handlePlayerChange(rowIndex, e.target.value)}
-              onFocus={() => handleFocusRow(rowIndex)}
-              onBlur={() => handleBlurRow(rowIndex)}
-              className="bg-gray-700 p-1 rounded w-full sm:w-36 text-center flex-shrink-0"
-            >
-              <option value="" disabled>
-                Player
-              </option>
-              {getAvailablePlayers(rowIndex).map((p) => (
-                <option key={p.name} value={p.name}>
-                  {p.name}
-                </option>
-              ))}
-            </select>
+            <div className="w-16 sm:w-20 text-center text-xs font-semibold flex-shrink-0">
+              {row.player || "—"}
+            </div>
 
-            {/* Node/Deaths inputs */}
-            <div className="flex flex-wrap gap-2 flex-1">
-              {row.entries
-                .filter((entry, idx) => {
-                  const isFilled = entry.node !== undefined || entry.deaths !== undefined;
-                  const firstEmpty =
-                    row.active &&
-                    idx <= row.entries.findIndex((e) => !e.node && !e.deaths);
-                  return isFilled || firstEmpty;
-                })
-                .map((entry, entryIndex) => (
-                  <div key={entryIndex} className="flex gap-1">
+            <div className="flex gap-1 flex-nowrap">
+              {row.entries.map((entry, entryIndex) => {
+                const first = entryIndex === 0;
+                const prev = row.entries[entryIndex - 1];
+                const hasValue = entry.node || entry.deaths;
+                const show =
+                  first || hasValue || (row.active && prev && (prev.node || prev.deaths));
+                if (!show) return null;
+
+                return (
+                  <div key={entryIndex} className="flex gap-1 flex-none w-20">
                     <input
+                      ref={(el) => {
+                        if (!inputRefs.current[rowIndex]) inputRefs.current[rowIndex] = [];
+                        inputRefs.current[rowIndex][entryIndex] = el;
+                      }}
                       type="number"
                       min={1}
                       max={50}
-                      placeholder="Node 1-50"
+                      placeholder="Node"
                       value={entry.node ?? ""}
                       onFocus={() => handleFocusRow(rowIndex)}
                       onBlur={() => handleBlurRow(rowIndex)}
@@ -210,7 +225,7 @@ const totalDeaths = rows.reduce(
                           e.target.value === "" ? undefined : Number(e.target.value)
                         )
                       }
-                      className="bg-gray-700 p-1 rounded w-24 text-center no-arrows"
+                      className="bg-gray-700 p-1 rounded text-center text-xs w-full no-spin focus:outline-none"
                     />
                     <input
                       type="number"
@@ -227,25 +242,40 @@ const totalDeaths = rows.reduce(
                           e.target.value === "" ? undefined : Number(e.target.value)
                         )
                       }
-                      className="bg-gray-700 p-1 rounded w-20 text-center no-arrows"
+                      className="bg-gray-700 p-1 rounded text-center text-xs w-full no-spin focus:outline-none"
                     />
                   </div>
-                ))}
+                );
+              })}
             </div>
           </div>
         ))}
       </div>
-      <div className="flex justify-center mt-4 gap-6 text-lg font-semibold">
-  <div>Total Kills: {totalKills}</div>
-  <div>Total Deaths: {totalDeaths}</div>
-</div>
 
+      <div className="mt-2 text-center text-sm font-semibold">
+        Total Kills: {totalKills} | Total Deaths: {totalDeaths}
+      </div>
 
-      <div className="flex justify-center mt-4">
-        <Button onClick={handleSubmit} variant="outline" className="hover:bg-white hover:text-black">
-          Submit Data
+      <div className="flex justify-center mt-2">
+        <Button
+          onClick={handleSubmit}
+          variant="outline"
+          className="hover:bg-white hover:text-black text-xs px-3 py-1"
+        >
+          Submit
         </Button>
       </div>
+
+      <style jsx>{`
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        input[type="number"] {
+          -moz-appearance: textfield;
+        }
+      `}</style>
     </main>
   );
 }
