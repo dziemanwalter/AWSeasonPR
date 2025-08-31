@@ -33,6 +33,7 @@ export default function NodeTrackerPage() {
   const [selectedBG, setSelectedBG] = useState<"" | "BG1" | "BG2" | "BG3">("");
   const [rows, setRows] = useState<PlayerRow[]>([]);
   const [nodeKills, setNodeKills] = useState<Record<number, number>>({});
+  const [openRows, setOpenRows] = useState<Set<number>>(new Set());
 
   const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -79,6 +80,11 @@ export default function NodeTrackerPage() {
         newRows[rowIndex].entries = entries;
       }
 
+      // Update summary for this row in real-time
+      const kills = entries.filter((e) => e.node).length;
+      const deaths = entries.reduce((s, e) => s + (e.deaths ?? 0), 0);
+      newRows[rowIndex] = { ...newRows[rowIndex], summary: { kills, deaths } };
+
       // Update node kills
       const newKills: Record<number, number> = {};
       newRows.forEach((r) => {
@@ -92,23 +98,7 @@ export default function NodeTrackerPage() {
     });
   };
 
-  const handleBlurRow = (rowIndex: number) => {
-    setTimeout(() => {
-      const rowEl = rowRefs.current[rowIndex];
-      if (rowEl && !rowEl.contains(document.activeElement)) {
-        setRows((prev) =>
-          prev.map((row, i) => {
-            if (i === rowIndex) {
-              const kills = row.entries.filter((e) => e.node).length;
-              const deaths = row.entries.reduce((s, e) => s + (e.deaths ?? 0), 0);
-              return { ...row, summary: { kills, deaths } };
-            }
-            return row;
-          })
-        );
-      }
-    }, 150);
-  };
+
 
   const handleSubmit = async () => {
     try {
@@ -166,13 +156,39 @@ export default function NodeTrackerPage() {
       {/* Rows */}
       <div className="space-y-1">
         {rows.map((row, rowIndex) => (
-          <Collapsible key={rowIndex}>
-            <CollapsibleTrigger asChild>
-              <div
-                ref={(el) => {rowRefs.current[rowIndex] = el;}}
-                className="bg-gray-800 p-2 rounded mb-1 cursor-pointer flex justify-between items-center"
-                tabIndex={0}
-              >
+                     <Collapsible key={rowIndex} open={openRows.has(rowIndex)} onOpenChange={(open) => {
+             if (open) {
+               // Close all other rows when opening a new one
+               setOpenRows(new Set([rowIndex]));
+             } else {
+               // Update summary when closing
+               setRows((prev) =>
+                 prev.map((row, i) => {
+                   if (i === rowIndex) {
+                     const kills = row.entries.filter((e) => e.node).length;
+                     const deaths = row.entries.reduce((s, e) => s + (e.deaths ?? 0), 0);
+                     return { ...row, summary: { kills, deaths } };
+                   }
+                   return row;
+                 })
+               );
+               setOpenRows((prev) => {
+                 const newSet = new Set(prev);
+                 newSet.delete(rowIndex);
+                 return newSet;
+               });
+             }
+           }}>
+                         <CollapsibleTrigger asChild>
+               <div
+                 ref={(el) => {rowRefs.current[rowIndex] = el;}}
+                 className="bg-gray-800 p-2 rounded mb-1 cursor-pointer flex justify-between items-center collapsible-trigger"
+                 data-row-index={rowIndex}
+                 tabIndex={0}
+                                   onClick={(e) => {
+                    e.stopPropagation();
+                  }}
+               >
                 <div className="text-sm font-semibold">{row.player || "—"}</div>
                 <div className="flex items-center gap-1">
                   {row.summary && (
@@ -180,16 +196,21 @@ export default function NodeTrackerPage() {
                       {row.summary.kills} K / {row.summary.deaths} D
                     </span>
                   )}
-                  <ChevronDown className="w-4 h-4 text-gray-400 transition-transform duration-200" />
+                  <ChevronDown className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${
+                    openRows.has(rowIndex) ? "rotate-180" : ""
+                  }`} />
                 </div>
               </div>
             </CollapsibleTrigger>
 
-            <CollapsibleContent className="overflow-y-auto mt-2 max-h-96">
-              <div
-                className="flex flex-col gap-1"
-                onBlur={() => handleBlurRow(rowIndex)}
-              >
+                         <CollapsibleContent className="overflow-y-auto mt-2 max-h-96">
+               <div
+                 className="flex flex-col gap-1"
+                 data-row-index={rowIndex}
+                 onClick={(e) => {
+                   e.stopPropagation();
+                 }}
+               >
                 {row.entries.map((entry, entryIndex) => {
                   const prevFilled =
                     entryIndex === 0 || row.entries[entryIndex - 1].node !== undefined;
