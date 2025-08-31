@@ -1,0 +1,306 @@
+[
+  {
+    "player": "Marshy",
+    "entries": [
+      {
+        "node": 3
+      },
+      {
+        "node": 12
+      },
+      {
+        "node": 23
+      },
+      {
+        "node": 32
+      },
+      {
+        "node": 42
+      },
+      {
+        "node": 45
+      },
+      {
+        "node": 46
+      },
+      {
+        "node": 50
+      },
+      {},
+      {}
+    ],
+    "active": false,
+    "summary": {
+      "kills": 8,
+      "deaths": 0
+    }
+  },
+  {
+    "player": "Steel",
+    "entries": [
+      {
+        "node": 1
+      },
+      {
+        "node": 10
+      },
+      {
+        "node": 21
+      },
+      {
+        "node": 30
+      },
+      {
+        "node": 37
+      },
+      {
+        "node": 44
+      },
+      {
+        "node": 47
+      },
+      {},
+      {},
+      {}
+    ],
+    "active": false,
+    "summary": {
+      "kills": 7,
+      "deaths": 0
+    }
+  },
+  {
+    "player": "Praetor",
+    "entries": [
+      {
+        "node": 8,
+        "deaths": 1
+      },
+      {
+        "node": 17
+      },
+      {
+        "node": 22
+      },
+      {
+        "node": 31
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "active": false,
+    "summary": {
+      "kills": 4,
+      "deaths": 1
+    }
+  },
+  {
+    "player": "Zkittlez",
+    "entries": [
+      {
+        "node": 6
+      },
+      {
+        "node": 15
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "active": false,
+    "summary": {
+      "kills": 2,
+      "deaths": 0
+    }
+  },
+  {
+    "player": "JWill",
+    "entries": [
+      {
+        "node": 7
+      },
+      {
+        "node": 16,
+        "deaths": 1
+      },
+      {
+        "node": 24
+      },
+      {
+        "node": 33
+      },
+      {
+        "node": 49
+      },
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "active": false,
+    "summary": {
+      "kills": 5,
+      "deaths": 1
+    }
+  },
+  {
+    "player": "Hazz",
+    "entries": [
+      {
+        "node": 5
+      },
+      {
+        "node": 27
+      },
+      {
+        "node": 36
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "active": false,
+    "summary": {
+      "kills": 3,
+      "deaths": 0
+    }
+  },
+  {
+    "player": "Voltaic",
+    "entries": [
+      {
+        "node": 14
+      },
+      {
+        "node": 26
+      },
+      {
+        "node": 35,
+        "deaths": 1
+      },
+      {
+        "node": 40
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "active": false,
+    "summary": {
+      "kills": 4,
+      "deaths": 1
+    }
+  },
+  {
+    "player": "Fort",
+    "entries": [
+      {
+        "node": 9,
+        "deaths": 1
+      },
+      {
+        "node": 18
+      },
+      {
+        "node": 19
+      },
+      {
+        "node": 28
+      },
+      {
+        "node": 39
+      },
+      {
+        "node": 43
+      },
+      {
+        "node": 48
+      },
+      {},
+      {},
+      {}
+    ],
+    "active": false,
+    "summary": {
+      "kills": 7,
+      "deaths": 1
+    }
+  },
+  {
+    "player": "Nomis",
+    "entries": [
+      {
+        "node": 4
+      },
+      {
+        "node": 13
+      },
+      {
+        "node": 20
+      },
+      {
+        "node": 29
+      },
+      {
+        "node": 38
+      },
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "active": false,
+    "summary": {
+      "kills": 5,
+      "deaths": 0
+    }
+  },
+  {
+    "player": "Chupa",
+    "entries": [
+      {
+        "node": 2
+      },
+      {
+        "node": 11
+      },
+      {
+        "node": 25
+      },
+      {
+        "node": 34
+      },
+      {
+        "node": 41
+      },
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "active": false,
+    "summary": {
+      "kills": 5,
+      "deaths": 0
+    }
+  }
+]

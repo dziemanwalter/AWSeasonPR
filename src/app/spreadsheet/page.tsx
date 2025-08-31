@@ -3,11 +3,12 @@
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
-interface PlayerAPI {
-  name: string;
-  battlegroup?: string;
-}
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import { ChevronDown } from "lucide-react";
 
 interface NodeEntry {
   node?: number;
@@ -17,7 +18,14 @@ interface NodeEntry {
 interface PlayerRow {
   player: string;
   entries: NodeEntry[];
-  active: boolean;
+  summary?: { kills: number; deaths: number };
+}
+
+interface PlayerAPI {
+  name: string;
+  battlegroup?: string;
+  killsPerNode: Record<string, number>;
+  deathsPerNode: Record<string, number>;
 }
 
 export default function NodeTrackerPage() {
@@ -27,7 +35,6 @@ export default function NodeTrackerPage() {
   const [nodeKills, setNodeKills] = useState<Record<number, number>>({});
 
   const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const inputRefs = useRef<(HTMLInputElement | null)[][]>([]);
 
   useEffect(() => {
     const fetchPlayers = async () => {
@@ -42,31 +49,14 @@ export default function NodeTrackerPage() {
     fetchPlayers();
   }, []);
 
-  useEffect(() => {
-    setRows(
-      Array.from({ length: 10 }).map(() => ({
-        player: "",
-        entries: Array.from({ length: 10 }).map(() => ({})),
-        active: false,
-      }))
-    );
-    inputRefs.current = Array.from({ length: 10 }, () =>
-      Array.from({ length: 10 }, () => null)
-    );
-  }, []);
-
-  const filteredPlayers = players.filter((p) => p.battlegroup === selectedBG);
-
   const handleBGChange = (bg: "BG1" | "BG2" | "BG3") => {
     setSelectedBG(bg);
     const filtered = players.filter((p) => p.battlegroup === bg);
 
-    setRows((prev) =>
-      prev.map((row, i) => ({
-        ...row,
+    setRows(
+      Array.from({ length: 10 }).map((_, i) => ({
         player: filtered[i]?.name || "",
-        entries: row.entries,
-        active: !!filtered[i],
+        entries: [{}],
       }))
     );
   };
@@ -78,45 +68,28 @@ export default function NodeTrackerPage() {
     value: number | undefined
   ) => {
     setRows((prev) => {
-      const newRows = prev.map((row, i) => {
-        if (i === rowIndex) {
-          const newEntries = [...row.entries];
-          newEntries[entryIndex] = { ...newEntries[entryIndex], [field]: value };
-          return { ...row, entries: newEntries };
-        }
-        return row;
-      });
+      const newRows = [...prev];
+      const entries = [...newRows[rowIndex].entries];
+      entries[entryIndex] = { ...entries[entryIndex], [field]: value };
+      newRows[rowIndex].entries = entries;
 
-      // Scroll the row horizontally so the active input is visible
-      const inputEl = inputRefs.current[rowIndex][entryIndex];
-      if (inputEl && newRows[rowIndex].active) {
-        inputEl.scrollIntoView({ behavior: "smooth", inline: "end", block: "nearest" });
+      // Auto-add next input if last node filled
+      if (entryIndex === entries.length - 1 && entries[entryIndex].node !== undefined) {
+        entries.push({});
+        newRows[rowIndex].entries = entries;
       }
+
+      // Update node kills
+      const newKills: Record<number, number> = {};
+      newRows.forEach((r) => {
+        r.entries.forEach((e) => {
+          if (e.node) newKills[e.node] = (newKills[e.node] || 0) + 1;
+        });
+      });
+      setNodeKills(newKills);
 
       return newRows;
     });
-
-    // Update total kills
-    setNodeKills(() => {
-      const allEntries = rows.flatMap((r, idx) =>
-        idx === rowIndex
-          ? r.entries.map((e, i) =>
-              i === entryIndex ? { ...e, [field]: value ?? 0 } : e
-            )
-          : r.entries
-      );
-      const newKills: Record<number, number> = {};
-      allEntries.forEach((e) => {
-        if (e.node) newKills[e.node] = (newKills[e.node] || 0) + 1;
-      });
-      return newKills;
-    });
-  };
-
-  const handleFocusRow = (rowIndex: number) => {
-    setRows((prev) =>
-      prev.map((row, i) => (i === rowIndex ? { ...row, active: true } : row))
-    );
   };
 
   const handleBlurRow = (rowIndex: number) => {
@@ -126,11 +99,9 @@ export default function NodeTrackerPage() {
         setRows((prev) =>
           prev.map((row, i) => {
             if (i === rowIndex) {
-              // Keep only filled entries and first pair
-              const cleanedEntries = row.entries.map((e, idx) =>
-                idx === 0 || e.node || e.deaths ? e : {}
-              );
-              return { ...row, active: false, entries: cleanedEntries };
+              const kills = row.entries.filter((e) => e.node).length;
+              const deaths = row.entries.reduce((s, e) => s + (e.deaths ?? 0), 0);
+              return { ...row, summary: { kills, deaths } };
             }
             return row;
           })
@@ -139,20 +110,29 @@ export default function NodeTrackerPage() {
     }, 150);
   };
 
-  const handleSubmit = () => {
-    console.log("Submitted data:", rows);
+  const handleSubmit = async () => {
+    try {
+      await fetch("/api/savePlayerNodes", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(rows),
+      });
+      alert("Player node data saved!");
+    } catch (err) {
+      console.error(err);
+      alert("Error saving data");
+    }
   };
 
   const totalKills = Object.values(nodeKills).reduce((sum, val) => sum + val, 0);
   const totalDeaths = rows.reduce(
-    (sum, row) =>
-      sum +
-      row.entries.reduce((rowSum, entry) => rowSum + (entry.deaths ?? 0), 0),
+    (sum, row) => sum + row.entries.reduce((rowSum, e) => rowSum + (e.deaths ?? 0), 0),
     0
   );
 
   return (
     <main className="p-2 bg-gray-900 text-white min-h-screen">
+      {/* Header */}
       <div className="flex flex-col sm:flex-row sm:justify-between gap-1 mb-2 text-sm">
         <Link href="/">
           <Button
@@ -183,79 +163,116 @@ export default function NodeTrackerPage() {
 
       <h1 className="text-xl font-bold mb-2 text-center">Node Tracker</h1>
 
+      {/* Rows */}
       <div className="space-y-1">
         {rows.map((row, rowIndex) => (
-          <div
-            key={rowIndex}
-            ref={(el) => { rowRefs.current[rowIndex] = el }}
-            className="bg-gray-800 p-1 rounded flex gap-1 overflow-x-auto"
-          >
-            <div className="w-16 sm:w-20 text-center text-xs font-semibold flex-shrink-0">
-              {row.player || "—"}
-            </div>
+          <Collapsible key={rowIndex}>
+            <CollapsibleTrigger asChild>
+              <div
+                ref={(el) => {rowRefs.current[rowIndex] = el;}}
+                className="bg-gray-800 p-2 rounded mb-1 cursor-pointer flex justify-between items-center"
+                tabIndex={0}
+              >
+                <div className="text-sm font-semibold">{row.player || "—"}</div>
+                <div className="flex items-center gap-1">
+                  {row.summary && (
+                    <span className="text-xs text-gray-400">
+                      {row.summary.kills} K / {row.summary.deaths} D
+                    </span>
+                  )}
+                  <ChevronDown className="w-4 h-4 text-gray-400 transition-transform duration-200" />
+                </div>
+              </div>
+            </CollapsibleTrigger>
 
-            <div className="flex gap-1 flex-nowrap">
-              {row.entries.map((entry, entryIndex) => {
-                const first = entryIndex === 0;
-                const prev = row.entries[entryIndex - 1];
-                const hasValue = entry.node || entry.deaths;
-                const show =
-                  first || hasValue || (row.active && prev && (prev.node || prev.deaths));
-                if (!show) return null;
+            <CollapsibleContent className="overflow-y-auto mt-2 max-h-96">
+              <div
+                className="flex flex-col gap-1"
+                onBlur={() => handleBlurRow(rowIndex)}
+              >
+                {row.entries.map((entry, entryIndex) => {
+                  const prevFilled =
+                    entryIndex === 0 || row.entries[entryIndex - 1].node !== undefined;
+                  if (!prevFilled) return null;
 
-                return (
-                  <div key={entryIndex} className="flex gap-1 flex-none w-20">
-                    <input
-                      ref={(el) => {
-                        if (!inputRefs.current[rowIndex]) inputRefs.current[rowIndex] = [];
-                        inputRefs.current[rowIndex][entryIndex] = el;
-                      }}
-                      type="number"
-                      min={1}
-                      max={50}
-                      placeholder="Node"
-                      value={entry.node ?? ""}
-                      onFocus={() => handleFocusRow(rowIndex)}
-                      onBlur={() => handleBlurRow(rowIndex)}
-                      onChange={(e) =>
-                        handleEntryChange(
-                          rowIndex,
-                          entryIndex,
-                          "node",
-                          e.target.value === "" ? undefined : Number(e.target.value)
-                        )
-                      }
-                      className="bg-gray-700 p-1 rounded text-center text-xs w-full no-spin focus:outline-none"
-                    />
-                    <input
-                      type="number"
-                      min={0}
-                      placeholder="Deaths"
-                      value={entry.deaths ?? ""}
-                      onFocus={() => handleFocusRow(rowIndex)}
-                      onBlur={() => handleBlurRow(rowIndex)}
-                      onChange={(e) =>
-                        handleEntryChange(
-                          rowIndex,
-                          entryIndex,
-                          "deaths",
-                          e.target.value === "" ? undefined : Number(e.target.value)
-                        )
-                      }
-                      className="bg-gray-700 p-1 rounded text-center text-xs w-full no-spin focus:outline-none"
-                    />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+                  return (
+                    <div key={entryIndex} className="flex gap-1 w-full">
+                      <input
+                        type="number"
+                        min={1}
+                        max={50}
+                        placeholder="Node"
+                        id={`node-${rowIndex}-${entryIndex}`}
+                        value={entry.node ?? ""}
+                        onChange={(e) =>
+                          handleEntryChange(
+                            rowIndex,
+                            entryIndex,
+                            "node",
+                            e.target.value === "" ? undefined : Number(e.target.value)
+                          )
+                        }
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            e.preventDefault();
+                            const deathInput = document.getElementById(
+                              `death-${rowIndex}-${entryIndex}`
+                            );
+                            deathInput?.focus();
+                          }
+                        }}
+                        className="bg-gray-700 p-0.5 rounded text-center text-xs w-16 no-spin focus:outline-none"
+                      />
+                      <input
+                        type="number"
+                        min={0}
+                        placeholder="Deaths"
+                        id={`death-${rowIndex}-${entryIndex}`}
+                        value={entry.deaths ?? ""}
+                        onChange={(e) =>
+                          handleEntryChange(
+                            rowIndex,
+                            entryIndex,
+                            "deaths",
+                            e.target.value === "" ? undefined : Number(e.target.value)
+                          )
+                        }
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            e.preventDefault();
+                            const nextEntryIndex = entryIndex + 1;
+                            if (!row.entries[nextEntryIndex]) {
+                              setRows((prev) => {
+                                const newRows = [...prev];
+                                newRows[rowIndex].entries.push({});
+                                return newRows;
+                              });
+                            }
+                            setTimeout(() => {
+                              const nextNode = document.getElementById(
+                                `node-${rowIndex}-${nextEntryIndex}`
+                              );
+                              nextNode?.focus();
+                            }, 50);
+                          }
+                        }}
+                        className="bg-gray-700 p-0.5 rounded text-center text-xs w-16 no-spin focus:outline-none"
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            </CollapsibleContent>
+          </Collapsible>
         ))}
       </div>
 
+      {/* Totals */}
       <div className="mt-2 text-center text-sm font-semibold">
         Total Kills: {totalKills} | Total Deaths: {totalDeaths}
       </div>
 
+      {/* Submit */}
       <div className="flex justify-center mt-2">
         <Button
           onClick={handleSubmit}
