@@ -13,5 +13,6 @@ input.no-arrows::-webkit-inner-spin-button {
 }
 
 input.no-arrows {
+  appearance: textfield; /* Modern browsers */
   -moz-appearance: textfield; /* Firefox */
 }

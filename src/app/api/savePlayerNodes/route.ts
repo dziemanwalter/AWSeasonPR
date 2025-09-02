@@ -11,6 +11,32 @@ interface PlayerRowData {
   entries: NodeEntry[];
 }
 
+export async function GET() {
+  try {
+    const filePath = path.join(process.cwd(), "data", "playerNodes.json");
+    
+    if (!fs.existsSync(filePath)) {
+      return new Response(JSON.stringify([]), {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+
+    const data = fs.readFileSync(filePath, "utf-8");
+    const rows = JSON.parse(data);
+
+    return new Response(JSON.stringify(rows), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
+  } catch (err: any) {
+    return new Response(JSON.stringify({ error: err.message }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+}
+
 export async function POST(req: Request) {
   try {
     const rows: PlayerRowData[] = await req.json();

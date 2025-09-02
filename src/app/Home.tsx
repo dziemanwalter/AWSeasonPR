@@ -64,15 +64,18 @@ export default function SeasonStats() {
             View Battle Groups
           </button>
         </Link>
+        {/* Button to Kill Streaks */}
+        <Link href="/kill-streaks" className="ml-2">
+          <button className="px-4 py-2 rounded-lg bg-purple-600 hover:bg-purple-800 text-white font-semibold transition-colors">
+            Kill Streaks
+          </button>
+        </Link>
         {/* Button to Spreadsheet */}
-      <div className="flex justify-center sm:justify-start mb-6">
-        <Link href="/spreadsheet">
+        <Link href="/spreadsheet" className="ml-2">
           <button className="px-4 py-2 rounded-lg bg-teal-600 hover:bg-teal-800 text-white font-semibold transition-colors">
             K/D Entry Page
           </button>
         </Link>
-      </div>
-
       </div>
 
       {/* Alliance Totals */}

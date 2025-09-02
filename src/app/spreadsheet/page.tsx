@@ -34,6 +34,7 @@ export default function NodeTrackerPage() {
   const [rows, setRows] = useState<PlayerRow[]>([]);
   const [nodeKills, setNodeKills] = useState<Record<number, number>>({});
   const [openRows, setOpenRows] = useState<Set<number>>(new Set());
+  const [isLoading, setIsLoading] = useState(false);
 
   const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -54,12 +55,64 @@ export default function NodeTrackerPage() {
     setSelectedBG(bg);
     const filtered = players.filter((p) => p.battlegroup === bg);
 
-    setRows(
-      Array.from({ length: 10 }).map((_, i) => ({
-        player: filtered[i]?.name || "",
-        entries: [{}],
-      }))
-    );
+    // Load saved data for this battlegroup
+    const loadSavedData = async () => {
+      setIsLoading(true);
+      try {
+        const res = await fetch("/api/savePlayerNodes");
+        if (res.ok) {
+          const savedRows = await res.json();
+          const savedData = savedRows.filter((row: any) => 
+            filtered.some(p => p.name === row.player)
+          );
+          
+          // Create rows with saved data or empty entries
+          const newRows = Array.from({ length: 10 }).map((_, i) => {
+            const player = filtered[i];
+            if (!player) return { player: "", entries: [{}] };
+            
+            const savedRow = savedData.find((row: any) => row.player === player.name);
+            if (savedRow && savedRow.entries) {
+              // Use saved entries, ensure there's at least one empty entry at the end
+              const entries = [...savedRow.entries];
+              if (entries.length === 0 || entries[entries.length - 1].node !== undefined) {
+                entries.push({});
+              }
+              return {
+                player: player.name,
+                entries: entries,
+                summary: savedRow.summary
+              };
+            }
+            
+            return { player: player.name, entries: [{}] };
+          });
+          
+          setRows(newRows);
+        } else {
+          // Fallback to empty rows if no saved data
+          setRows(
+            Array.from({ length: 10 }).map((_, i) => ({
+              player: filtered[i]?.name || "",
+              entries: [{}],
+            }))
+          );
+        }
+      } catch (err) {
+        console.error("Error loading saved data:", err);
+        // Fallback to empty rows
+        setRows(
+          Array.from({ length: 10 }).map((_, i) => ({
+            player: filtered[i]?.name || "",
+            entries: [{}],
+          }))
+        );
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadSavedData();
   };
 
   const handleEntryChange = (
@@ -102,16 +155,59 @@ export default function NodeTrackerPage() {
 
   const handleSubmit = async () => {
     try {
+      // First, get existing saved data
+      const existingRes = await fetch("/api/savePlayerNodes");
+      let existingData: PlayerRow[] = [];
+      
+      if (existingRes.ok) {
+        existingData = await existingRes.json();
+      }
+      
+      // Filter out data for players in the current battlegroup
+      const currentPlayerNames = rows.map(row => row.player).filter(name => name);
+      const filteredExistingData = existingData.filter(row => 
+        !currentPlayerNames.includes(row.player)
+      );
+      
+      // Combine existing data with current rows
+      const dataToSave = [...filteredExistingData, ...rows];
+      
       await fetch("/api/savePlayerNodes", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(rows),
+        body: JSON.stringify(dataToSave),
       });
       alert("Player node data saved!");
+      
+      // Reset the current rows to empty for fresh data entry
+      const filtered = players.filter((p) => p.battlegroup === selectedBG);
+      setRows(
+        Array.from({ length: 10 }).map((_, i) => ({
+          player: filtered[i]?.name || "",
+          entries: [{}],
+        }))
+      );
+      
+      // Reset node kills for the current view
+      setNodeKills({});
+      
     } catch (err) {
       console.error(err);
       alert("Error saving data");
     }
+  };
+
+  const handleResetCurrentBG = () => {
+    if (!selectedBG) return;
+    
+    const filtered = players.filter((p) => p.battlegroup === selectedBG);
+    setRows(
+      Array.from({ length: 10 }).map((_, i) => ({
+        player: filtered[i]?.name || "",
+        entries: [{}],
+      }))
+    );
+    setNodeKills({});
   };
 
   const totalKills = Object.values(nodeKills).reduce((sum, val) => sum + val, 0);
@@ -133,8 +229,10 @@ export default function NodeTrackerPage() {
           </Button>
         </Link>
         <div className="flex items-center gap-1 text-xs">
-          <span>Battlegroup:</span>
+          <label htmlFor="battlegroup-select">Battlegroup:</label>
           <select
+            id="battlegroup-select"
+            aria-label="Battlegroup"
             value={selectedBG}
             onChange={(e) =>
               handleBGChange(e.target.value as "BG1" | "BG2" | "BG3")
@@ -152,6 +250,18 @@ export default function NodeTrackerPage() {
       </div>
 
       <h1 className="text-xl font-bold mb-2 text-center">Node Tracker</h1>
+
+      {/* Info message */}
+      <div className="text-center text-xs text-gray-400 mb-2">
+        Enter data for current session. Submit saves data and resets form for next session.
+      </div>
+
+      {/* Loading indicator */}
+      {isLoading && (
+        <div className="text-center text-sm text-gray-400 mb-2">
+          Loading saved data...
+        </div>
+      )}
 
       {/* Rows */}
       <div className="space-y-1">
@@ -293,8 +403,8 @@ export default function NodeTrackerPage() {
         Total Kills: {totalKills} | Total Deaths: {totalDeaths}
       </div>
 
-      {/* Submit */}
-      <div className="flex justify-center mt-2">
+      {/* Submit and Reset */}
+      <div className="flex justify-center gap-2 mt-2">
         <Button
           onClick={handleSubmit}
           variant="outline"
@@ -302,6 +412,15 @@ export default function NodeTrackerPage() {
         >
           Submit
         </Button>
+        {selectedBG && (
+          <Button
+            onClick={handleResetCurrentBG}
+            variant="outline"
+            className="hover:bg-red-500 hover:text-white text-xs px-3 py-1"
+          >
+            Reset Current BG
+          </Button>
+        )}
       </div>
 
       <style jsx>{`

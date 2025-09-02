@@ -24,8 +24,36 @@ export async function GET() {
   try {
     // --- Read CSV ---
     const csvFilePath = path.join(process.cwd(), "C.Av PR aDR.csv");
+    
+    if (!fs.existsSync(csvFilePath)) {
+      console.error("CSV file not found:", csvFilePath);
+      return new Response(
+        JSON.stringify({ 
+          error: "CSV file not found", 
+          players: [], 
+          totalAllianceKills: 0, 
+          totalAllianceDeaths: 0 
+        }),
+        { status: 404, headers: { "Content-Type": "application/json" } }
+      );
+    }
+    
     const fileContent = fs.readFileSync(csvFilePath, "utf-8");
     const records: string[][] = parse(fileContent, { skip_empty_lines: true });
+    
+    if (records.length < 53) {
+      console.error("CSV file too short, expected at least 53 rows");
+      return new Response(
+        JSON.stringify({ 
+          error: "CSV file format invalid", 
+          players: [], 
+          totalAllianceKills: 0, 
+          totalAllianceDeaths: 0 
+        }),
+        { status: 400, headers: { "Content-Type": "application/json" } }
+      );
+    }
+    
     const nodeRows = records.slice(3, 53); // rows 4–53
 
     const battlegroups = ["BG1", "BG2", "BG3"];
@@ -33,38 +61,43 @@ export async function GET() {
 
     const players: Player[] = [];
 
-    // --- Parse CSV data ---
+        // --- Parse CSV data ---
     for (let i = 0; i < playerNameCells.length; i++) {
-      const col = columnLetterToIndex(playerNameCells[i].replace(/\d+/, ""));
-      const name = records[1][col];
-      if (!name) continue;
+      try {
+        const col = columnLetterToIndex(playerNameCells[i].replace(/\d+/, ""));
+        const name = records[1]?.[col];
+        if (!name) continue;
 
-      const killsPerNode: Record<string, number> = {};
-      const deathsPerNode: Record<string, number> = {};
-      let totalKills = 0;
-      let totalDeaths = 0;
+        const killsPerNode: Record<string, number> = {};
+        const deathsPerNode: Record<string, number> = {};
+        let totalKills = 0;
+        let totalDeaths = 0;
 
-      nodeRows.forEach((row, idx) => {
-        const nodeNumber = (50 - idx).toString();
-        const kills = parseFloat(row[col] || "0");
-        const deaths = parseFloat(row[col + 1] || "0");
-        killsPerNode[nodeNumber] = kills;
-        deathsPerNode[nodeNumber] = deaths;
-        totalKills += kills;
-        totalDeaths += deaths;
-      });
+        nodeRows.forEach((row, idx) => {
+          const nodeNumber = (50 - idx).toString();
+          const kills = parseFloat(row[col] || "0");
+          const deaths = parseFloat(row[col + 1] || "0");
+          killsPerNode[nodeNumber] = kills;
+          deathsPerNode[nodeNumber] = deaths;
+          totalKills += kills;
+          totalDeaths += deaths;
+        });
 
-      const battlegroupIndex = Math.floor(i / playersPerGroup);
-      const battlegroup = battlegroups[battlegroupIndex] || "Unknown";
+        const battlegroupIndex = Math.floor(i / playersPerGroup);
+        const battlegroup = battlegroups[battlegroupIndex] || "Unknown";
 
-      players.push({
-        name,
-        kills: totalKills,
-        deaths: totalDeaths,
-        killsPerNode,
-        deathsPerNode,
-        battlegroup,
-      });
+        players.push({
+          name,
+          kills: totalKills,
+          deaths: totalDeaths,
+          killsPerNode,
+          deathsPerNode,
+          battlegroup,
+        });
+      } catch (err) {
+        console.error(`Error parsing player ${i}:`, err);
+        continue;
+      }
     }
 
     // --- Merge saved node/death entries ---
@@ -99,21 +132,18 @@ export async function GET() {
     const totalAllianceKills = players.reduce((sum, p) => sum + p.kills, 0);
     const totalAllianceDeaths = players.reduce((sum, p) => sum + p.deaths, 0);
 
-    // --- Fetch node values for power rating ---
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-    const nodeRes = await fetch(`${baseUrl}/api/nodeValues`);
-    const nodeValues: { nodeNumber: string; nodeValue: string; deathPenalty: string }[] =
-      await nodeRes.json();
-
-    // --- Calculate powerRating ---
+    // --- Calculate powerRating using node values from CSV ---
     const playersWithPR = players.map((player) => {
       let totalKillRating = 0;
 
-      nodeValues.forEach((node) => {
-        const nodeVal = parseFloat(node.nodeValue) || 0;
-        const deathPenalty = parseFloat(node.deathPenalty) || 0;
-        const kills = player.killsPerNode[node.nodeNumber] || 0;
-        const deaths = player.deathsPerNode[node.nodeNumber] || 0;
+      // Calculate power rating based on node values from CSV
+      // Node values are in columns Y (24), Z (25), AA (26) for each node
+      nodeRows.forEach((row, idx) => {
+        const nodeNumber = (50 - idx).toString();
+        const nodeVal = parseFloat(row[24] || "0"); // Column Y - node value
+        const deathPenalty = parseFloat(row[26] || "0"); // Column AA - death penalty
+        const kills = player.killsPerNode[nodeNumber] || 0;
+        const deaths = player.deathsPerNode[nodeNumber] || 0;
         totalKillRating += nodeVal * kills - deathPenalty * deaths;
       });
 
