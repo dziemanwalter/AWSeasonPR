@@ -55,64 +55,16 @@ export default function NodeTrackerPage() {
     setSelectedBG(bg);
     const filtered = players.filter((p) => p.battlegroup === bg);
 
-    // Load saved data for this battlegroup
-    const loadSavedData = async () => {
-      setIsLoading(true);
-      try {
-        const res = await fetch("/api/savePlayerNodes");
-        if (res.ok) {
-          const savedRows = await res.json();
-          const savedData = savedRows.filter((row: any) => 
-            filtered.some(p => p.name === row.player)
-          );
-          
-          // Create rows with saved data or empty entries
-          const newRows = Array.from({ length: 10 }).map((_, i) => {
-            const player = filtered[i];
-            if (!player) return { player: "", entries: [{}] };
-            
-            const savedRow = savedData.find((row: any) => row.player === player.name);
-            if (savedRow && savedRow.entries) {
-              // Use saved entries, ensure there's at least one empty entry at the end
-              const entries = [...savedRow.entries];
-              if (entries.length === 0 || entries[entries.length - 1].node !== undefined) {
-                entries.push({});
-              }
-              return {
-                player: player.name,
-                entries: entries,
-                summary: savedRow.summary
-              };
-            }
-            
-            return { player: player.name, entries: [{}] };
-          });
-          
-          setRows(newRows);
-        } else {
-          // Fallback to empty rows if no saved data
-          setRows(
-            Array.from({ length: 10 }).map((_, i) => ({
-              player: filtered[i]?.name || "",
-              entries: [{}],
-            }))
-          );
-        }
-      } catch (err) {
-        console.error("Error loading saved data:", err);
-        // Fallback to empty rows
-        setRows(
-          Array.from({ length: 10 }).map((_, i) => ({
-            player: filtered[i]?.name || "",
-            entries: [{}],
-          }))
-        );
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    loadSavedData();
+    // Always start fresh with empty data entries, but populate player names
+    setRows(
+      Array.from({ length: 10 }).map((_, i) => ({
+        player: filtered[i]?.name || "",
+        entries: [{}], // Start with one empty entry
+      }))
+    );
+    
+    // Reset node kills for fresh start
+    setNodeKills({});
   };
 
   const handleEntryChange = (
@@ -163,21 +115,44 @@ export default function NodeTrackerPage() {
         existingData = await existingRes.json();
       }
       
-      // Filter out data for players in the current battlegroup
-      const currentPlayerNames = rows.map(row => row.player).filter(name => name);
-      const filteredExistingData = existingData.filter(row => 
-        !currentPlayerNames.includes(row.player)
+      // Get current rows with actual data entered
+      const currentRowsWithData = rows.filter(row => 
+        row.player && row.entries.some(entry => entry.node !== undefined)
       );
       
-      // Combine existing data with current rows
-      const dataToSave = [...filteredExistingData, ...rows];
+      // For each player with new data, merge with existing data
+      const mergedData = [...existingData]; // Start with all existing data
+      
+      currentRowsWithData.forEach(currentRow => {
+        const existingPlayerIndex = mergedData.findIndex(row => row.player === currentRow.player);
+        
+        if (existingPlayerIndex >= 0) {
+          // Player exists - ADD new entries to existing entries
+          const existingPlayer = mergedData[existingPlayerIndex];
+          const newEntries = currentRow.entries.filter(entry => entry.node !== undefined);
+          
+          mergedData[existingPlayerIndex] = {
+            ...existingPlayer,
+            entries: [...existingPlayer.entries, ...newEntries]
+          };
+        } else {
+          // New player - add to data
+          mergedData.push(currentRow);
+        }
+      });
+      
+      console.log('Merging data:', {
+        existingDataCount: existingData.length,
+        newEntriesCount: currentRowsWithData.length,
+        totalAfterMerge: mergedData.length
+      });
       
       await fetch("/api/savePlayerNodes", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(dataToSave),
+        body: JSON.stringify(mergedData),
       });
-      alert("Player node data saved!");
+      alert("Player node data saved and merged with existing data!");
       
       // Reset the current rows to empty for fresh data entry
       const filtered = players.filter((p) => p.battlegroup === selectedBG);
@@ -256,12 +231,7 @@ export default function NodeTrackerPage() {
         Enter data for current session. Submit saves data and resets form for next session.
       </div>
 
-      {/* Loading indicator */}
-      {isLoading && (
-        <div className="text-center text-sm text-gray-400 mb-2">
-          Loading saved data...
-        </div>
-      )}
+
 
       {/* Rows */}
       <div className="space-y-1">
@@ -421,6 +391,25 @@ export default function NodeTrackerPage() {
             Reset Current BG
           </Button>
         )}
+        <Button
+          onClick={async () => {
+            try {
+              const res = await fetch("/api/savePlayerNodes");
+              if (res.ok) {
+                const data = await res.json();
+                console.log('All saved data:', data);
+                alert(`Total players with data: ${data.length}\nCheck console for details.`);
+              }
+            } catch (err) {
+              console.error(err);
+              alert("Error loading data");
+            }
+          }}
+          variant="outline"
+          className="hover:bg-blue-500 hover:text-white text-xs px-3 py-1"
+        >
+          View All Data
+        </Button>
       </div>
 
       <style jsx>{`
