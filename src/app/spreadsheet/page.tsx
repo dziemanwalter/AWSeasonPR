@@ -354,7 +354,7 @@ export default function NodeTrackerPage() {
       <div className="text-center text-xs text-gray-400 mb-2">
         Enter data for Season {currentSeason}, War {currentWar}. Submit saves data and resets form for next session.
         <br />
-        Use the "Assign War {currentWar}" button to assign war numbers to existing entries, or use individual dropdowns.
+        Use the &quot;Assign War {currentWar}&quot; button to assign war numbers to existing entries, or use individual dropdowns.
         <br />
         {selectedBG && "Enter battlegroup deaths above to track casualties that affect the entire battlegroup."}
       </div>

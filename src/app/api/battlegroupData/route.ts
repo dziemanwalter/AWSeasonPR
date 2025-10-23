@@ -210,7 +210,7 @@ export async function GET() {
     // --- Merge saved node/death entries ---
     const savedFile = path.join(process.cwd(), "data", "playerNodes.json");
     if (fs.existsSync(savedFile)) {
-      const savedRows: { player: string; entries: { node?: number; deaths?: number; carryOver?: boolean }[] }[] =
+      const savedRows: { player: string; entries: { node?: number; deaths?: number; war?: number; carryOver?: boolean }[] }[] =
         JSON.parse(fs.readFileSync(savedFile, "utf-8"));
 
       // Filter out deleted CSV players from playerNodes.json data

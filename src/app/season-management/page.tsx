@@ -160,7 +160,7 @@ export default function SeasonManagement() {
         <div className="bg-gray-800 rounded-lg shadow-lg p-6 mb-6">
           <h2 className="text-xl font-semibold mb-4 text-yellow-400">Start New Season</h2>
           <p className="text-gray-300 mb-4">
-            This will save all current data as "Season 60" and start a fresh season that only uses live data going forward.
+            This will save all current data as &quot;Season 60&quot; and start a fresh season that only uses live data going forward.
             Kill streaks will continue to accumulate across all seasons.
           </p>
           
@@ -246,7 +246,7 @@ export default function SeasonManagement() {
             <div className="bg-gray-800 p-6 rounded-lg max-w-md w-full mx-4">
               <h3 className="text-xl font-semibold mb-4 text-yellow-400">Confirm New Season</h3>
               <p className="text-gray-300 mb-4">
-                This will archive all current data as "Season 60" and start Season {newSeasonNumber} with only live data.
+                This will archive all current data as &quot;Season 60&quot; and start Season {newSeasonNumber} with only live data.
                 <br /><br />
                 <strong className="text-green-400">✓ Kill streaks will continue to accumulate</strong>
                 <br />

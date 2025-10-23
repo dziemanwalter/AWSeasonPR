@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 import html2canvas from 'html2canvas';
 import { Button } from '@/components/ui/button';
 
@@ -35,11 +35,7 @@ export default function KillStreaks() {
   const [availablePlayers, setAvailablePlayers] = useState<string[]>([]);
   const contentRef = useRef<HTMLDivElement>(null);
 
-     useEffect(() => {
-     fetchAvailablePlayers();
-   }, []);
-
-           const fetchAvailablePlayers = async () => {
+           const fetchAvailablePlayers = useCallback(async () => {
       try {
         const res = await fetch('/api/playerData');
         const data = await res.json();
@@ -52,7 +48,11 @@ export default function KillStreaks() {
       } catch (err) {
         console.error("Error fetching players:", err);
       }
-    };
+    }, []);
+
+     useEffect(() => {
+     fetchAvailablePlayers();
+   }, [fetchAvailablePlayers]);
 
            const fetchStreaks = async (playerNames?: string[], players?: any[]) => {
     try {

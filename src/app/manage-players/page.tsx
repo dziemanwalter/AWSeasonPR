@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
@@ -36,18 +36,22 @@ export default function ManagePlayersPage() {
   const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
   const [showHiddenPlayers, setShowHiddenPlayers] = useState(false);
 
-  useEffect(() => {
-    fetchAllData();
-  }, []);
-
-  const fetchAllData = async () => {
+  const fetchCustomPlayers = useCallback(async () => {
     try {
-      // Fetch custom players
       const customResponse = await fetch("/api/customPlayers");
       if (customResponse.ok) {
         const customPlayers = await customResponse.json();
         setCustomPlayers(customPlayers);
       }
+    } catch (error) {
+      console.error("Error fetching custom players:", error);
+    }
+  }, []);
+
+  const fetchAllData = useCallback(async () => {
+    try {
+      // Fetch custom players
+      await fetchCustomPlayers();
 
       // Fetch CSV players
       const csvResponse = await fetch("/api/playerData");
@@ -73,7 +77,11 @@ export default function ManagePlayersPage() {
       console.error("Error fetching data:", error);
       showMessage("error", "Failed to load player data");
     }
-  };
+  }, [fetchCustomPlayers]);
+
+  useEffect(() => {
+    fetchAllData();
+  }, [fetchAllData]);
 
   const showMessage = (type: "success" | "error", text: string) => {
     setMessage({ type, text });
@@ -556,7 +564,7 @@ export default function ManagePlayersPage() {
           <li>• <strong>Custom Players</strong>: Added manually and can be hidden or deleted</li>
           <li>• <strong>Hide players</strong> to remove them from active tracking without losing their data</li>
           <li>• <strong>Delete custom players</strong> to permanently remove them and all their data</li>
-          <li>• Hidden players won't appear in rankings, spreadsheets, or statistics</li>
+          <li>• Hidden players won&apos;t appear in rankings, spreadsheets, or statistics</li>
           <li>• CSV players can be shown again, custom players can be hidden/shown or deleted</li>
         </ul>
       </Card>
