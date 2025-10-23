@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Ensure full background coverage */
+html, body {
+  background-color: #111827; /* bg-gray-900 */
+  min-height: 100vh;
+}
+
 /* Custom styles for the application */
 .pr-highlight {
   color: #fbbf24;

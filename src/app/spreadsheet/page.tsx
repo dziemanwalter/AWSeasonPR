@@ -250,7 +250,7 @@ export default function NodeTrackerPage() {
   );
 
   return (
-    <div className="p-2">
+    <div className="p-2 bg-gray-900 min-h-screen">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:justify-between gap-1 mb-2 text-sm">
         <div className="flex gap-1">
@@ -315,14 +315,6 @@ export default function NodeTrackerPage() {
               ))}
             </select>
           </div>
-          <Button
-            onClick={handleBulkAssignWar}
-            variant="outline"
-            className="hover:bg-yellow-500 hover:text-white text-xs px-2 py-1"
-            title="Assign current war to all unassigned entries"
-          >
-            Assign War {currentWar}
-          </Button>
         </div>
       </div>
 
@@ -354,7 +346,7 @@ export default function NodeTrackerPage() {
       <div className="text-center text-xs text-gray-400 mb-2">
         Enter data for Season {currentSeason}, War {currentWar}. Submit saves data and resets form for next session.
         <br />
-        Use the &quot;Assign War {currentWar}&quot; button to assign war numbers to existing entries, or use individual dropdowns.
+        Use individual dropdowns to assign war numbers to entries.
         <br />
         {selectedBG && "Enter battlegroup deaths above to track casualties that affect the entire battlegroup."}
       </div>

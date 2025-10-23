@@ -27,8 +27,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const bodyClass = `antialiased ${geistSans.variable ?? ""} ${geistMono.variable ?? ""}`;
 
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={bodyClass} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="bg-gray-900">
+      <body className={`${bodyClass} bg-gray-900`} suppressHydrationWarning>
         <div className="min-h-screen bg-gray-900 text-white">
           {/* Navigation Header */}
           <header className="bg-gray-800 border-b border-gray-700 p-4">
