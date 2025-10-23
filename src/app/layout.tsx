@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
+import { DropdownNav } from "./dropdownmenu";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -25,7 +26,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={bodyClass} suppressHydrationWarning>{children}</body>
+      <body className={bodyClass} suppressHydrationWarning>
+        <div className="min-h-screen bg-gray-900 text-white">
+          {/* Navigation Header */}
+          <header className="bg-gray-800 border-b border-gray-700 p-4">
+            <div className="flex justify-between items-center">
+              <h1 className="text-xl font-bold text-yellow-400">AW Masters Dashboard</h1>
+              <DropdownNav />
+            </div>
+          </header>
+          
+          {/* Main Content */}
+          <main className="flex-1">
+            {children}
+          </main>
+        </div>
+      </body>
     </html>
   );
 }

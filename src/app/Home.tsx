@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import Link from "next/link";
 import html2canvas from "html2canvas";
+import { Button } from "@/components/ui/button";
+
 
 interface Player {
   name: string;
@@ -10,9 +11,11 @@ interface Player {
   deaths: number;
   battlegroup?: string;
   powerRating?: number;
+  difficultyRatingPerFight?: number;
 }
 
-type SortKey = "pr" | "soloRate" | "kills" | "deaths";
+
+type SortKey = "pr" | "soloRate" | "kills" | "deaths" | "difficultyRating";
 
 export default function SeasonStats() {
   const [players, setPlayers] = useState<Player[]>([]);
@@ -48,6 +51,8 @@ export default function SeasonStats() {
         return b.kills - a.kills;
       case "deaths":
         return b.deaths - a.deaths;
+      case "difficultyRating":
+        return (b.difficultyRatingPerFight || 0) - (a.difficultyRatingPerFight || 0);
       default:
         return 0;
     }
@@ -271,33 +276,15 @@ export default function SeasonStats() {
       document.body.removeChild(tempContainer);
     }
   };
+     
 
   return (
-    <main className="min-h-screen bg-gray-900 text-white p-4 sm:p-6">
+    <div className="p-4 sm:p-6">
       <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-yellow-400 text-center">
         PR Season Stats
       </h1>
 
-      {/* Button to Battle Groups */}
-      <div className="flex justify-center sm:justify-start mb-6">
-        <Link href="/battle-groups">
-          <button className="px-4 py-2 rounded-lg bg-slate-500 hover:bg-slate-700 text-white font-semibold transition-colors">
-            View Battle Groups
-          </button>
-        </Link>
-        {/* Button to Kill Streaks */}
-        <Link href="/kill-streaks" className="ml-2">
-          <button className="px-4 py-2 rounded-lg bg-purple-600 hover:bg-purple-800 text-white font-semibold transition-colors">
-            Kill Streaks
-          </button>
-        </Link>
-        {/* Button to Spreadsheet */}
-        <Link href="/spreadsheet" className="ml-2">
-          <button className="px-4 py-2 rounded-lg bg-teal-600 hover:bg-teal-800 text-white font-semibold transition-colors">
-            K/D Entry Page
-          </button>
-        </Link>
-      </div>
+
 
       {/* Alliance Totals */}
       <div className="bg-gray-800 rounded-lg shadow-lg p-4 mb-6 text-center sm:text-left">
@@ -317,6 +304,7 @@ export default function SeasonStats() {
           { key: "soloRate", label: "Sort by Solo Rate" },
           { key: "kills", label: "Sort by Kills" },
           { key: "deaths", label: "Sort by Deaths" },
+          { key: "difficultyRating", label: "Sort by DR/Fight" },
         ].map((btn) => (
           <button
             key={btn.key}
@@ -343,6 +331,7 @@ export default function SeasonStats() {
               <th className="p-2 text-left">D</th>
               <th className="p-2 text-left">Solo%</th>
               <th className="p-2 text-left">PR</th>
+              <th className="p-2 text-left">TDR/Fight</th>
             </tr>
           </thead>
           <tbody>
@@ -379,6 +368,9 @@ export default function SeasonStats() {
                   %
                 </td>
                 <td className="p-2 font-bold text-yellow-400">{p.powerRating}</td>
+                <td className="p-2 text-purple-400 font-semibold">
+                  {p.difficultyRatingPerFight?.toFixed(2) || '0.00'}
+                </td>
               </tr>
             ))}
           </tbody>
@@ -394,6 +386,6 @@ export default function SeasonStats() {
           📱 Export Mobile Image
         </button>
       </div>
-    </main>
+    </div>
   );
 }

@@ -13,6 +13,7 @@ import { ChevronDown } from "lucide-react";
 interface NodeEntry {
   node?: number;
   deaths?: number;
+  war?: number; // War number (1-12)
 }
 
 interface PlayerRow {
@@ -21,11 +22,20 @@ interface PlayerRow {
   summary?: { kills: number; deaths: number };
 }
 
+interface BattlegroupDeathEntry {
+  battlegroup: string;
+  deaths: number;
+  war: number;
+  season: number;
+  timestamp: string;
+}
+
 interface PlayerAPI {
   name: string;
   battlegroup?: string;
   killsPerNode: Record<string, number>;
   deathsPerNode: Record<string, number>;
+  isCustom?: boolean;
 }
 
 export default function NodeTrackerPage() {
@@ -35,6 +45,10 @@ export default function NodeTrackerPage() {
   const [nodeKills, setNodeKills] = useState<Record<number, number>>({});
   const [openRows, setOpenRows] = useState<Set<number>>(new Set());
   const [isLoading, setIsLoading] = useState(false);
+  const [sessionId] = useState(() => `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`);
+  const [currentWar, setCurrentWar] = useState<number>(1);
+  const [currentSeason, setCurrentSeason] = useState<number>(60);
+  const [battlegroupDeaths, setBattlegroupDeaths] = useState<number>(0);
 
   const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -56,8 +70,10 @@ export default function NodeTrackerPage() {
     const filtered = players.filter((p) => p.battlegroup === bg);
 
     // Always start fresh with empty data entries, but populate player names
+    // Use the actual number of players in this battlegroup, with a minimum of 10 slots
+    const maxSlots = Math.max(10, filtered.length);
     setRows(
-      Array.from({ length: 10 }).map((_, i) => ({
+      Array.from({ length: maxSlots }).map((_, i) => ({
         player: filtered[i]?.name || "",
         entries: [{}], // Start with one empty entry
       }))
@@ -70,13 +86,18 @@ export default function NodeTrackerPage() {
   const handleEntryChange = (
     rowIndex: number,
     entryIndex: number,
-    field: "node" | "deaths",
+    field: "node" | "deaths" | "war",
     value: number | undefined
   ) => {
     setRows((prev) => {
       const newRows = [...prev];
       const entries = [...newRows[rowIndex].entries];
-      entries[entryIndex] = { ...entries[entryIndex], [field]: value };
+      entries[entryIndex] = { 
+        ...entries[entryIndex], 
+        [field]: value,
+        // Only set war to currentWar for new entries (when field is not "war")
+        ...(field !== "war" && !entries[entryIndex].war ? { war: currentWar } : {})
+      };
       newRows[rowIndex].entries = entries;
 
       // Auto-add next input if last node filled
@@ -147,17 +168,37 @@ export default function NodeTrackerPage() {
         totalAfterMerge: mergedData.length
       });
       
+      // Save player data
       await fetch("/api/savePlayerNodes", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(mergedData),
       });
-      alert("Player node data saved and merged with existing data!");
+
+      // Save battlegroup deaths if any
+      if (battlegroupDeaths > 0 && selectedBG) {
+        const battlegroupDeathEntry: BattlegroupDeathEntry = {
+          battlegroup: selectedBG,
+          deaths: battlegroupDeaths,
+          war: currentWar,
+          season: currentSeason,
+          timestamp: new Date().toISOString()
+        };
+
+        await fetch("/api/battlegroupDeaths", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(battlegroupDeathEntry),
+        });
+      }
+
+      alert("Data saved successfully!");
       
       // Reset the current rows to empty for fresh data entry
       const filtered = players.filter((p) => p.battlegroup === selectedBG);
+      const maxSlots = Math.max(10, filtered.length);
       setRows(
-        Array.from({ length: 10 }).map((_, i) => ({
+        Array.from({ length: maxSlots }).map((_, i) => ({
           player: filtered[i]?.name || "",
           entries: [{}],
         }))
@@ -176,13 +217,30 @@ export default function NodeTrackerPage() {
     if (!selectedBG) return;
     
     const filtered = players.filter((p) => p.battlegroup === selectedBG);
-    setRows(
-      Array.from({ length: 10 }).map((_, i) => ({
-        player: filtered[i]?.name || "",
-        entries: [{}],
-      }))
-    );
-    setNodeKills({});
+    const maxSlots = Math.max(10, filtered.length);
+      setRows(
+        Array.from({ length: maxSlots }).map((_, i) => ({
+          player: filtered[i]?.name || "",
+          entries: [{}],
+        }))
+      );
+      setNodeKills({});
+      setBattlegroupDeaths(0);
+  };
+
+  const handleBulkAssignWar = () => {
+    setRows((prev) => {
+      const newRows = [...prev];
+      newRows.forEach((row) => {
+        row.entries.forEach((entry) => {
+          // Only assign war if entry has data but no war assigned
+          if ((entry.node !== undefined || entry.deaths !== undefined) && !entry.war) {
+            entry.war = currentWar;
+          }
+        });
+      });
+      return newRows;
+    });
   };
 
   const totalKills = Object.values(nodeKills).reduce((sum, val) => sum + val, 0);
@@ -192,43 +250,113 @@ export default function NodeTrackerPage() {
   );
 
   return (
-    <main className="p-2 bg-gray-900 text-white min-h-screen">
+    <div className="p-2">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:justify-between gap-1 mb-2 text-sm">
-        <Link href="/">
+        <div className="flex gap-1">
+          <Link href="/manage-players">
+            <Button
+              variant="outline"
+              className="hover:bg-blue-500 hover:text-white text-xs px-2 py-1"
+            >
+              Manage Players
+            </Button>
+          </Link>
+        </div>
+        <div className="flex items-center gap-2 text-xs">
+          <div className="flex items-center gap-1">
+            <label htmlFor="battlegroup-select">BG:</label>
+            <select
+              id="battlegroup-select"
+              aria-label="Battlegroup"
+              value={selectedBG}
+              onChange={(e) =>
+                handleBGChange(e.target.value as "BG1" | "BG2" | "BG3")
+              }
+              className="bg-gray-700 text-white p-1 rounded text-xs"
+            >
+              <option value="" disabled>
+                Select
+              </option>
+              <option value="BG1">BG1</option>
+              <option value="BG2">BG2</option>
+              <option value="BG3">BG3</option>
+            </select>
+          </div>
+          <div className="flex items-center gap-1">
+            <label htmlFor="war-select">War:</label>
+            <select
+              id="war-select"
+              aria-label="War"
+              value={currentWar}
+              onChange={(e) => setCurrentWar(Number(e.target.value))}
+              className="bg-gray-700 text-white p-1 rounded text-xs"
+            >
+              {Array.from({ length: 12 }, (_, i) => (
+                <option key={i + 1} value={i + 1}>
+                  War {i + 1}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="flex items-center gap-1">
+            <label htmlFor="season-select">Season:</label>
+            <select
+              id="season-select"
+              aria-label="Season"
+              value={currentSeason}
+              onChange={(e) => setCurrentSeason(Number(e.target.value))}
+              className="bg-gray-700 text-white p-1 rounded text-xs"
+            >
+              {Array.from({ length: 10 }, (_, i) => (
+                <option key={i + 55} value={i + 55}>
+                  Season {i + 55}
+                </option>
+              ))}
+            </select>
+          </div>
           <Button
+            onClick={handleBulkAssignWar}
             variant="outline"
-            className="hover:bg-white hover:text-black text-xs px-2 py-1"
+            className="hover:bg-yellow-500 hover:text-white text-xs px-2 py-1"
+            title="Assign current war to all unassigned entries"
           >
-            ← Home
+            Assign War {currentWar}
           </Button>
-        </Link>
-        <div className="flex items-center gap-1 text-xs">
-          <label htmlFor="battlegroup-select">Battlegroup:</label>
-          <select
-            id="battlegroup-select"
-            aria-label="Battlegroup"
-            value={selectedBG}
-            onChange={(e) =>
-              handleBGChange(e.target.value as "BG1" | "BG2" | "BG3")
-            }
-            className="bg-gray-700 text-white p-1 rounded text-xs"
-          >
-            <option value="" disabled>
-              Select
-            </option>
-            <option value="BG1">BG1</option>
-            <option value="BG2">BG2</option>
-            <option value="BG3">BG3</option>
-          </select>
         </div>
       </div>
+
+      {/* Battlegroup Deaths Input */}
+      {selectedBG && (
+        <div className="flex items-center justify-center gap-2 mb-3 p-2 bg-gray-800 rounded border border-gray-600">
+          <label htmlFor="bg-deaths" className="text-sm font-medium">
+            {selectedBG} Battlegroup Deaths:
+          </label>
+          <input
+            id="bg-deaths"
+            type="number"
+            min={0}
+            placeholder="0"
+            value={battlegroupDeaths}
+            onChange={(e) => setBattlegroupDeaths(Number(e.target.value) || 0)}
+            className="bg-gray-700 text-white p-1 rounded text-sm w-20 text-center focus:outline-none"
+            title="Deaths that affect the entire battlegroup"
+          />
+          <span className="text-xs text-gray-400">
+            (affects entire {selectedBG})
+          </span>
+        </div>
+      )}
 
       <h1 className="text-xl font-bold mb-2 text-center">Node Tracker</h1>
 
       {/* Info message */}
       <div className="text-center text-xs text-gray-400 mb-2">
-        Enter data for current session. Submit saves data and resets form for next session.
+        Enter data for Season {currentSeason}, War {currentWar}. Submit saves data and resets form for next session.
+        <br />
+        Use the "Assign War {currentWar}" button to assign war numbers to existing entries, or use individual dropdowns.
+        <br />
+        {selectedBG && "Enter battlegroup deaths above to track casualties that affect the entire battlegroup."}
       </div>
 
 
@@ -297,13 +425,12 @@ export default function NodeTrackerPage() {
                   if (!prevFilled) return null;
 
                   return (
-                    <div key={entryIndex} className="flex gap-1 w-full">
+                    <div key={entryIndex} className="flex gap-1 w-full items-center">
                       <input
                         type="number"
                         min={1}
                         max={50}
                         placeholder="Node"
-                        id={`node-${rowIndex}-${entryIndex}`}
                         value={entry.node ?? ""}
                         onChange={(e) =>
                           handleEntryChange(
@@ -316,10 +443,10 @@ export default function NodeTrackerPage() {
                         onKeyDown={(e) => {
                           if (e.key === "Enter") {
                             e.preventDefault();
-                            const deathInput = document.getElementById(
-                              `death-${rowIndex}-${entryIndex}`
-                            );
-                            deathInput?.focus();
+                            // Focus next input in the same row
+                            const currentInput = e.target as HTMLInputElement;
+                            const nextInput = currentInput.parentElement?.nextElementSibling?.querySelector('input') as HTMLInputElement;
+                            nextInput?.focus();
                           }
                         }}
                         className="bg-gray-700 p-0.5 rounded text-center text-xs w-16 no-spin focus:outline-none"
@@ -328,7 +455,6 @@ export default function NodeTrackerPage() {
                         type="number"
                         min={0}
                         placeholder="Deaths"
-                        id={`death-${rowIndex}-${entryIndex}`}
                         value={entry.deaths ?? ""}
                         onChange={(e) =>
                           handleEntryChange(
@@ -350,15 +476,35 @@ export default function NodeTrackerPage() {
                               });
                             }
                             setTimeout(() => {
-                              const nextNode = document.getElementById(
-                                `node-${rowIndex}-${nextEntryIndex}`
-                              );
+                   const nextNode = document.getElementById(
+                     `node-${sessionId}-${rowIndex}-${nextEntryIndex}-${row.player.replace(/\s+/g, '-')}`
+                   );
                               nextNode?.focus();
                             }, 50);
                           }
                         }}
                         className="bg-gray-700 p-0.5 rounded text-center text-xs w-16 no-spin focus:outline-none"
                       />
+                      <select
+                        value={entry.war ?? ""}
+                        onChange={(e) =>
+                          handleEntryChange(
+                            rowIndex,
+                            entryIndex,
+                            "war",
+                            e.target.value === "" ? undefined : Number(e.target.value)
+                          )
+                        }
+                        className="bg-gray-700 text-white p-0.5 rounded text-xs w-12 focus:outline-none"
+                        title="Assign War"
+                      >
+                        <option value="">War</option>
+                        {Array.from({ length: 12 }, (_, i) => (
+                          <option key={i + 1} value={i + 1}>
+                            {i + 1}
+                          </option>
+                        ))}
+                      </select>
                     </div>
                   );
                 })}
@@ -422,6 +568,6 @@ export default function NodeTrackerPage() {
           -moz-appearance: textfield;
         }
       `}</style>
-    </main>
+    </div>
   );
 }

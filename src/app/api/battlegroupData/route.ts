@@ -11,8 +11,8 @@ interface Player {
   battlegroup?: string;
   powerRating?: number;
   difficultyRatingPerFight?: number;
-  entries?: { node?: number; deaths?: number; carryOver?: boolean }[];
-  isCustom?: boolean; // Flag to identify custom players
+  entries?: { node?: number; deaths?: number }[];
+  isCustom?: boolean;
 }
 
 interface CustomPlayer {
@@ -32,6 +32,16 @@ interface HiddenPlayer {
 interface DeletedCSVPlayer {
   name: string;
   deletedDate: string;
+}
+
+interface BattlegroupTotals {
+  battlegroup: string;
+  totalKills: number;
+  totalDeaths: number;
+  totalPR: number;
+  avgSoloRate: number;
+  playerCount: number;
+  visiblePlayerCount: number;
 }
 
 // Column letters for 30 players
@@ -71,7 +81,6 @@ function readHiddenPlayers(): HiddenPlayer[] {
   }
 }
 
-// Helper function to read deleted CSV players
 function readDeletedCSVPlayers(): DeletedCSVPlayer[] {
   try {
     const deletedFile = path.join(process.cwd(), "data", "deletedCSVPlayers.json");
@@ -101,6 +110,16 @@ function readBattlegroupDeaths(): { battlegroup: string; deaths: number; war: nu
   }
 }
 
+// Helper: Convert Excel column letters to index
+function columnLetterToIndex(letter: string): number {
+  let col = 0;
+  for (let i = 0; i < letter.length; i++) {
+    col *= 26;
+    col += letter.charCodeAt(i) - 64;
+  }
+  return col - 1;
+}
+
 export async function GET() {
   try {
     // --- Read CSV for player names and battlegroups ---
@@ -111,7 +130,7 @@ export async function GET() {
       return new Response(
         JSON.stringify({ 
           error: "CSV file not found", 
-          players: [], 
+          battlegroupTotals: [], 
           totalAllianceKills: 0, 
           totalAllianceDeaths: 0 
         }),
@@ -127,7 +146,7 @@ export async function GET() {
       return new Response(
         JSON.stringify({ 
           error: "CSV file format invalid", 
-          players: [], 
+          battlegroupTotals: [], 
           totalAllianceKills: 0, 
           totalAllianceDeaths: 0 
         }),
@@ -140,13 +159,12 @@ export async function GET() {
     const battlegroups = ["BG1", "BG2", "BG3"];
     const playersPerGroup = 10;
 
-    const players: Player[] = [];
-    const allPlayers: Player[] = []; // For calculating totals including hidden players
+    const allPlayers: Player[] = []; // All players including hidden ones
 
-    // --- Add custom players first (including hidden ones for totals) ---
+    // --- Add custom players (including hidden ones for totals) ---
     const customPlayers = readCustomPlayers();
     customPlayers.forEach((customPlayer) => {
-      const playerData = {
+      allPlayers.push({
         name: customPlayer.name,
         kills: 0,
         deaths: 0,
@@ -154,30 +172,17 @@ export async function GET() {
         deathsPerNode: {},
         battlegroup: customPlayer.battlegroup,
         isCustom: true,
-      };
-      
-      // Add to all players for totals calculation
-      allPlayers.push(playerData);
-      
-      // Only add to visible players if not hidden
-      if (!customPlayer.hidden) {
-        players.push(playerData);
-      }
+      });
     });
 
     // --- Parse CSV data for player names and battlegroups (but not kills/deaths) ---
-    const hiddenPlayers = readHiddenPlayers();
-    const deletedCSVPlayers = readDeletedCSVPlayers();
-    const hiddenCSVPlayerNames = hiddenPlayers
-      .filter(p => !p.isCustom)
-      .map(p => p.name.toLowerCase());
-    const deletedCSVPlayerNames = deletedCSVPlayers.map(p => p.name.toLowerCase());
-    
+    const deletedCSVPlayerNames = readDeletedCSVPlayers().map(p => p.name.toLowerCase());
     for (let i = 0; i < playerNameCells.length; i++) {
       try {
         const col = columnLetterToIndex(playerNameCells[i].replace(/\d+/, ""));
         const name = records[1]?.[col];
         if (!name) continue;
+        if (deletedCSVPlayerNames.includes(name.toLowerCase())) continue;
 
         // Initialize with empty data - we'll populate from live data later
         const killsPerNode: Record<string, number> = {};
@@ -188,27 +193,14 @@ export async function GET() {
         const battlegroupIndex = Math.floor(i / playersPerGroup);
         const battlegroup = battlegroups[battlegroupIndex] || "Unknown";
 
-        const playerData = {
+        allPlayers.push({
           name,
           kills: totalKills,
           deaths: totalDeaths,
           killsPerNode,
           deathsPerNode,
           battlegroup,
-        };
-
-        // Skip players that were explicitly deleted from CSV
-        if (deletedCSVPlayerNames.includes(name.toLowerCase())) {
-          continue;
-        }
-
-        // Add to all players for totals calculation
-        allPlayers.push(playerData);
-        
-        // Only add to visible players if not hidden
-        if (!hiddenCSVPlayerNames.includes(name.toLowerCase())) {
-          players.push(playerData);
-        }
+        });
       } catch (err) {
         console.error(`Error parsing player ${i}:`, err);
         continue;
@@ -221,49 +213,34 @@ export async function GET() {
       const savedRows: { player: string; entries: { node?: number; deaths?: number; carryOver?: boolean }[] }[] =
         JSON.parse(fs.readFileSync(savedFile, "utf-8"));
 
-      savedRows.forEach((row) => {
-        // Update both visible and all players arrays
-        const visiblePlayer = players.find((p) => p.name === row.player);
-        const allPlayer = allPlayers.find((p) => p.name === row.player);
-        
-        if (!allPlayer || !row.entries) return;
+      // Filter out deleted CSV players from playerNodes.json data
+      const deletedCSVPlayerNames = readDeletedCSVPlayers().map(p => p.name.toLowerCase());
+      const filteredRows = savedRows.filter(row => !deletedCSVPlayerNames.includes(row.player.toLowerCase()));
+
+      filteredRows.forEach((row) => {
+        const player = allPlayers.find((p) => p.name === row.player);
+        if (!player || !row.entries) return;
 
         row.entries.forEach((e) => {
           if (!e.node) return;
           
-          // Skip carry-over data for home page display
+          // Skip carry-over data (same as playerData API)
           if (e.carryOver) return;
 
           // Add 1 kill for each node
-          allPlayer.killsPerNode[e.node.toString()] =
-            (allPlayer.killsPerNode[e.node.toString()] || 0) + 1;
+          player.killsPerNode[e.node.toString()] =
+            (player.killsPerNode[e.node.toString()] || 0) + 1;
 
           // Add deaths if present (including 0)
-          allPlayer.deathsPerNode[e.node.toString()] =
-            (allPlayer.deathsPerNode[e.node.toString()] || 0) + (e.deaths || 0);
+          player.deathsPerNode[e.node.toString()] =
+            (player.deathsPerNode[e.node.toString()] || 0) + (e.deaths || 0);
         });
 
-        // Recalculate player totals for all players
-        allPlayer.kills = Object.values(allPlayer.killsPerNode).reduce((a, b) => a + b, 0);
-        allPlayer.deaths = Object.values(allPlayer.deathsPerNode).reduce((a, b) => a + b, 0);
-
-        // If player is visible, update their data too
-        if (visiblePlayer) {
-          visiblePlayer.killsPerNode = { ...allPlayer.killsPerNode };
-          visiblePlayer.deathsPerNode = { ...allPlayer.deathsPerNode };
-          visiblePlayer.kills = allPlayer.kills;
-          visiblePlayer.deaths = allPlayer.deaths;
-        }
+        // Recalculate player totals
+        player.kills = Object.values(player.killsPerNode).reduce((a, b) => a + b, 0);
+        player.deaths = Object.values(player.deathsPerNode).reduce((a, b) => a + b, 0);
       });
     }
-
-    // --- Read battlegroup deaths and add to totals ---
-    const battlegroupDeaths = readBattlegroupDeaths();
-    const totalBattlegroupDeaths = battlegroupDeaths.reduce((sum, bg) => sum + bg.deaths, 0);
-
-    // --- Recalculate alliance totals after merging (including hidden players and battlegroup deaths) ---
-    const totalAllianceKills = allPlayers.reduce((sum, p) => sum + p.kills, 0);
-    const totalAllianceDeaths = allPlayers.reduce((sum, p) => sum + p.deaths, 0) + totalBattlegroupDeaths;
 
     // --- Calculate powerRating using dynamic difficulty ratings ---
     // Get node values from JSON difficulty ratings
@@ -301,7 +278,7 @@ export async function GET() {
       console.error("Error reading node values:", err);
     }
 
-    const playersWithPR = players.map((player) => {
+    const playersWithPR = allPlayers.map((player) => {
       let totalKillRating = 0;
       let totalDifficultyRating = 0;
 
@@ -317,6 +294,9 @@ export async function GET() {
         totalDifficultyRating += nodeVal * kills;
       });
 
+      const totalAllianceKills = allPlayers.reduce((sum, p) => sum + p.kills, 0);
+      const totalAllianceDeaths = allPlayers.reduce((sum, p) => sum + p.deaths, 0);
+      
       const playerSoloRate = player.kills / ((player.kills + player.deaths) || 1);
       const allianceSoloRate =
         totalAllianceKills / ((totalAllianceKills + totalAllianceDeaths) || 1);
@@ -333,10 +313,51 @@ export async function GET() {
       };
     });
 
-    // --- Return players + alliance totals ---
+    // --- Read battlegroup deaths ---
+    const battlegroupDeaths = readBattlegroupDeaths();
+
+    // --- Calculate battlegroup totals (including hidden players and battlegroup deaths) ---
+    const battlegroupTotals: BattlegroupTotals[] = battlegroups.map((bg) => {
+      const bgPlayers = playersWithPR.filter(p => p.battlegroup === bg);
+      const totalKills = bgPlayers.reduce((sum, p) => sum + p.kills, 0);
+      
+      // Add battlegroup deaths to player deaths
+      const bgDeaths = battlegroupDeaths
+        .filter(bgDeath => bgDeath.battlegroup === bg)
+        .reduce((sum, bgDeath) => sum + bgDeath.deaths, 0);
+      const totalDeaths = bgPlayers.reduce((sum, p) => sum + p.deaths, 0) + bgDeaths;
+      
+      const totalPR = bgPlayers.reduce((sum, p) => sum + (p.powerRating || 0), 0);
+      const avgSoloRate = bgPlayers.length > 0 
+        ? bgPlayers.reduce((sum, p) => sum + p.kills / (p.kills + p.deaths || 1), 0) / bgPlayers.length
+        : 0;
+
+      // Count visible players (excluding hidden ones)
+      const hiddenPlayers = readHiddenPlayers();
+      const hiddenPlayerNames = hiddenPlayers.map(p => p.name.toLowerCase());
+      const visiblePlayerCount = bgPlayers.filter(p => !hiddenPlayerNames.includes(p.name.toLowerCase())).length;
+
+
+      return {
+        battlegroup: bg,
+        totalKills,
+        totalDeaths,
+        totalPR,
+        avgSoloRate,
+        playerCount: bgPlayers.length,
+        visiblePlayerCount,
+      };
+    });
+
+    // --- Calculate alliance totals (including hidden players and battlegroup deaths) ---
+    const totalAllianceKills = playersWithPR.reduce((sum, p) => sum + p.kills, 0);
+    const totalBattlegroupDeaths = battlegroupDeaths.reduce((sum, bg) => sum + bg.deaths, 0);
+    const totalAllianceDeaths = playersWithPR.reduce((sum, p) => sum + p.deaths, 0) + totalBattlegroupDeaths;
+
+    // --- Return battlegroup totals + alliance totals ---
     return new Response(
       JSON.stringify({
-        players: playersWithPR,
+        battlegroupTotals,
         totalAllianceKills,
         totalAllianceDeaths,
       }),
@@ -346,18 +367,13 @@ export async function GET() {
   } catch (err: any) {
     console.error("API Error:", err.message);
     return new Response(
-      JSON.stringify({ error: err.message, players: [], totalAllianceKills: 0, totalAllianceDeaths: 0 }),
+      JSON.stringify({ 
+        error: err.message, 
+        battlegroupTotals: [], 
+        totalAllianceKills: 0, 
+        totalAllianceDeaths: 0 
+      }),
       { status: 500, headers: { "Content-Type": "application/json" } }
     );
   }
-}
-
-// Helper: Convert Excel column letters to index
-function columnLetterToIndex(letter: string): number {
-  let col = 0;
-  for (let i = 0; i < letter.length; i++) {
-    col *= 26;
-    col += letter.charCodeAt(i) - 64;
-  }
-  return col - 1;
 }

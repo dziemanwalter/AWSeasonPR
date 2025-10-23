@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Hazza",
+    "highStreak": 245,
+    "currentStreak": 0,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG3",
+    "isNewHigh": false
+  },
+  {
+    "name": "DT",
+    "highStreak": 227,
+    "currentStreak": 0,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG3",
+    "isNewHigh": false
+  },
+  {
+    "name": "Steel",
+    "highStreak": 172,
+    "currentStreak": 36,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG3",
+    "isNewHigh": false
+  },
+  {
+    "name": "cas",
+    "highStreak": 155,
+    "currentStreak": 0,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG1",
+    "isNewHigh": false
+  },
+  {
+    "name": "Cipw",
+    "highStreak": 154,
+    "currentStreak": 0,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG1",
+    "isNewHigh": false
+  },
+  {
+    "name": "Swedeah",
+    "highStreak": 134,
+    "currentStreak": 0,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG3",
+    "isNewHigh": false
+  },
+  {
+    "name": "Enculet",
+    "highStreak": 130,
+    "currentStreak": 0,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG2",
+    "isNewHigh": false
+  },
+  {
+    "name": "Fort",
+    "highStreak": 123,
+    "currentStreak": 0,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG3",
+    "isNewHigh": false
+  },
+  {
+    "name": "Joel",
+    "highStreak": 117,
+    "currentStreak": 0,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG2",
+    "isNewHigh": false
+  },
+  {
+    "name": "Voltaic",
+    "highStreak": 117,
+    "currentStreak": 0,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG3",
+    "isNewHigh": false
+  },
+  {
+    "name": "Marshy",
+    "highStreak": 114,
+    "currentStreak": 0,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG3",
+    "isNewHigh": false
+  },
+  {
+    "name": "Fiery",
+    "highStreak": 110,
+    "currentStreak": 0,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG2",
+    "isNewHigh": false
+  },
+  {
+    "name": "Dreamin",
+    "highStreak": 106,
+    "currentStreak": 0,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG2",
+    "isNewHigh": false
+  },
+  {
+    "name": "X",
+    "highStreak": 104,
+    "currentStreak": 0,
+    "totalKills": 0,
+    "totalDeaths": 0,
+    "battlegroup": "BG2",
+    "isNewHigh": false
+  }
+]

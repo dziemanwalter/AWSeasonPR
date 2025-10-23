@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Steel",
+    "highStreak": 172,
+    "currentStreak": 36,
+    "totalKills": 44,
+    "totalDeaths": 1,
+    "battlegroup": "BG3",
+    "isNewHigh": true,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Shazim",
+    "highStreak": 61,
+    "currentStreak": 31,
+    "totalKills": 36,
+    "totalDeaths": 1,
+    "battlegroup": "BG2",
+    "isNewHigh": true,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "JWill",
+    "highStreak": 30,
+    "currentStreak": 30,
+    "totalKills": 49,
+    "totalDeaths": 1,
+    "battlegroup": "BG3",
+    "isNewHigh": true,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "pauloo",
+    "highStreak": 20,
+    "currentStreak": 20,
+    "totalKills": 25,
+    "totalDeaths": 1,
+    "battlegroup": "BG1",
+    "isNewHigh": true,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Praetor",
+    "highStreak": 38,
+    "currentStreak": 18,
+    "totalKills": 56,
+    "totalDeaths": 1,
+    "battlegroup": "BG3",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Jay",
+    "highStreak": 78,
+    "currentStreak": 17,
+    "totalKills": 65,
+    "totalDeaths": 1,
+    "battlegroup": "BG1",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Bunnings",
+    "highStreak": 14,
+    "currentStreak": 14,
+    "totalKills": 43,
+    "totalDeaths": 6,
+    "battlegroup": "BG1",
+    "isNewHigh": true,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Fort",
+    "highStreak": 123,
+    "currentStreak": 13,
+    "totalKills": 71,
+    "totalDeaths": 4,
+    "battlegroup": "BG3",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "King BUk",
+    "highStreak": 49,
+    "currentStreak": 11,
+    "totalKills": 44,
+    "totalDeaths": 3,
+    "battlegroup": "BG2",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Zefiro",
+    "highStreak": 20,
+    "currentStreak": 11,
+    "totalKills": 66,
+    "totalDeaths": 11,
+    "battlegroup": "BG1",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "lillegend",
+    "highStreak": 17,
+    "currentStreak": 11,
+    "totalKills": 54,
+    "totalDeaths": 5,
+    "battlegroup": "BG3",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Andy",
+    "highStreak": 49,
+    "currentStreak": 10,
+    "totalKills": 40,
+    "totalDeaths": 3,
+    "battlegroup": "BG2",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "oracle1010",
+    "highStreak": 23,
+    "currentStreak": 10,
+    "totalKills": 47,
+    "totalDeaths": 2,
+    "battlegroup": "BG3",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "unamtg9",
+    "highStreak": 14,
+    "currentStreak": 9,
+    "totalKills": 34,
+    "totalDeaths": 5,
+    "battlegroup": "BG3",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Jenx",
+    "highStreak": 70,
+    "currentStreak": 8,
+    "totalKills": 51,
+    "totalDeaths": 5,
+    "battlegroup": "BG1",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Dion",
+    "highStreak": 42,
+    "currentStreak": 7,
+    "totalKills": 44,
+    "totalDeaths": 2,
+    "battlegroup": "BG1",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Hazza",
+    "highStreak": 245,
+    "currentStreak": 6,
+    "totalKills": 88,
+    "totalDeaths": 6,
+    "battlegroup": "BG3",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Voltaic",
+    "highStreak": 117,
+    "currentStreak": 6,
+    "totalKills": 63,
+    "totalDeaths": 2,
+    "battlegroup": "BG3",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Forgotten",
+    "highStreak": 25,
+    "currentStreak": 5,
+    "totalKills": 43,
+    "totalDeaths": 6,
+    "battlegroup": "BG1",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Sokin",
+    "highStreak": 43,
+    "currentStreak": 4,
+    "totalKills": 59,
+    "totalDeaths": 2,
+    "battlegroup": "BG2",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Dreamin",
+    "highStreak": 106,
+    "currentStreak": 4,
+    "totalKills": 57,
+    "totalDeaths": 3,
+    "battlegroup": "BG2",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Skywalker",
+    "highStreak": 81,
+    "currentStreak": 4,
+    "totalKills": 60,
+    "totalDeaths": 2,
+    "battlegroup": "BG2",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "silverac",
+    "highStreak": 15,
+    "currentStreak": 4,
+    "totalKills": 39,
+    "totalDeaths": 6,
+    "battlegroup": "BG1",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "cloddiniz",
+    "highStreak": 16,
+    "currentStreak": 1,
+    "totalKills": 31,
+    "totalDeaths": 5,
+    "battlegroup": "BG2",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Retlaw",
+    "highStreak": 62,
+    "currentStreak": 0,
+    "totalKills": 85,
+    "totalDeaths": 7,
+    "battlegroup": "BG2",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Stone",
+    "highStreak": 91,
+    "currentStreak": 0,
+    "totalKills": 89,
+    "totalDeaths": 8,
+    "battlegroup": "BG2",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Scorpii",
+    "highStreak": 41,
+    "currentStreak": 0,
+    "totalKills": 61,
+    "totalDeaths": 4,
+    "battlegroup": "BG1",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "Gray",
+    "highStreak": 29,
+    "currentStreak": 0,
+    "totalKills": 39,
+    "totalDeaths": 3,
+    "battlegroup": "BG1",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "lordbeerus",
+    "highStreak": 26,
+    "currentStreak": 0,
+    "totalKills": 53,
+    "totalDeaths": 3,
+    "battlegroup": "BG2",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  },
+  {
+    "name": "anthxm",
+    "highStreak": 27,
+    "currentStreak": 0,
+    "totalKills": 50,
+    "totalDeaths": 2,
+    "battlegroup": "BG3",
+    "isNewHigh": false,
+    "isHistoricalRecord": false
+  }
+]

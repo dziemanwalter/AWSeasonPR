@@ -1,1375 +1,7730 @@
 [
   {
-    "player": "Brawlgate",
-    "entries": [
-      {
-        "node": 8
-      },
-      {
-        "node": 17
-      },
-      {
-        "node": 23
-      },
-      {
-        "node": 32
-      },
-      {
-        "node": 37
-      },
-      {
-        "node": 46
-      },
-      {
-        "node": 48,
-        "deaths": 1
-      },
-      {},
-      {
-        "node": 1
-      },
-      {
-        "node": 10,
-        "deaths": 1
-      },
-      {
-        "node": 23
-      },
-      {
-        "node": 32
-      },
-      {
-        "node": 38
-      },
-      {
-        "node": 41
-      },
-      {
-        "node": 45
-      },
-      {
-        "node": 47
-      },
-      {
-        "node": 49
-      }
-    ],
-    "summary": {
-      "kills": 16,
-      "deaths": 2
-    }
-  },
-  {
     "player": "Sokin",
     "entries": [
       {
-        "node": 4
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 13
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 24
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 33
-      },
-      {},
-      {
-        "node": 4
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 13
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 42
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 7,
+        "war": 1
+      },
+      {
+        "node": 16,
+        "war": 1
+      },
+      {
+        "node": 23,
+        "war": 1
+      },
+      {
+        "node": 32,
+        "war": 1
+      },
+      {
+        "node": 38,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 1,
+        "war": 2
+      },
+      {
+        "node": 10,
+        "war": 2
+      },
+      {
+        "node": 4,
+        "war": 3
+      },
+      {
+        "node": 13,
+        "war": 3
+      },
+      {
+        "node": 41,
+        "war": 3
+      },
+      {
+        "node": 43,
+        "war": 3
+      },
+      {
+        "node": 4,
+        "war": 4
+      },
+      {
+        "node": 13,
+        "war": 4
+      },
+      {
+        "node": 28,
+        "war": 4
+      },
+      {
+        "node": 42,
+        "war": 4
+      },
+      {
+        "node": 4,
+        "war": 5
+      },
+      {
+        "node": 13,
+        "war": 5
+      },
+      {
+        "node": 24,
+        "war": 5
+      },
+      {
+        "node": 33,
+        "war": 5
+      },
+      {
+        "node": 3,
+        "war": 7
+      },
+      {
+        "node": 46,
+        "war": 7
+      },
+      {
+        "node": 50,
+        "war": 7,
+        "deaths": 1
+      },
+      {
+        "node": 8,
+        "war": 8
+      },
+      {
+        "node": 17,
+        "war": 8
+      },
+      {
+        "node": 21,
+        "war": 8
+      },
+      {
+        "node": 30,
+        "war": 8
+      },
+      {
+        "node": 4,
+        "war": 9,
+        "deaths": 1
+      },
+      {
+        "node": 13,
+        "war": 9
+      },
+      {
+        "node": 23,
+        "war": 9
+      },
+      {
+        "node": 32,
+        "war": 9
       }
-    ],
-    "summary": {
-      "kills": 7,
-      "deaths": 0
-    }
+    ]
   },
   {
     "player": "Dreamin",
     "entries": [
       {
-        "node": 3
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 12
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 38
-      },
-      {},
-      {
-        "node": 3
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 12
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 24
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 33
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 3,
+        "war": 1
+      },
+      {
+        "node": 12,
+        "war": 1
+      },
+      {
+        "node": 24,
+        "war": 1
+      },
+      {
+        "node": 33,
+        "war": 1
+      },
+      {
+        "node": 7,
+        "war": 2
+      },
+      {
+        "node": 16,
+        "war": 2
+      },
+      {
+        "node": 19,
+        "war": 2
+      },
+      {
+        "node": 28,
+        "war": 2
+      },
+      {
+        "node": 49,
+        "war": 2,
+        "deaths": 1
+      },
+      {
+        "node": 3,
+        "war": 3
+      },
+      {
+        "node": 12,
+        "war": 3
+      },
+      {
+        "node": 21,
+        "war": 3
+      },
+      {
+        "node": 30,
+        "war": 3
+      },
+      {
+        "node": 3,
+        "war": 4
+      },
+      {
+        "node": 12,
+        "war": 4
+      },
+      {
+        "node": 24,
+        "war": 4
+      },
+      {
+        "node": 33,
+        "war": 4
+      },
+      {
+        "node": 37,
+        "war": 4,
+        "deaths": 1
+      },
+      {
+        "node": 3,
+        "war": 5
+      },
+      {
+        "node": 12,
+        "war": 5
+      },
+      {
+        "node": 23,
+        "war": 5
+      },
+      {
+        "node": 32,
+        "war": 5
+      },
+      {
+        "node": 3,
+        "war": 6
+      },
+      {
+        "node": 12,
+        "war": 6
+      },
+      {
+        "node": 23,
+        "war": 6
+      },
+      {
+        "node": 32,
+        "war": 6
+      },
+      {
+        "node": 12,
+        "war": 7,
+        "deaths": 1
+      },
+      {
+        "node": 23,
+        "war": 7
+      },
+      {
+        "node": 32,
+        "war": 7
+      },
+      {
+        "node": 3,
+        "war": 8
+      },
+      {
+        "node": 12,
+        "war": 8
+      },
+      {
+        "node": 3,
+        "war": 9
+      },
+      {
+        "node": 12,
+        "war": 9
+      },
+      {
+        "node": 24,
+        "war": 9
+      },
+      {
+        "node": 33,
+        "war": 9
+      },
+      {
+        "node": 38,
+        "war": 9
       }
-    ],
-    "summary": {
-      "kills": 7,
-      "deaths": 0
-    }
-  },
-  {
-    "player": "Infamous",
-    "entries": [
-      {
-        "node": 5
-      },
-      {
-        "node": 14
-      },
-      {
-        "node": 19
-      },
-      {
-        "node": 28
-      },
-      {},
-      {
-        "node": 5
-      },
-      {
-        "node": 14
-      },
-      {
-        "node": 20
-      },
-      {
-        "node": 29
-      },
-      {
-        "node": 44
-      }
-    ],
-    "summary": {
-      "kills": 9,
-      "deaths": 0
-    }
+    ]
   },
   {
     "player": "Retlaw",
     "entries": [
       {
-        "node": 9
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 18
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 22
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 31
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 44
-      },
-      {},
-      {
-        "node": 9
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 18
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 25
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 34
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 5,
+        "war": 1
+      },
+      {
+        "node": 14,
+        "war": 1
+      },
+      {
+        "node": 20,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 29,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 39,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 8,
+        "war": 2
+      },
+      {
+        "node": 17,
+        "war": 2
+      },
+      {
+        "node": 25,
+        "war": 2
+      },
+      {
+        "node": 34,
+        "war": 2
+      },
+      {
+        "node": 38,
+        "war": 2
+      },
+      {
+        "node": 2,
+        "war": 3
+      },
+      {
+        "node": 11,
+        "war": 3
+      },
+      {
+        "node": 23,
+        "war": 3
+      },
+      {
+        "node": 32,
+        "war": 3
+      },
+      {
+        "node": 42,
+        "war": 3
+      },
+      {
+        "node": 5,
+        "war": 4
+      },
+      {
+        "node": 14,
+        "war": 4
+      },
+      {
+        "node": 22,
+        "war": 4
+      },
+      {
+        "node": 31,
+        "war": 4,
+        "deaths": 1
+      },
+      {
+        "node": 47,
+        "war": 4
+      },
+      {
+        "node": 8,
+        "war": 5
+      },
+      {
+        "node": 17,
+        "war": 5
+      },
+      {
+        "node": 21,
+        "war": 5
+      },
+      {
+        "node": 30,
+        "war": 5
+      },
+      {
+        "node": 39,
+        "war": 5
+      },
+      {
+        "node": 41,
+        "war": 5
+      },
+      {
+        "node": 9,
+        "war": 6
+      },
+      {
+        "node": 18,
+        "war": 6
+      },
+      {
+        "node": 22,
+        "war": 6
+      },
+      {
+        "node": 31,
+        "war": 6
+      },
+      {
+        "node": 42,
+        "war": 6,
+        "deaths": 1
+      },
+      {
+        "node": 5,
+        "war": 7
+      },
+      {
+        "node": 14,
+        "war": 7
+      },
+      {
+        "node": 21,
+        "war": 7
+      },
+      {
+        "node": 30,
+        "war": 7
+      },
+      {
+        "node": 2,
+        "war": 8
+      },
+      {
+        "node": 11,
+        "war": 8
+      },
+      {
+        "node": 23,
+        "war": 8
+      },
+      {
+        "node": 32,
+        "war": 8
+      },
+      {
+        "node": 44,
+        "war": 8
+      },
+      {
+        "node": 46,
+        "war": 8,
+        "deaths": 1
+      },
+      {
+        "node": 48,
+        "war": 8,
+        "deaths": 1
+      },
+      {
+        "node": 6,
+        "war": 9
+      },
+      {
+        "node": 15,
+        "war": 9
+      },
+      {
+        "node": 20,
+        "war": 9
+      },
+      {
+        "node": 29,
+        "war": 9
+      },
+      {
+        "node": 39,
+        "war": 9
       }
-    ],
-    "summary": {
-      "kills": 9,
-      "deaths": 0
-    }
+    ]
   },
   {
     "player": "King BUk",
     "entries": [
       {
-        "node": 20
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 29
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 47
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
       },
       {
-        "node": 49
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 8,
+        "war": 1
+      },
+      {
+        "node": 17,
+        "war": 1
+      },
+      {
+        "node": 21,
+        "war": 1
+      },
+      {
+        "node": 30,
+        "war": 1
+      },
+      {
+        "node": 4,
+        "war": 2
+      },
+      {
+        "node": 13,
+        "war": 2
+      },
+      {
+        "node": 24,
+        "war": 2
+      },
+      {
+        "node": 33,
+        "war": 2
+      },
+      {
+        "node": 44,
+        "war": 2
+      },
+      {
+        "node": 5,
+        "war": 3,
+        "deaths": 1
+      },
+      {
+        "node": 14,
+        "war": 3
+      },
+      {
+        "node": 19,
+        "war": 3
+      },
+      {
+        "node": 28,
+        "war": 3
+      },
+      {
+        "node": 48,
+        "war": 3
+      },
+      {
+        "node": 8,
+        "war": 4
+      },
+      {
+        "node": 17,
+        "war": 4
+      },
+      {
+        "node": 21,
+        "war": 4
+      },
+      {
+        "node": 30,
+        "war": 4
+      },
+      {
+        "node": 40,
+        "war": 4
+      },
+      {
+        "node": 7,
+        "war": 5
+      },
+      {
+        "node": 16,
+        "war": 5
+      },
+      {
+        "node": 22,
+        "war": 5
+      },
+      {
+        "node": 31,
+        "war": 5
+      },
+      {
+        "node": 1,
+        "war": 6
+      },
+      {
+        "node": 10,
+        "war": 6
+      },
+      {
+        "node": 27,
+        "war": 6
+      },
+      {
+        "node": 36,
+        "war": 6,
+        "deaths": 1
+      },
+      {
+        "node": 39,
+        "war": 6
+      },
+      {
+        "node": 43,
+        "war": 6,
+        "deaths": 1
+      },
+      {
+        "node": 7,
+        "war": 7
+      },
+      {
+        "node": 16,
+        "war": 7
+      },
+      {
+        "node": 19,
+        "war": 7
+      },
+      {
+        "node": 28,
+        "war": 7
+      },
+      {
+        "node": 42,
+        "war": 7
+      },
+      {
+        "node": 7,
+        "war": 8
+      },
+      {
+        "node": 16,
+        "war": 8
+      },
+      {
+        "node": 22,
+        "war": 8
+      },
+      {
+        "node": 31,
+        "war": 8
+      },
+      {
+        "node": 42,
+        "war": 8
+      },
+      {
+        "node": 49,
+        "war": 8
+      },
+      {
+        "node": 8,
+        "war": 9
+      },
+      {
+        "node": 17,
+        "war": 9
+      },
+      {
+        "node": 21,
+        "war": 9,
+        "deaths": 1
+      },
+      {
+        "node": 30,
+        "war": 9
+      },
+      {
+        "node": 42,
+        "war": 9
+      }
+    ]
+  },
+  {
+    "player": "Stone",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 6,
+        "war": 1
+      },
+      {
+        "node": 15,
+        "war": 1
+      },
+      {
+        "node": 22,
+        "war": 1
+      },
+      {
+        "node": 31,
+        "war": 1
+      },
+      {
+        "node": 37,
+        "war": 1
+      },
+      {
+        "node": 42,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 47,
+        "war": 1
+      },
+      {
+        "node": 49,
+        "war": 1
+      },
+      {
+        "node": 6,
+        "war": 2
+      },
+      {
+        "node": 15,
+        "war": 2
+      },
+      {
+        "node": 22,
+        "war": 2
+      },
+      {
+        "node": 31,
+        "war": 2
+      },
+      {
+        "node": 39,
+        "war": 2
+      },
+      {
+        "node": 42,
+        "war": 2,
+        "deaths": 1
+      },
+      {
+        "node": 46,
+        "war": 2
+      },
+      {
+        "node": 48,
+        "war": 2
+      },
+      {
+        "node": 50,
+        "war": 2,
+        "deaths": 1
+      },
+      {
+        "node": 9,
+        "war": 3
+      },
+      {
+        "node": 18,
+        "war": 3
+      },
+      {
+        "node": 22,
+        "war": 3
+      },
+      {
+        "node": 31,
+        "war": 3
+      },
+      {
+        "node": 38,
+        "war": 3
+      },
+      {
+        "node": 40,
+        "war": 3
+      },
+      {
+        "node": 44,
+        "war": 3
+      },
+      {
+        "node": 49,
+        "war": 3
+      },
+      {
+        "node": 50,
+        "war": 3,
+        "deaths": 1
+      },
+      {
+        "node": 2,
+        "war": 4,
+        "deaths": 2
+      },
+      {
+        "node": 11,
+        "war": 4
+      },
+      {
+        "node": 26,
+        "war": 4
+      },
+      {
+        "node": 35,
+        "war": 4
+      },
+      {
+        "node": 38,
+        "war": 4
+      },
+      {
+        "node": 41,
+        "war": 4
+      },
+      {
+        "node": 44,
+        "war": 4
+      },
+      {
+        "node": 50,
+        "war": 4,
+        "deaths": 1
+      },
+      {
+        "node": 1,
+        "war": 5
+      },
+      {
+        "node": 10,
+        "war": 5
+      },
+      {
+        "node": 20,
+        "war": 5
+      },
+      {
+        "node": 29,
+        "war": 5
+      },
+      {
+        "node": 37,
+        "war": 5
+      },
+      {
+        "node": 42,
+        "war": 5
+      },
+      {
+        "node": 43,
+        "war": 5
+      },
+      {
+        "node": 5,
+        "war": 6
+      },
+      {
+        "node": 14,
+        "war": 6
+      },
+      {
+        "node": 21,
+        "war": 6
+      },
+      {
+        "node": 30,
+        "war": 6
+      },
+      {
+        "node": 40,
+        "war": 6
+      },
+      {
+        "node": 46,
+        "war": 6
+      },
+      {
+        "node": 48,
+        "war": 6
+      },
+      {
+        "node": 2,
+        "war": 7
+      },
+      {
+        "node": 11,
+        "war": 7
+      },
+      {
+        "node": 22,
+        "war": 7
+      },
+      {
+        "node": 31,
+        "war": 7
+      },
+      {
+        "node": 38,
+        "war": 7
+      },
+      {
+        "node": 43,
+        "war": 7
+      },
+      {
+        "node": 47,
+        "war": 7
+      },
+      {
+        "node": 49,
+        "war": 7
+      },
+      {
+        "node": 4,
+        "war": 8
+      },
+      {
+        "node": 13,
+        "war": 8
+      },
+      {
+        "node": 24,
+        "war": 8
+      },
+      {
+        "node": 33,
+        "war": 8
+      },
+      {
+        "node": 39,
+        "war": 8
+      },
+      {
+        "node": 47,
+        "war": 8
+      },
+      {
+        "node": 50,
+        "war": 8,
+        "deaths": 1
+      },
+      {
+        "node": 5,
+        "war": 9
+      },
+      {
+        "node": 14,
+        "war": 9
+      },
+      {
+        "node": 22,
+        "war": 9
+      },
+      {
+        "node": 31,
+        "war": 9
+      },
+      {
+        "node": 40,
+        "war": 9
+      },
+      {
+        "node": 48,
+        "war": 9
+      }
+    ]
+  },
+  {
+    "player": "Skywalker",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 4,
+        "war": 1
+      },
+      {
+        "node": 13,
+        "war": 1
+      },
+      {
+        "node": 25,
+        "war": 1
+      },
+      {
+        "node": 34,
+        "war": 1
+      },
+      {
+        "node": 20,
+        "war": 2
+      },
+      {
+        "node": 29,
+        "war": 2
+      },
+      {
+        "node": 41,
+        "war": 2
+      },
+      {
+        "node": 47,
+        "war": 2
+      },
+      {
+        "node": 8,
+        "war": 3
+      },
+      {
+        "node": 17,
+        "war": 3
+      },
+      {
+        "node": 20,
+        "war": 3
+      },
+      {
+        "node": 29,
+        "war": 3
+      },
+      {
+        "node": 39,
+        "war": 3
+      },
+      {
+        "node": 9,
+        "war": 4
+      },
+      {
+        "node": 18,
+        "war": 4
+      },
+      {
+        "node": 20,
+        "war": 4
+      },
+      {
+        "node": 29,
+        "war": 4
+      },
+      {
+        "node": 48,
+        "war": 4
+      },
+      {
+        "node": 5,
+        "war": 5
+      },
+      {
+        "node": 14,
+        "war": 5
+      },
+      {
+        "node": 45,
+        "war": 5
+      },
+      {
+        "node": 4,
+        "war": 6
+      },
+      {
+        "node": 13,
+        "war": 6
+      },
+      {
+        "node": 20,
+        "war": 6
+      },
+      {
+        "node": 29,
+        "war": 6
+      },
+      {
+        "node": 45,
+        "war": 6,
+        "deaths": 1
+      },
+      {
+        "node": 4,
+        "war": 7
+      },
+      {
+        "node": 13,
+        "war": 7
+      },
+      {
+        "node": 20,
+        "war": 7
+      },
+      {
+        "node": 29,
+        "war": 7
+      },
+      {
+        "node": 37,
+        "war": 7
+      },
+      {
+        "node": 40,
+        "war": 7
+      },
+      {
+        "node": 1,
+        "war": 8
+      },
+      {
+        "node": 10,
+        "war": 8,
+        "deaths": 1
+      },
+      {
+        "node": 26,
+        "war": 8
+      },
+      {
+        "node": 35,
+        "war": 8
+      },
+      {
+        "node": 37,
+        "war": 8
+      },
+      {
+        "node": 40,
+        "war": 8
+      },
+      {
+        "node": 19,
+        "war": 9
+      },
+      {
+        "node": 28,
+        "war": 9
+      },
+      {
+        "node": 43,
+        "war": 9
+      }
+    ]
+  },
+  {
+    "player": "Praetor",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 8,
+        "war": 1
+      },
+      {
+        "node": 17,
+        "war": 1
+      },
+      {
+        "node": 19,
+        "war": 1
+      },
+      {
+        "node": 28,
+        "war": 1
+      },
+      {
+        "node": 5,
+        "war": 2
+      },
+      {
+        "node": 14,
+        "war": 2
+      },
+      {
+        "node": 19,
+        "war": 2
+      },
+      {
+        "node": 28,
+        "war": 2
+      },
+      {
+        "node": 8,
+        "war": 3
+      },
+      {
+        "node": 21,
+        "war": 3
+      },
+      {
+        "node": 30,
+        "war": 3
+      },
+      {
+        "node": 39,
+        "war": 3
+      },
+      {
+        "node": 4,
+        "war": 4
+      },
+      {
+        "node": 13,
+        "war": 4
+      },
+      {
+        "node": 25,
+        "war": 4
+      },
+      {
+        "node": 34,
+        "war": 4
+      },
+      {
+        "node": 47,
+        "war": 4
+      },
+      {
+        "node": 8,
+        "war": 5,
+        "deaths": 1
+      },
+      {
+        "node": 17,
+        "war": 5
+      },
+      {
+        "node": 2,
+        "war": 6
+      },
+      {
+        "node": 11,
+        "war": 6
+      },
+      {
+        "node": 27,
+        "war": 6
+      },
+      {
+        "node": 36,
+        "war": 6
+      },
+      {
+        "node": 38,
+        "war": 6
+      },
+      {
+        "node": 44,
+        "war": 6
+      },
+      {
+        "node": 5,
+        "war": 7
+      },
+      {
+        "node": 14,
+        "war": 7
+      },
+      {
+        "node": 20,
+        "war": 7
+      },
+      {
+        "node": 29,
+        "war": 7
+      },
+      {
+        "node": 37,
+        "war": 7
+      },
+      {
+        "node": 47,
+        "war": 7
+      },
+      {
+        "node": 5,
+        "war": 8
+      },
+      {
+        "node": 14,
+        "war": 8
+      },
+      {
+        "node": 24,
+        "war": 8
+      },
+      {
+        "node": 33,
+        "war": 8
+      },
+      {
+        "node": 44,
+        "war": 8
+      },
+      {
+        "node": 3,
+        "war": 9
+      },
+      {
+        "node": 12,
+        "war": 9,
+        "deaths": 1
+      },
+      {
+        "node": 23,
+        "war": 9
+      },
+      {
+        "node": 32,
+        "war": 9
+      },
+      {
+        "node": 44,
+        "war": 9
+      }
+    ]
+  },
+  {
+    "player": "JWill",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 3,
+        "war": 1
+      },
+      {
+        "node": 12,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 45,
+        "war": 1
+      },
+      {
+        "node": 6,
+        "war": 2
+      },
+      {
+        "node": 15,
+        "war": 2
+      },
+      {
+        "node": 25,
+        "war": 2
+      },
+      {
+        "node": 34,
+        "war": 2
+      },
+      {
+        "node": 37,
+        "war": 2
+      },
+      {
+        "node": 3,
+        "war": 3
+      },
+      {
+        "node": 12,
+        "war": 3
+      },
+      {
+        "node": 20,
+        "war": 3
+      },
+      {
+        "node": 29,
+        "war": 3
+      },
+      {
+        "node": 3,
+        "war": 4
+      },
+      {
+        "node": 12,
+        "war": 4
+      },
+      {
+        "node": 21,
+        "war": 4
+      },
+      {
+        "node": 30,
+        "war": 4
+      },
+      {
+        "node": 4,
+        "war": 5
+      },
+      {
+        "node": 13,
+        "war": 5
+      },
+      {
+        "node": 19,
+        "war": 5
+      },
+      {
+        "node": 28,
+        "war": 5
+      },
+      {
+        "node": 8,
+        "war": 6
+      },
+      {
+        "node": 17,
+        "war": 6
+      },
+      {
+        "node": 37,
+        "war": 6
+      },
+      {
+        "node": 6,
+        "war": 7
+      },
+      {
+        "node": 15,
+        "war": 7
+      },
+      {
+        "node": 21,
+        "war": 7
+      },
+      {
+        "node": 30,
+        "war": 7
+      },
+      {
+        "node": 3,
+        "war": 8
+      },
+      {
+        "node": 12,
+        "war": 8
+      },
+      {
+        "node": 21,
+        "war": 8
+      },
+      {
+        "node": 30,
+        "war": 8
+      },
+      {
+        "node": 40,
+        "war": 8
+      },
+      {
+        "node": 7,
+        "war": 9
+      },
+      {
+        "node": 16,
+        "war": 9
+      },
+      {
+        "node": 21,
+        "war": 9
+      },
+      {
+        "node": 30,
+        "war": 9
+      }
+    ]
+  },
+  {
+    "player": "Hazza",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 5,
+        "war": 1
+      },
+      {
+        "node": 14,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 27,
+        "war": 1
+      },
+      {
+        "node": 36,
+        "war": 1
+      },
+      {
+        "node": 42,
+        "war": 1
+      },
+      {
+        "node": 44,
+        "war": 1
+      },
+      {
+        "node": 2,
+        "war": 2
+      },
+      {
+        "node": 11,
+        "war": 2
+      },
+      {
+        "node": 20,
+        "war": 2
+      },
+      {
+        "node": 29,
+        "war": 2,
+        "deaths": 1
+      },
+      {
+        "node": 39,
+        "war": 2
+      },
+      {
+        "node": 42,
+        "war": 2
+      },
+      {
+        "node": 45,
+        "war": 2
+      },
+      {
+        "node": 49,
+        "war": 2
+      },
+      {
+        "node": 1,
+        "war": 3
+      },
+      {
+        "node": 10,
+        "war": 3
+      },
+      {
+        "node": 25,
+        "war": 3
+      },
+      {
+        "node": 34,
+        "war": 3
+      },
+      {
+        "node": 40,
+        "war": 3
+      },
+      {
+        "node": 45,
+        "war": 3
+      },
+      {
+        "node": 46,
+        "war": 3
+      },
+      {
+        "node": 5,
+        "war": 4
+      },
+      {
+        "node": 14,
+        "war": 4
+      },
+      {
+        "node": 19,
+        "war": 4
+      },
+      {
+        "node": 28,
+        "war": 4
+      },
+      {
+        "node": 42,
+        "war": 4,
+        "deaths": 1
+      },
+      {
+        "node": 2,
+        "war": 5
+      },
+      {
+        "node": 11,
+        "war": 5
+      },
+      {
+        "node": 24,
+        "war": 5
+      },
+      {
+        "node": 33,
+        "war": 5
+      },
+      {
+        "node": 42,
+        "war": 5
+      },
+      {
+        "node": 45,
+        "war": 5
+      },
+      {
+        "node": 1,
+        "war": 6,
+        "deaths": 1
+      },
+      {
+        "node": 10,
+        "war": 6
+      },
+      {
+        "node": 20,
+        "war": 6
+      },
+      {
+        "node": 29,
+        "war": 6
+      },
+      {
+        "node": 42,
+        "war": 6,
+        "deaths": 2
+      },
+      {
+        "node": 23,
+        "war": 7
+      },
+      {
+        "node": 32,
+        "war": 7
+      },
+      {
+        "node": 7,
+        "war": 8
+      },
+      {
+        "node": 16,
+        "war": 8
+      },
+      {
+        "node": 20,
+        "war": 8
+      },
+      {
+        "node": 29,
+        "war": 8
+      },
+      {
+        "node": 8,
+        "war": 9
+      },
+      {
+        "node": 17,
+        "war": 9
+      },
+      {
+        "node": 33,
+        "war": 9
+      },
+      {
+        "node": 46,
+        "war": 9
+      }
+    ]
+  },
+  {
+    "player": "Voltaic",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 26,
+        "war": 1
+      },
+      {
+        "node": 35,
+        "war": 1
+      },
+      {
+        "node": 4,
+        "war": 2
+      },
+      {
+        "node": 26,
+        "war": 2
+      },
+      {
+        "node": 35,
+        "war": 2
+      },
+      {
+        "node": 4,
+        "war": 3
+      },
+      {
+        "node": 13,
+        "war": 3
+      },
+      {
+        "node": 26,
+        "war": 3
+      },
+      {
+        "node": 35,
+        "war": 3
+      },
+      {
+        "node": 7,
+        "war": 4
+      },
+      {
+        "node": 16,
+        "war": 4
+      },
+      {
+        "node": 20,
+        "war": 4
+      },
+      {
+        "node": 29,
+        "war": 4
+      },
+      {
+        "node": 6,
+        "war": 5
+      },
+      {
+        "node": 15,
+        "war": 5
+      },
+      {
+        "node": 20,
+        "war": 5,
+        "deaths": 1
+      },
+      {
+        "node": 29,
+        "war": 5
+      },
+      {
+        "node": 37,
+        "war": 5
+      },
+      {
+        "node": 41,
+        "war": 5
+      },
+      {
+        "node": 9,
+        "war": 6
+      },
+      {
+        "node": 18,
+        "war": 6
+      },
+      {
+        "node": 21,
+        "war": 6,
+        "deaths": 1
+      },
+      {
+        "node": 30,
+        "war": 6
+      },
+      {
+        "node": 7,
+        "war": 7
+      },
+      {
+        "node": 16,
+        "war": 7
+      },
+      {
+        "node": 23,
+        "war": 8
+      },
+      {
+        "node": 32,
+        "war": 8
+      },
+      {
+        "node": 43,
+        "war": 8
+      },
+      {
+        "node": 24,
+        "war": 9
+      },
+      {
+        "node": 43,
+        "war": 9
+      }
+    ]
+  },
+  {
+    "player": "Fort",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 2,
+        "war": 1
+      },
+      {
+        "node": 11,
+        "war": 1
+      },
+      {
+        "node": 20,
+        "war": 1
+      },
+      {
+        "node": 29,
+        "war": 1,
+        "deaths": 2
+      },
+      {
+        "node": 39,
+        "war": 1
+      },
+      {
+        "node": 40,
+        "war": 1
+      },
+      {
+        "node": 43,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 3,
+        "war": 2
+      },
+      {
+        "node": 12,
+        "war": 2
+      },
+      {
+        "node": 24,
+        "war": 2
+      },
+      {
+        "node": 33,
+        "war": 2
+      },
+      {
+        "node": 41,
+        "war": 2
+      },
+      {
+        "node": 7,
+        "war": 3
+      },
+      {
+        "node": 16,
+        "war": 3
+      },
+      {
+        "node": 27,
+        "war": 3
+      },
+      {
+        "node": 36,
+        "war": 3
+      },
+      {
+        "node": 38,
+        "war": 3
+      },
+      {
+        "node": 8,
+        "war": 4
+      },
+      {
+        "node": 17,
+        "war": 4
+      },
+      {
+        "node": 24,
+        "war": 4
+      },
+      {
+        "node": 33,
+        "war": 4
+      },
+      {
+        "node": 38,
+        "war": 4
+      },
+      {
+        "node": 41,
+        "war": 4
+      },
+      {
+        "node": 26,
+        "war": 5
+      },
+      {
+        "node": 35,
+        "war": 5
+      },
+      {
+        "node": 38,
+        "war": 5
+      },
+      {
+        "node": 48,
+        "war": 5,
+        "deaths": 1
+      },
+      {
+        "node": 7,
+        "war": 6
+      },
+      {
+        "node": 16,
+        "war": 6
+      },
+      {
+        "node": 25,
+        "war": 6
+      },
+      {
+        "node": 34,
+        "war": 6
+      },
+      {
+        "node": 39,
+        "war": 6
+      },
+      {
+        "node": 2,
+        "war": 7
+      },
+      {
+        "node": 11,
+        "war": 7
+      },
+      {
+        "node": 25,
+        "war": 7
+      },
+      {
+        "node": 34,
+        "war": 7
+      },
+      {
+        "node": 42,
+        "war": 7
+      },
+      {
+        "node": 9,
+        "war": 8
+      },
+      {
+        "node": 18,
+        "war": 8
+      },
+      {
+        "node": 42,
+        "war": 8
+      },
+      {
+        "node": 5,
+        "war": 9
+      },
+      {
+        "node": 14,
+        "war": 9,
+        "deaths": 1
+      },
+      {
+        "node": 19,
+        "war": 9
+      },
+      {
+        "node": 28,
+        "war": 9
+      },
+      {
+        "node": 42,
+        "war": 9,
+        "deaths": 1
+      },
+      {
+        "node": 50,
+        "war": 9,
+        "deaths": 1
+      }
+    ]
+  },
+  {
+    "player": "Jay",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 5,
+        "war": 1
+      },
+      {
+        "node": 14,
+        "war": 1
+      },
+      {
+        "node": 23,
+        "war": 1
+      },
+      {
+        "node": 32,
+        "war": 1
+      },
+      {
+        "node": 41,
+        "war": 1
+      },
+      {
+        "node": 47,
+        "war": 1
+      },
+      {
+        "node": 8,
+        "war": 2
+      },
+      {
+        "node": 17,
+        "war": 2
+      },
+      {
+        "node": 25,
+        "war": 2
+      },
+      {
+        "node": 34,
+        "war": 2
+      },
+      {
+        "node": 44,
+        "war": 2
+      },
+      {
+        "node": 20,
+        "war": 3
+      },
+      {
+        "node": 29,
+        "war": 3
+      },
+      {
+        "node": 49,
+        "war": 3
+      },
+      {
+        "node": 2,
+        "war": 4
+      },
+      {
+        "node": 11,
+        "war": 4
+      },
+      {
+        "node": 19,
+        "war": 4
+      },
+      {
+        "node": 28,
+        "war": 4
+      },
+      {
+        "node": 9,
+        "war": 5,
+        "deaths": 1
+      },
+      {
+        "node": 18,
+        "war": 5
+      },
+      {
+        "node": 22,
+        "war": 5
+      },
+      {
+        "node": 31,
+        "war": 5
+      },
+      {
+        "node": 45,
+        "war": 5
+      },
+      {
+        "node": 3,
+        "war": 6
+      },
+      {
+        "node": 12,
+        "war": 6
+      },
+      {
+        "node": 21,
+        "war": 6
+      },
+      {
+        "node": 30,
+        "war": 6
+      },
+      {
+        "node": 3,
+        "war": 7
+      },
+      {
+        "node": 12,
+        "war": 7
+      },
+      {
+        "node": 21,
+        "war": 7
+      },
+      {
+        "node": 30,
+        "war": 7
+      },
+      {
+        "node": 44,
+        "war": 7
+      },
+      {
+        "node": 3,
+        "war": 8
+      },
+      {
+        "node": 12,
+        "war": 8
+      },
+      {
+        "node": 21,
+        "war": 8
+      },
+      {
+        "node": 30,
+        "war": 8
+      },
+      {
+        "node": 8,
+        "war": 9
+      },
+      {
+        "node": 17,
+        "war": 9
+      },
+      {
+        "node": 27,
+        "war": 9
+      },
+      {
+        "node": 36,
+        "war": 9
+      },
+      {
+        "node": 46,
+        "war": 9
+      }
+    ]
+  },
+  {
+    "player": "Jenx",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 9,
+        "war": 1
+      },
+      {
+        "node": 18,
+        "war": 1
+      },
+      {
+        "node": 26,
+        "war": 1
+      },
+      {
+        "node": 35,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 39,
+        "war": 1
+      },
+      {
+        "node": 45,
+        "war": 1
+      },
+      {
+        "node": 9,
+        "war": 2
+      },
+      {
+        "node": 18,
+        "war": 2
+      },
+      {
+        "node": 22,
+        "war": 2
+      },
+      {
+        "node": 31,
+        "war": 2
+      },
+      {
+        "node": 9,
+        "war": 3,
+        "deaths": 1
+      },
+      {
+        "node": 18,
+        "war": 3
+      },
+      {
+        "node": 27,
+        "war": 3,
+        "deaths": 1
+      },
+      {
+        "node": 36,
+        "war": 3
+      },
+      {
+        "node": 9,
+        "war": 4
+      },
+      {
+        "node": 18,
+        "war": 4
+      },
+      {
+        "node": 26,
+        "war": 4
+      },
+      {
+        "node": 35,
+        "war": 4
+      },
+      {
+        "node": 38,
+        "war": 4
+      },
+      {
+        "node": 25,
+        "war": 5
+      },
+      {
+        "node": 34,
+        "war": 5
+      },
+      {
+        "node": 9,
+        "war": 6,
+        "deaths": 1
+      },
+      {
+        "node": 18,
+        "war": 6
+      },
+      {
+        "node": 20,
+        "war": 6
+      },
+      {
+        "node": 29,
+        "war": 6,
+        "deaths": 1
+      },
+      {
+        "node": 4,
+        "war": 7
+      },
+      {
+        "node": 13,
+        "war": 7
+      },
+      {
+        "node": 25,
+        "war": 7
+      },
+      {
+        "node": 34,
+        "war": 7
+      },
+      {
+        "node": 9,
+        "war": 8
+      },
+      {
+        "node": 18,
+        "war": 8
+      },
+      {
+        "node": 20,
+        "war": 8
+      },
+      {
+        "node": 29,
+        "war": 8
+      },
+      {
+        "node": 9,
+        "war": 9
+      },
+      {
+        "node": 18,
+        "war": 9
+      },
+      {
+        "node": 20,
+        "war": 9
+      },
+      {
+        "node": 29,
+        "war": 9
+      },
+      {
+        "node": 40,
+        "war": 9
+      }
+    ]
+  },
+  {
+    "player": "Zefiro",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "war": 1
+      },
+      {
+        "node": 10,
+        "war": 1
+      },
+      {
+        "node": 27,
+        "war": 1
+      },
+      {
+        "node": 36,
+        "war": 1
+      },
+      {
+        "node": 37,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 44,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 46,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 50,
+        "war": 1,
+        "deaths": 3
+      },
+      {
+        "node": 1,
+        "war": 2
+      },
+      {
+        "node": 10,
+        "war": 2
+      },
+      {
+        "node": 26,
+        "war": 2
+      },
+      {
+        "node": 35,
+        "war": 2
+      },
+      {
+        "node": 42,
+        "war": 2
+      },
+      {
+        "node": 45,
+        "war": 2
+      },
+      {
+        "node": 49,
+        "war": 2
+      },
+      {
+        "node": 50,
+        "war": 2,
+        "deaths": 1
+      },
+      {
+        "node": 1,
+        "war": 3
+      },
+      {
+        "node": 10,
+        "war": 3
+      },
+      {
+        "node": 22,
+        "war": 3
+      },
+      {
+        "node": 31,
+        "war": 3
+      },
+      {
+        "node": 40,
+        "war": 3
+      },
+      {
+        "node": 46,
+        "war": 3,
+        "deaths": 2
+      },
+      {
+        "node": 6,
+        "war": 4
+      },
+      {
+        "node": 15,
+        "war": 4
+      },
+      {
+        "node": 22,
+        "war": 4
+      },
+      {
+        "node": 31,
+        "war": 4
+      },
+      {
+        "node": 49,
+        "war": 4
+      },
+      {
+        "node": 50,
+        "war": 4,
+        "deaths": 1
+      },
+      {
+        "node": 7,
+        "war": 5
+      },
+      {
+        "node": 16,
+        "war": 5
+      },
+      {
+        "node": 23,
+        "war": 5
+      },
+      {
+        "node": 32,
+        "war": 5
+      },
+      {
+        "node": 42,
+        "war": 5
+      },
+      {
+        "node": 47,
+        "war": 5
+      },
+      {
+        "node": 50,
+        "war": 5
+      },
+      {
+        "node": 22,
+        "war": 6
+      },
+      {
+        "node": 31,
+        "war": 6
+      },
+      {
+        "node": 42,
+        "war": 6
+      },
+      {
+        "node": 46,
+        "war": 6
+      },
+      {
+        "node": 50,
+        "war": 6,
+        "deaths": 1
+      },
+      {
+        "node": 9,
+        "war": 7
+      },
+      {
+        "node": 18,
+        "war": 7
+      },
+      {
+        "node": 27,
+        "war": 7
+      },
+      {
+        "node": 36,
+        "war": 7
+      },
+      {
+        "node": 42,
+        "war": 7
+      },
+      {
+        "node": 46,
+        "war": 7
+      },
+      {
+        "node": 22,
+        "war": 8
+      },
+      {
+        "node": 31,
+        "war": 8
+      },
+      {
+        "node": 37,
+        "war": 8
+      },
+      {
+        "node": 42,
+        "war": 8
+      },
+      {
+        "node": 47,
+        "war": 8
+      },
+      {
+        "node": 14,
+        "war": 9
+      },
+      {
+        "node": 22,
+        "war": 9
+      },
+      {
+        "node": 31,
+        "war": 9,
+        "deaths": 1
+      },
+      {
+        "node": 42,
+        "war": 9
+      }
+    ]
+  },
+  {
+    "player": "Dion",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 2,
+        "war": 1
+      },
+      {
+        "node": 11,
+        "war": 1
+      },
+      {
+        "node": 24,
+        "war": 1
+      },
+      {
+        "node": 33,
+        "war": 1
+      },
+      {
+        "node": 40,
+        "war": 1
+      },
+      {
+        "node": 4,
+        "war": 2
+      },
+      {
+        "node": 13,
+        "war": 2
+      },
+      {
+        "node": 20,
+        "war": 2
+      },
+      {
+        "node": 29,
+        "war": 2,
+        "deaths": 1
+      },
+      {
+        "node": 2,
+        "war": 3
+      },
+      {
+        "node": 11,
+        "war": 3
+      },
+      {
+        "node": 21,
+        "war": 3
+      },
+      {
+        "node": 30,
+        "war": 3
+      },
+      {
+        "node": 48,
+        "war": 3
+      },
+      {
+        "node": 1,
+        "war": 4
+      },
+      {
+        "node": 10,
+        "war": 4
+      },
+      {
+        "node": 37,
+        "war": 4
+      },
+      {
+        "node": 40,
+        "war": 4
+      },
+      {
+        "node": 8,
+        "war": 5
+      },
+      {
+        "node": 17,
+        "war": 5
+      },
+      {
+        "node": 44,
+        "war": 5
+      },
+      {
+        "node": 7,
+        "war": 6
+      },
+      {
+        "node": 16,
+        "war": 6
+      },
+      {
+        "node": 24,
+        "war": 6
+      },
+      {
+        "node": 33,
+        "war": 6
+      },
+      {
+        "node": 44,
+        "war": 6
+      },
+      {
+        "node": 49,
+        "war": 6
+      },
+      {
+        "node": 22,
+        "war": 7
+      },
+      {
+        "node": 31,
+        "war": 7,
+        "deaths": 1
+      },
+      {
+        "node": 38,
+        "war": 7
+      },
+      {
+        "node": 50,
+        "war": 7
+      },
+      {
+        "node": 1,
+        "war": 8
+      },
+      {
+        "node": 10,
+        "war": 8
+      },
+      {
+        "node": 23,
+        "war": 8
+      },
+      {
+        "node": 32,
+        "war": 8
+      },
+      {
+        "node": 49,
+        "war": 8
+      },
+      {
+        "node": 1,
+        "war": 9
+      },
+      {
+        "node": 10,
+        "war": 9
+      },
+      {
+        "node": 26,
+        "war": 9
+      },
+      {
+        "node": 35,
+        "war": 9
+      },
+      {
+        "node": 44,
+        "war": 9
+      }
+    ]
+  },
+  {
+    "player": "Forgotten",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 6,
+        "war": 1
+      },
+      {
+        "node": 15,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 20,
+        "war": 1
+      },
+      {
+        "node": 29,
+        "war": 1
+      },
+      {
+        "node": 48,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 3,
+        "war": 2
+      },
+      {
+        "node": 12,
+        "war": 2
+      },
+      {
+        "node": 24,
+        "war": 2
+      },
+      {
+        "node": 33,
+        "war": 2
+      },
+      {
+        "node": 48,
+        "war": 2
+      },
+      {
+        "node": 6,
+        "war": 3
+      },
+      {
+        "node": 15,
+        "war": 3
+      },
+      {
+        "node": 26,
+        "war": 3
+      },
+      {
+        "node": 35,
+        "war": 3
+      },
+      {
+        "node": 41,
+        "war": 3
+      },
+      {
+        "node": 7,
+        "war": 4
+      },
+      {
+        "node": 16,
+        "war": 4
+      },
+      {
+        "node": 23,
+        "war": 4
+      },
+      {
+        "node": 32,
+        "war": 4
+      },
+      {
+        "node": 48,
+        "war": 4,
+        "deaths": 1
+      },
+      {
+        "node": 3,
+        "war": 5
+      },
+      {
+        "node": 12,
+        "war": 5
+      },
+      {
+        "node": 27,
+        "war": 5
+      },
+      {
+        "node": 36,
+        "war": 5,
+        "deaths": 2
+      },
+      {
+        "node": 40,
+        "war": 5
+      },
+      {
+        "node": 6,
+        "war": 6
+      },
+      {
+        "node": 15,
+        "war": 6
+      },
+      {
+        "node": 26,
+        "war": 6
+      },
+      {
+        "node": 35,
+        "war": 6
+      },
+      {
+        "node": 41,
+        "war": 6
+      },
+      {
+        "node": 2,
+        "war": 7
+      },
+      {
+        "node": 11,
+        "war": 7
+      },
+      {
+        "node": 19,
+        "war": 7
+      },
+      {
+        "node": 28,
+        "war": 7
+      },
+      {
+        "node": 41,
+        "war": 7
+      },
+      {
+        "node": 49,
+        "war": 7,
+        "deaths": 1
+      },
+      {
+        "node": 8,
+        "war": 8
+      },
+      {
+        "node": 17,
+        "war": 8
+      },
+      {
+        "node": 26,
+        "war": 8
+      },
+      {
+        "node": 35,
+        "war": 8
+      },
+      {
+        "node": 44,
+        "war": 8
+      },
+      {
+        "node": 7,
+        "war": 9
+      },
+      {
+        "node": 16,
+        "war": 9
+      },
+      {
+        "node": 23,
+        "war": 9
+      },
+      {
+        "node": 32,
+        "war": 9
+      },
+      {
+        "node": 49,
+        "war": 9,
+        "deaths": 1
+      },
+      {
+        "node": 50,
+        "war": 9
+      }
+    ]
+  },
+  {
+    "player": "Scorpii",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 4,
+        "war": 1
+      },
+      {
+        "node": 13,
+        "war": 1
+      },
+      {
+        "node": 22,
+        "war": 1
+      },
+      {
+        "node": 31,
+        "war": 1
+      },
+      {
+        "node": 2,
+        "war": 2
+      },
+      {
+        "node": 11,
+        "war": 2
+      },
+      {
+        "node": 23,
+        "war": 2
+      },
+      {
+        "node": 32,
+        "war": 2
+      },
+      {
+        "node": 38,
+        "war": 2
+      },
+      {
+        "node": 47,
+        "war": 2
+      },
+      {
+        "node": 4,
+        "war": 3,
+        "deaths": 1
+      },
+      {
+        "node": 13,
+        "war": 3
+      },
+      {
+        "node": 23,
+        "war": 3
+      },
+      {
+        "node": 32,
+        "war": 3
+      },
+      {
+        "node": 44,
+        "war": 3
+      },
+      {
+        "node": 47,
+        "war": 3
+      },
+      {
+        "node": 8,
+        "war": 4
+      },
+      {
+        "node": 17,
+        "war": 4
+      },
+      {
+        "node": 24,
+        "war": 4
+      },
+      {
+        "node": 33,
+        "war": 4
+      },
+      {
+        "node": 39,
+        "war": 4
+      },
+      {
+        "node": 4,
+        "war": 5
+      },
+      {
+        "node": 13,
+        "war": 5
+      },
+      {
+        "node": 19,
+        "war": 5
+      },
+      {
+        "node": 28,
+        "war": 5
+      },
+      {
+        "node": 37,
+        "war": 5
+      },
+      {
+        "node": 4,
+        "war": 6
+      },
+      {
+        "node": 13,
+        "war": 6
+      },
+      {
+        "node": 19,
+        "war": 6
+      },
+      {
+        "node": 28,
+        "war": 6
+      },
+      {
+        "node": 40,
+        "war": 6
+      },
+      {
+        "node": 47,
+        "war": 6
+      },
+      {
+        "node": 6,
+        "war": 7
+      },
+      {
+        "node": 15,
+        "war": 7
+      },
+      {
+        "node": 23,
+        "war": 7
+      },
+      {
+        "node": 32,
+        "war": 7,
+        "deaths": 1
+      },
+      {
+        "node": 39,
+        "war": 7,
+        "deaths": 1
+      },
+      {
+        "node": 40,
+        "war": 7
+      },
+      {
+        "node": 48,
+        "war": 7
+      },
+      {
+        "node": 6,
+        "war": 8
+      },
+      {
+        "node": 15,
+        "war": 8
+      },
+      {
+        "node": 38,
+        "war": 8
+      },
+      {
+        "node": 41,
+        "war": 8
+      },
+      {
+        "node": 48,
+        "war": 8
+      },
+      {
+        "node": 50,
+        "war": 8,
+        "deaths": 1
+      },
+      {
+        "node": 5,
+        "war": 9
+      },
+      {
+        "node": 24,
+        "war": 9
+      },
+      {
+        "node": 33,
+        "war": 9
+      },
+      {
+        "node": 39,
+        "war": 9
+      }
+    ]
+  },
+  {
+    "player": "lillegend",
+    "entries": [
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "deaths": 0,
+        "carryOver": true
+      },
+      {
+        "node": 1,
+        "war": 1
+      },
+      {
+        "node": 10,
+        "war": 1
+      },
+      {
+        "node": 23,
+        "war": 1
+      },
+      {
+        "node": 32,
+        "war": 1
+      },
+      {
+        "node": 37,
+        "war": 1
+      },
+      {
+        "node": 50,
+        "war": 1,
+        "deaths": 1
+      },
+      {
+        "node": 8,
+        "war": 2
+      },
+      {
+        "node": 17,
+        "war": 2
+      },
+      {
+        "node": 50,
+        "war": 2
+      },
+      {
+        "node": 5,
+        "war": 3
+      },
+      {
+        "node": 14,
+        "war": 3
+      },
+      {
+        "node": 19,
+        "war": 3
+      },
+      {
+        "node": 28,
+        "war": 3
+      },
+      {
+        "node": 42,
+        "war": 3
+      },
+      {
+        "node": 50,
+        "war": 3
+      },
+      {
+        "node": 2,
+        "war": 4
+      },
+      {
+        "node": 11,
+        "war": 4
+      },
+      {
+        "node": 26,
+        "war": 4
+      },
+      {
+        "node": 35,
+        "war": 4
+      },
+      {
+        "node": 45,
+        "war": 4
+      },
+      {
+        "node": 46,
+        "war": 4
+      },
+      {
+        "node": 48,
+        "war": 4
+      },
+      {
+        "node": 50,
+        "war": 4,
+        "deaths": 1
+      },
+      {
+        "node": 5,
+        "war": 5
+      },
+      {
+        "node": 14,
+        "war": 5
+      },
+      {
+        "node": 21,
+        "war": 5
+      },
+      {
+        "node": 30,
+        "war": 5
+      },
+      {
+        "node": 50,
+        "war": 5
+      },
+      {
+        "node": 4,
+        "war": 6
+      },
+      {
+        "node": 13,
+        "war": 6
+      },
+      {
+        "node": 23,
+        "war": 6
+      },
+      {
+        "node": 32,
+        "war": 6
+      },
+      {
+        "node": 49,
+        "war": 6
+      },
+      {
+        "node": 50,
+        "war": 6,
+        "deaths": 2
+      },
+      {
+        "node": 4,
+        "war": 7,
+        "deaths": 1
+      },
+      {
+        "node": 13,
+        "war": 7
+      },
+      {
+        "node": 27,
+        "war": 7
+      },
+      {
+        "node": 36,
+        "war": 7
+      },
+      {
+        "node": 40,
+        "war": 7
+      },
+      {
+        "node": 49,
+        "war": 7
+      },
+      {
+        "node": 4,
+        "war": 8
+      },
+      {
+        "node": 13,
+        "war": 8
+      },
+      {
+        "node": 26,
+        "war": 8
+      },
+      {
+        "node": 35,
+        "war": 8
+      },
+      {
+        "node": 47,
+        "war": 8
+      },
+      {
+        "node": 49,
+        "war": 8
+      },
+      {
+        "node": 4,
+        "war": 9
+      },
+      {
+        "node": 13,
+        "war": 9
+      },
+      {
+        "node": 20,
+        "war": 9
+      },
+      {
+        "node": 29,
+        "war": 9
+      },
+      {
+        "node": 48,
+        "war": 9,
+        "deaths": 1
+      }
+    ]
+  },
+  {
+    "player": "Bunnings",
+    "entries": [
+      {
+        "node": 7,
+        "war": 1
+      },
+      {
+        "node": 16,
+        "war": 1
+      },
+      {
+        "node": 19,
+        "war": 1
+      },
+      {
+        "node": 28,
+        "war": 1
+      },
+      {
+        "node": 42,
+        "war": 1,
+        "deaths": 1
       },
       {},
       {
-        "node": 27
+        "node": 7,
+        "war": 2
       },
       {
-        "node": 36
+        "node": 16,
+        "war": 2
       },
       {
-        "node": 39
+        "node": 19,
+        "war": 2
+      },
+      {
+        "node": 28,
+        "war": 2
+      },
+      {
+        "node": 37,
+        "war": 2
+      },
+      {
+        "node": 5,
+        "war": 3
+      },
+      {
+        "node": 14,
+        "war": 3
+      },
+      {
+        "node": 24,
+        "war": 3
+      },
+      {
+        "node": 33,
+        "war": 3
+      },
+      {
+        "node": 39,
+        "war": 3
+      },
+      {
+        "node": 42,
+        "war": 3,
+        "deaths": 1
+      },
+      {
+        "node": 4,
+        "war": 4,
+        "deaths": 2
+      },
+      {
+        "node": 13,
+        "war": 4
+      },
+      {
+        "node": 27,
+        "war": 4
+      },
+      {
+        "node": 36,
+        "war": 4,
+        "deaths": 1
+      },
+      {
+        "node": 41,
+        "war": 4
+      },
+      {
+        "node": 45,
+        "war": 4
+      },
+      {
+        "node": 5,
+        "war": 5
+      },
+      {
+        "node": 14,
+        "war": 5
+      },
+      {
+        "node": 24,
+        "war": 5
+      },
+      {
+        "node": 33,
+        "war": 5
+      },
+      {
+        "node": 41,
+        "war": 5
+      },
+      {
+        "node": 5,
+        "war": 6
+      },
+      {
+        "node": 14,
+        "war": 6,
+        "deaths": 1
+      },
+      {
+        "node": 23,
+        "war": 6
+      },
+      {
+        "node": 32,
+        "war": 6
+      },
+      {
+        "node": 48,
+        "war": 6
+      },
+      {
+        "node": 7,
+        "war": 7
+      },
+      {
+        "node": 16,
+        "war": 7
+      },
+      {
+        "node": 26,
+        "war": 7
+      },
+      {
+        "node": 35,
+        "war": 7
+      },
+      {
+        "node": 37,
+        "war": 7
+      },
+      {
+        "node": 43,
+        "war": 7
+      },
+      {
+        "node": 5,
+        "war": 8
+      },
+      {
+        "node": 14,
+        "war": 8
+      },
+      {
+        "node": 24,
+        "war": 8
+      },
+      {
+        "node": 33,
+        "war": 8
+      },
+      {
+        "node": 43,
+        "war": 8
+      },
+      {
+        "node": 2,
+        "war": 9
+      },
+      {
+        "node": 11,
+        "war": 9
+      },
+      {
+        "node": 19,
+        "war": 9
+      },
+      {
+        "node": 28,
+        "war": 9
+      },
+      {
+        "node": 41,
+        "war": 9,
+        "deaths": 1
+      },
+      {
+        "node": 43,
+        "war": 9
+      }
+    ],
+    "summary": {
+      "kills": 5,
+      "deaths": 1
+    }
+  },
+  {
+    "player": "Gray",
+    "entries": [
+      {
+        "node": 21,
+        "war": 1
+      },
+      {
+        "node": 30,
+        "war": 1
+      },
+      {
+        "node": 38,
+        "war": 1
+      },
+      {},
+      {
+        "node": 5,
+        "war": 2
+      },
+      {
+        "node": 14,
+        "war": 2
+      },
+      {
+        "node": 41,
+        "war": 2
+      },
+      {
+        "node": 7,
+        "war": 3
+      },
+      {
+        "node": 16,
+        "war": 3
+      },
+      {
+        "node": 19,
+        "war": 3
+      },
+      {
+        "node": 28,
+        "war": 3,
+        "deaths": 2
+      },
+      {
+        "node": 38,
+        "war": 3
+      },
+      {
+        "node": 43,
+        "war": 3
+      },
+      {
+        "node": 50,
+        "war": 3
+      },
+      {
+        "node": 5,
+        "war": 4
+      },
+      {
+        "node": 14,
+        "war": 4
+      },
+      {
+        "node": 20,
+        "war": 4
+      },
+      {
+        "node": 29,
+        "war": 4
+      },
+      {
+        "node": 43,
+        "war": 4
+      },
+      {
+        "node": 47,
+        "war": 4
+      },
+      {
+        "node": 6,
+        "war": 5
+      },
+      {
+        "node": 15,
+        "war": 5
+      },
+      {
+        "node": 20,
+        "war": 5
+      },
+      {
+        "node": 29,
+        "war": 5
+      },
+      {
+        "node": 38,
+        "war": 5
+      },
+      {
+        "node": 43,
+        "war": 5
+      },
+      {
+        "node": 2,
+        "war": 6
+      },
+      {
+        "node": 11,
+        "war": 6
+      },
+      {
+        "node": 38,
+        "war": 6
+      },
+      {
+        "node": 45,
+        "war": 6
+      },
+      {
+        "node": 1,
+        "war": 7
+      },
+      {
+        "node": 10,
+        "war": 7
+      },
+      {
+        "node": 24,
+        "war": 7
+      },
+      {
+        "node": 33,
+        "war": 7
+      },
+      {
+        "node": 7,
+        "war": 8
+      },
+      {
+        "node": 16,
+        "war": 8
+      },
+      {
+        "node": 19,
+        "war": 8
+      },
+      {
+        "node": 28,
+        "war": 8
+      },
+      {
+        "node": 39,
+        "war": 8
+      },
+      {
+        "node": 45,
+        "war": 8,
+        "deaths": 1
+      },
+      {
+        "node": 4,
+        "war": 9
+      },
+      {
+        "node": 13,
+        "war": 9,
+        "deaths": 1
+      },
+      {
+        "node": 25,
+        "war": 9
+      },
+      {
+        "node": 34,
+        "war": 9
+      },
+      {
+        "node": 37,
+        "war": 9
+      },
+      {
+        "node": 47,
+        "war": 9
+      }
+    ],
+    "summary": {
+      "kills": 3,
+      "deaths": 0
+    }
+  },
+  {
+    "player": "silverac",
+    "entries": [
+      {
+        "node": 8,
+        "war": 1
+      },
+      {
+        "node": 17,
+        "war": 1
+      },
+      {
+        "node": 25,
+        "war": 1
+      },
+      {
+        "node": 34,
+        "war": 1
+      },
+      {
+        "node": 43,
+        "war": 1
+      },
+      {},
+      {
+        "node": 6,
+        "war": 2
+      },
+      {
+        "node": 15,
+        "war": 2
+      },
+      {
+        "node": 21,
+        "war": 2
+      },
+      {
+        "node": 30,
+        "war": 2,
+        "deaths": 1
+      },
+      {
+        "node": 40,
+        "war": 2
+      },
+      {
+        "node": 8,
+        "war": 3
+      },
+      {
+        "node": 17,
+        "war": 3
+      },
+      {
+        "node": 25,
+        "war": 3
+      },
+      {
+        "node": 34,
+        "war": 3
+      },
+      {
+        "node": 25,
+        "war": 4
+      },
+      {
+        "node": 34,
+        "war": 4
+      },
+      {
+        "node": 44,
+        "war": 4
+      },
+      {
+        "node": 46,
+        "war": 4
+      },
+      {
+        "node": 2,
+        "war": 5
+      },
+      {
+        "node": 11,
+        "war": 5
+      },
+      {
+        "node": 21,
+        "war": 5
+      },
+      {
+        "node": 30,
+        "war": 5
+      },
+      {
+        "node": 49,
+        "war": 5
+      },
+      {
+        "node": 8,
+        "war": 6,
+        "deaths": 1
+      },
+      {
+        "node": 17,
+        "war": 6
+      },
+      {
+        "node": 25,
+        "war": 6
+      },
+      {
+        "node": 34,
+        "war": 6
+      },
+      {
+        "node": 37,
+        "war": 6
+      },
+      {
+        "node": 5,
+        "war": 7
+      },
+      {
+        "node": 14,
+        "war": 7
+      },
+      {
+        "node": 20,
+        "war": 7
+      },
+      {
+        "node": 29,
+        "war": 7,
+        "deaths": 3
+      },
+      {
+        "node": 47,
+        "war": 7
+      },
+      {
+        "node": 2,
+        "war": 8
+      },
+      {
+        "node": 11,
+        "war": 8,
+        "deaths": 1
+      },
+      {
+        "node": 25,
+        "war": 8
+      },
+      {
+        "node": 34,
+        "war": 8
+      },
+      {
+        "node": 40,
+        "war": 8
+      },
+      {
+        "node": 46,
+        "war": 8
+      },
+      {
+        "node": 6,
+        "war": 9
+      },
+      {
+        "node": 15,
+        "war": 9
+      },
+      {
+        "node": 21,
+        "war": 9
+      },
+      {
+        "node": 30,
+        "war": 9
+      },
+      {
+        "node": 45,
+        "war": 9
+      }
+    ],
+    "summary": {
+      "kills": 5,
+      "deaths": 0
+    }
+  },
+  {
+    "player": "cloddiniz",
+    "entries": [
+      {
+        "node": 9,
+        "war": 1
+      },
+      {
+        "node": 18,
+        "war": 1
+      },
+      {},
+      {
+        "node": 9,
+        "war": 2
+      },
+      {
+        "node": 18,
+        "war": 2
+      },
+      {
+        "node": 27,
+        "war": 2
+      },
+      {
+        "node": 36,
+        "war": 2
+      },
+      {
+        "node": 26,
+        "war": 3
+      },
+      {
+        "node": 35,
+        "war": 3,
+        "deaths": 1
+      },
+      {
+        "node": 46,
+        "war": 3
+      },
+      {
+        "node": 6,
+        "war": 4
+      },
+      {
+        "node": 15,
+        "war": 4
+      },
+      {
+        "node": 27,
+        "war": 4
+      },
+      {
+        "node": 36,
+        "war": 4,
+        "deaths": 1
+      },
+      {
+        "node": 43,
+        "war": 4
+      },
+      {
+        "node": 9,
+        "war": 5
+      },
+      {
+        "node": 18,
+        "war": 5
+      },
+      {
+        "node": 27,
+        "war": 5
+      },
+      {
+        "node": 36,
+        "war": 5
+      },
+      {
+        "node": 7,
+        "war": 6
+      },
+      {
+        "node": 16,
+        "war": 6
+      },
+      {
+        "node": 19,
+        "war": 6
+      },
+      {
+        "node": 28,
+        "war": 6
+      },
+      {
+        "node": 38,
+        "war": 6
+      },
+      {
+        "node": 8,
+        "war": 7
+      },
+      {
+        "node": 17,
+        "war": 7
+      },
+      {
+        "node": 27,
+        "war": 7
+      },
+      {
+        "node": 36,
+        "war": 7
+      },
+      {
+        "node": 9,
+        "war": 8
+      },
+      {
+        "node": 18,
+        "war": 8,
+        "deaths": 1
+      },
+      {
+        "node": 27,
+        "war": 8,
+        "deaths": 2
+      },
+      {
+        "node": 36,
+        "war": 8
+      },
+      {
+        "node": 9,
+        "war": 9
+      },
+      {
+        "node": 18,
+        "war": 9
+      },
+      {
+        "node": 46,
+        "war": 9
+      }
+    ],
+    "summary": {
+      "kills": 2,
+      "deaths": 0
+    }
+  },
+  {
+    "player": "lordbeerus",
+    "entries": [
+      {
+        "node": 1,
+        "war": 1
+      },
+      {
+        "node": 10,
+        "war": 1
+      },
+      {
+        "node": 27,
+        "war": 1
+      },
+      {
+        "node": 36,
+        "war": 1
+      },
+      {
+        "node": 41,
+        "war": 1
+      },
+      {
+        "node": 44,
+        "war": 1
+      },
+      {
+        "node": 50,
+        "war": 1,
+        "deaths": 1
+      },
+      {},
+      {
+        "node": 2,
+        "war": 2
+      },
+      {
+        "node": 11,
+        "war": 2
+      },
+      {
+        "node": 23,
+        "war": 2
+      },
+      {
+        "node": 32,
+        "war": 2
+      },
+      {
+        "node": 45,
+        "war": 2
+      },
+      {
+        "node": 1,
+        "war": 3
+      },
+      {
+        "node": 10,
+        "war": 3
+      },
+      {
+        "node": 25,
+        "war": 3
+      },
+      {
+        "node": 34,
+        "war": 3
+      },
+      {
+        "node": 37,
+        "war": 3
+      },
+      {
+        "node": 45,
+        "war": 3
+      },
+      {
+        "node": 47,
+        "war": 3
+      },
+      {
+        "node": 7,
+        "war": 4
+      },
+      {
+        "node": 16,
+        "war": 4
+      },
+      {
+        "node": 25,
+        "war": 4
+      },
+      {
+        "node": 34,
+        "war": 4
+      },
+      {
+        "node": 45,
+        "war": 4
+      },
+      {
+        "node": 46,
+        "war": 4
+      },
+      {
+        "node": 2,
+        "war": 5
+      },
+      {
+        "node": 11,
+        "war": 5
+      },
+      {
+        "node": 25,
+        "war": 5
+      },
+      {
+        "node": 34,
+        "war": 5
+      },
+      {
+        "node": 40,
+        "war": 5
+      },
+      {
+        "node": 44,
+        "war": 5
+      },
+      {
+        "node": 46,
+        "war": 5
+      },
+      {
+        "node": 48,
+        "war": 5,
+        "deaths": 1
+      },
+      {
+        "node": 50,
+        "war": 5
+      },
+      {
+        "node": 6,
+        "war": 6
+      },
+      {
+        "node": 15,
+        "war": 6
+      },
+      {
+        "node": 25,
+        "war": 6
+      },
+      {
+        "node": 34,
+        "war": 6
+      },
+      {
+        "node": 41,
+        "war": 6
+      },
+      {
+        "node": 50,
+        "war": 6
+      },
+      {
+        "node": 9,
+        "war": 7
+      },
+      {
+        "node": 18,
+        "war": 7
+      },
+      {
+        "node": 25,
+        "war": 7
+      },
+      {
+        "node": 34,
+        "war": 7
+      },
+      {
+        "node": 39,
+        "war": 7
+      },
+      {
+        "node": 41,
+        "war": 7
+      },
+      {
+        "node": 48,
+        "war": 7
+      },
+      {
+        "node": 6,
+        "war": 8
+      },
+      {
+        "node": 15,
+        "war": 8
+      },
+      {
+        "node": 25,
+        "war": 8
+      },
+      {
+        "node": 34,
+        "war": 8
+      },
+      {
+        "node": 38,
+        "war": 8
+      },
+      {
+        "node": 43,
+        "war": 8,
+        "deaths": 1
+      },
+      {
+        "node": 1,
+        "war": 9
+      },
+      {
+        "node": 10,
+        "war": 9
+      },
+      {
+        "node": 26,
+        "war": 9
+      },
+      {
+        "node": 35,
+        "war": 9
+      },
+      {
+        "node": 41,
+        "war": 9
+      },
+      {
+        "node": 49,
+        "war": 9
+      },
+      {
+        "node": 50,
+        "war": 9,
+        "deaths": 1
       }
     ],
     "summary": {
       "kills": 7,
-      "deaths": 0
+      "deaths": 1
+    }
+  },
+  {
+    "player": "Shazim",
+    "entries": [
+      {
+        "node": 19,
+        "war": 1
+      },
+      {
+        "node": 28,
+        "war": 1
+      },
+      {
+        "node": 40,
+        "war": 1
+      },
+      {
+        "node": 43,
+        "war": 1
+      },
+      {
+        "node": 48,
+        "war": 1,
+        "deaths": 1
+      },
+      {},
+      {
+        "node": 5,
+        "war": 2
+      },
+      {
+        "node": 14,
+        "war": 2
+      },
+      {
+        "node": 26,
+        "war": 2
+      },
+      {
+        "node": 35,
+        "war": 2
+      },
+      {
+        "node": 40,
+        "war": 2
+      },
+      {
+        "node": 7,
+        "war": 3
+      },
+      {
+        "node": 16,
+        "war": 3
+      },
+      {
+        "node": 24,
+        "war": 3
+      },
+      {
+        "node": 33,
+        "war": 3
+      },
+      {
+        "node": 23,
+        "war": 4
+      },
+      {
+        "node": 32,
+        "war": 4
+      },
+      {
+        "node": 39,
+        "war": 4
+      },
+      {
+        "node": 19,
+        "war": 5
+      },
+      {
+        "node": 28,
+        "war": 5
+      },
+      {
+        "node": 47,
+        "war": 5
+      },
+      {
+        "node": 8,
+        "war": 6
+      },
+      {
+        "node": 17,
+        "war": 6
+      },
+      {
+        "node": 24,
+        "war": 6
+      },
+      {
+        "node": 33,
+        "war": 6
+      },
+      {
+        "node": 37,
+        "war": 6
+      },
+      {
+        "node": 6,
+        "war": 7
+      },
+      {
+        "node": 15,
+        "war": 7
+      },
+      {
+        "node": 24,
+        "war": 7
+      },
+      {
+        "node": 33,
+        "war": 7
+      },
+      {
+        "node": 45,
+        "war": 7
+      },
+      {
+        "node": 5,
+        "war": 8
+      },
+      {
+        "node": 14,
+        "war": 8
+      },
+      {
+        "node": 19,
+        "war": 8
+      },
+      {
+        "node": 28,
+        "war": 8
+      },
+      {
+        "node": 41,
+        "war": 8
+      },
+      {
+        "node": 45,
+        "war": 8
+      },
+      {
+        "node": 2,
+        "war": 9
+      },
+      {
+        "node": 11,
+        "war": 9
+      },
+      {
+        "node": 27,
+        "war": 9
+      },
+      {
+        "node": 36,
+        "war": 9
+      },
+      {
+        "node": 45,
+        "war": 9
+      }
+    ],
+    "summary": {
+      "kills": 5,
+      "deaths": 1
     }
   },
   {
     "player": "Andy",
     "entries": [
       {
-        "node": 6
+        "node": 2,
+        "war": 1
       },
       {
-        "node": 15
+        "node": 11,
+        "war": 1
       },
       {
-        "node": 26
+        "node": 26,
+        "war": 1
       },
       {
-        "node": 35
+        "node": 35,
+        "war": 1
       },
       {
-        "node": 40
-      },
-      {},
-      {
-        "node": 7
+        "node": 45,
+        "war": 1
       },
       {
-        "node": 16
-      },
-      {
-        "node": 26
-      },
-      {
-        "node": 35
-      }
-    ],
-    "summary": {
-      "kills": 9,
-      "deaths": 0
-    }
-  },
-  {
-    "player": "Stone",
-    "entries": [
-      {
-        "node": 7
-      },
-      {
-        "node": 16
-      },
-      {
-        "node": 25
-      },
-      {
-        "node": 34
-      },
-      {
-        "node": 42
-      },
-      {
-        "node": 45
-      },
-      {
-        "node": 50,
+        "node": 46,
+        "war": 1,
         "deaths": 1
       },
       {},
       {
-        "node": 2
+        "node": 3,
+        "war": 2
       },
       {
-        "node": 11
-      },
-      {
-        "node": 19
-      },
-      {
-        "node": 28
-      },
-      {
-        "node": 37
-      },
-      {
-        "node": 40
-      },
-      {
-        "node": 43
-      },
-      {
-        "node": 46
-      },
-      {
-        "node": 48
-      }
-    ],
-    "summary": {
-      "kills": 16,
-      "deaths": 1
-    }
-  },
-  {
-    "player": "Skywalker",
-    "entries": [
-      {
-        "node": 2
-      },
-      {
-        "node": 11
-      },
-      {
-        "node": 21
-      },
-      {
-        "node": 30
-      },
-      {
-        "node": 39
-      },
-      {
-        "node": 41
-      },
-      {},
-      {
-        "node": 6
-      },
-      {
-        "node": 15
+        "node": 12,
+        "war": 2
       },
       {
         "node": 21,
+        "war": 2,
         "deaths": 1
       },
       {
-        "node": 30
+        "node": 30,
+        "war": 2
       },
       {
-        "node": 50
+        "node": 37,
+        "war": 2
+      },
+      {
+        "node": 43,
+        "war": 2
+      },
+      {
+        "node": 6,
+        "war": 3
+      },
+      {
+        "node": 15,
+        "war": 3
+      },
+      {
+        "node": 27,
+        "war": 3
+      },
+      {
+        "node": 36,
+        "war": 3
+      },
+      {
+        "node": 1,
+        "war": 4
+      },
+      {
+        "node": 10,
+        "war": 4
+      },
+      {
+        "node": 19,
+        "war": 4
+      },
+      {
+        "node": 49,
+        "war": 4
+      },
+      {
+        "node": 6,
+        "war": 5
+      },
+      {
+        "node": 15,
+        "war": 5
+      },
+      {
+        "node": 26,
+        "war": 5
+      },
+      {
+        "node": 35,
+        "war": 5
+      },
+      {
+        "node": 38,
+        "war": 5
+      },
+      {
+        "node": 49,
+        "war": 5
+      },
+      {
+        "node": 2,
+        "war": 6
+      },
+      {
+        "node": 11,
+        "war": 6
+      },
+      {
+        "node": 26,
+        "war": 6
+      },
+      {
+        "node": 35,
+        "war": 6,
+        "deaths": 1
+      },
+      {
+        "node": 44,
+        "war": 6
+      },
+      {
+        "node": 47,
+        "war": 6
+      },
+      {
+        "node": 49,
+        "war": 6
+      },
+      {
+        "node": 1,
+        "war": 7
+      },
+      {
+        "node": 10,
+        "war": 7
+      },
+      {
+        "node": 26,
+        "war": 7
+      },
+      {
+        "node": 35,
+        "war": 7
+      },
+      {
+        "node": 44,
+        "war": 7
+      },
+      {
+        "node": 20,
+        "war": 8
+      },
+      {
+        "node": 29,
+        "war": 8
+      },
+      {
+        "node": 7,
+        "war": 9
+      },
+      {
+        "node": 16,
+        "war": 9
+      },
+      {
+        "node": 25,
+        "war": 9
+      },
+      {
+        "node": 34,
+        "war": 9
+      },
+      {
+        "node": 37,
+        "war": 9
+      },
+      {
+        "node": 44,
+        "war": 9
+      },
+      {
+        "node": 47,
+        "war": 9,
+        "deaths": 1
       }
     ],
     "summary": {
-      "kills": 11,
+      "kills": 6,
       "deaths": 1
     }
   },
   {
-    "player": "Avalon",
+    "player": "anthxm",
     "entries": [
       {
-        "node": 1
+        "node": 9,
+        "war": 1
       },
       {
-        "node": 10
+        "node": 18,
+        "war": 1
       },
       {
-        "node": 27
+        "node": 25,
+        "war": 1
       },
       {
-        "node": 36
+        "node": 34,
+        "war": 1
       },
       {
-        "node": 43
+        "node": 41,
+        "war": 1
+      },
+      {
+        "node": 47,
+        "war": 1
       },
       {},
       {
-        "node": 8
+        "node": 7,
+        "war": 2
       },
       {
-        "node": 17
+        "node": 16,
+        "war": 2
       },
       {
-        "node": 22
+        "node": 23,
+        "war": 2
       },
       {
-        "node": 31
+        "node": 32,
+        "war": 2
+      },
+      {
+        "node": 38,
+        "war": 2
+      },
+      {
+        "node": 44,
+        "war": 2
+      },
+      {
+        "node": 9,
+        "war": 3
+      },
+      {
+        "node": 18,
+        "war": 3
+      },
+      {
+        "node": 24,
+        "war": 3
+      },
+      {
+        "node": 33,
+        "war": 3
+      },
+      {
+        "node": 41,
+        "war": 3
+      },
+      {
+        "node": 43,
+        "war": 3
+      },
+      {
+        "node": 6,
+        "war": 4
+      },
+      {
+        "node": 15,
+        "war": 4
+      },
+      {
+        "node": 27,
+        "war": 4
+      },
+      {
+        "node": 36,
+        "war": 4
+      },
+      {
+        "node": 40,
+        "war": 4
+      },
+      {
+        "node": 43,
+        "war": 4
+      },
+      {
+        "node": 9,
+        "war": 5
+      },
+      {
+        "node": 18,
+        "war": 5
+      },
+      {
+        "node": 25,
+        "war": 5,
+        "deaths": 1
+      },
+      {
+        "node": 34,
+        "war": 5
+      },
+      {
+        "node": 40,
+        "war": 5
+      },
+      {
+        "node": 44,
+        "war": 5
+      },
+      {
+        "node": 3,
+        "war": 6
+      },
+      {
+        "node": 24,
+        "war": 6
+      },
+      {
+        "node": 33,
+        "war": 6
+      },
+      {
+        "node": 45,
+        "war": 6
+      },
+      {
+        "node": 47,
+        "war": 6
+      },
+      {
+        "node": 1,
+        "war": 7
+      },
+      {
+        "node": 10,
+        "war": 7
+      },
+      {
+        "node": 19,
+        "war": 7
+      },
+      {
+        "node": 28,
+        "war": 7
+      },
+      {
+        "node": 38,
+        "war": 7
+      },
+      {
+        "node": 43,
+        "war": 7
+      },
+      {
+        "node": 50,
+        "war": 7
+      },
+      {
+        "node": 1,
+        "war": 8
+      },
+      {
+        "node": 10,
+        "war": 8
+      },
+      {
+        "node": 19,
+        "war": 8
+      },
+      {
+        "node": 28,
+        "war": 8
+      },
+      {
+        "node": 37,
+        "war": 8
+      },
+      {
+        "node": 41,
+        "war": 8
+      },
+      {
+        "node": 45,
+        "war": 8
+      },
+      {
+        "node": 50,
+        "war": 8,
+        "deaths": 1
+      },
+      {
+        "node": 1,
+        "war": 9
+      },
+      {
+        "node": 10,
+        "war": 9
+      },
+      {
+        "node": 22,
+        "war": 9
+      },
+      {
+        "node": 31,
+        "war": 9
+      },
+      {
+        "node": 38,
+        "war": 9
+      },
+      {
+        "node": 41,
+        "war": 9
+      },
+      {
+        "node": 45,
+        "war": 9,
+        "deaths": 2
       }
     ],
     "summary": {
-      "kills": 9,
+      "kills": 6,
+      "deaths": 2
+    }
+  },
+  {
+    "player": "oracle1010",
+    "entries": [
+      {
+        "node": 4,
+        "war": 1
+      },
+      {
+        "node": 13,
+        "war": 1
+      },
+      {
+        "node": 21,
+        "war": 1
+      },
+      {
+        "node": 30,
+        "war": 1
+      },
+      {
+        "node": 46,
+        "war": 1
+      },
+      {},
+      {
+        "node": 13,
+        "war": 2
+      },
+      {
+        "node": 27,
+        "war": 2
+      },
+      {
+        "node": 36,
+        "war": 2
+      },
+      {
+        "node": 43,
+        "war": 2
+      },
+      {
+        "node": 47,
+        "war": 2
+      },
+      {
+        "node": 6,
+        "war": 3
+      },
+      {
+        "node": 15,
+        "war": 3
+      },
+      {
+        "node": 22,
+        "war": 3
+      },
+      {
+        "node": 31,
+        "war": 3,
+        "deaths": 1
+      },
+      {
+        "node": 47,
+        "war": 3
+      },
+      {
+        "node": 1,
+        "war": 4
+      },
+      {
+        "node": 10,
+        "war": 4
+      },
+      {
+        "node": 22,
+        "war": 4
+      },
+      {
+        "node": 31,
+        "war": 4
+      },
+      {
+        "node": 39,
+        "war": 4
+      },
+      {
+        "node": 49,
+        "war": 4
+      },
+      {
+        "node": 1,
+        "war": 5
+      },
+      {
+        "node": 10,
+        "war": 5
+      },
+      {
+        "node": 23,
+        "war": 5
+      },
+      {
+        "node": 32,
+        "war": 5
+      },
+      {
+        "node": 39,
+        "war": 5
+      },
+      {
+        "node": 43,
+        "war": 5
+      },
+      {
+        "node": 46,
+        "war": 5
+      },
+      {
+        "node": 12,
+        "war": 6
+      },
+      {
+        "node": 19,
+        "war": 6
+      },
+      {
+        "node": 28,
+        "war": 6
+      },
+      {
+        "node": 43,
+        "war": 6
+      },
+      {
+        "node": 46,
+        "war": 6
+      },
+      {
+        "node": 3,
+        "war": 7
+      },
+      {
+        "node": 12,
+        "war": 7
+      },
+      {
+        "node": 24,
+        "war": 7
+      },
+      {
+        "node": 33,
+        "war": 7,
+        "deaths": 1
+      },
+      {
+        "node": 39,
+        "war": 7
+      },
+      {
+        "node": 45,
+        "war": 7
+      },
+      {
+        "node": 48,
+        "war": 7
+      },
+      {
+        "node": 6,
+        "war": 8
+      },
+      {
+        "node": 15,
+        "war": 8
+      },
+      {
+        "node": 22,
+        "war": 8
+      },
+      {
+        "node": 31,
+        "war": 8
+      },
+      {
+        "node": 39,
+        "war": 8
+      },
+      {
+        "node": 46,
+        "war": 8
+      },
+      {
+        "node": 48,
+        "war": 8
+      },
+      {
+        "node": 2,
+        "war": 9
+      },
+      {
+        "node": 11,
+        "war": 9
+      },
+      {
+        "node": 27,
+        "war": 9
+      },
+      {
+        "node": 36,
+        "war": 9
+      },
+      {
+        "node": 47,
+        "war": 9
+      }
+    ],
+    "summary": {
+      "kills": 5,
       "deaths": 0
     }
   },
   {
-    "player": "Marshy",
+    "player": "unamtg9",
     "entries": [
       {
-        "node": 3
+        "node": 6,
+        "war": 1
       },
       {
-        "node": 12
+        "node": 15,
+        "war": 1
       },
       {
-        "node": 23
+        "node": 24,
+        "war": 1
       },
       {
-        "node": 32
-      },
-      {
-        "node": 42
-      },
-      {
-        "node": 45
-      },
-      {
-        "node": 46
-      },
-      {
-        "node": 50
-      },
-      {},
-      {
-        "node": 5
-      },
-      {
-        "node": 14
-      },
-      {
-        "node": 19
-      },
-      {
-        "node": 28
-      },
-      {
-        "node": 47,
+        "node": 33,
+        "war": 1,
         "deaths": 1
       },
       {
-        "node": 49
+        "node": 48,
+        "war": 1,
+        "deaths": 1
+      },
+      {},
+      {
+        "node": 1,
+        "war": 2,
+        "deaths": 1
+      },
+      {
+        "node": 10,
+        "war": 2
+      },
+      {
+        "node": 22,
+        "war": 2
+      },
+      {
+        "node": 31,
+        "war": 2
+      },
+      {
+        "node": 40,
+        "war": 2
+      },
+      {
+        "node": 46,
+        "war": 2,
+        "deaths": 1
+      },
+      {
+        "node": 48,
+        "war": 2
+      },
+      {
+        "node": 17,
+        "war": 3
+      },
+      {
+        "node": 44,
+        "war": 3
+      },
+      {
+        "node": 49,
+        "war": 3
+      },
+      {
+        "node": 3,
+        "war": 5
+      },
+      {
+        "node": 12,
+        "war": 5
+      },
+      {
+        "node": 27,
+        "war": 5
+      },
+      {
+        "node": 36,
+        "war": 5
+      },
+      {
+        "node": 5,
+        "war": 6
+      },
+      {
+        "node": 14,
+        "war": 6
+      },
+      {
+        "node": 26,
+        "war": 6
+      },
+      {
+        "node": 35,
+        "war": 6
+      },
+      {
+        "node": 40,
+        "war": 6
+      },
+      {
+        "node": 48,
+        "war": 6,
+        "deaths": 1
+      },
+      {
+        "node": 8,
+        "war": 7
+      },
+      {
+        "node": 17,
+        "war": 7
+      },
+      {
+        "node": 22,
+        "war": 7
+      },
+      {
+        "node": 31,
+        "war": 7
+      },
+      {
+        "node": 44,
+        "war": 7
+      },
+      {
+        "node": 2,
+        "war": 8
+      },
+      {
+        "node": 11,
+        "war": 8
+      },
+      {
+        "node": 27,
+        "war": 8
+      },
+      {
+        "node": 36,
+        "war": 8
+      },
+      {
+        "node": 6,
+        "war": 9,
+        "deaths": 1
+      },
+      {
+        "node": 15,
+        "war": 9
+      },
+      {
+        "node": 26,
+        "war": 9
+      },
+      {
+        "node": 35,
+        "war": 9
+      },
+      {
+        "node": 39,
+        "war": 9
+      },
+      {
+        "node": 49,
+        "war": 9
       }
     ],
     "summary": {
-      "kills": 14,
-      "deaths": 1
+      "kills": 5,
+      "deaths": 2
     }
   },
   {
     "player": "Steel",
     "entries": [
       {
-        "node": 1
-      },
-      {
-        "node": 10
-      },
-      {
-        "node": 21
-      },
-      {
-        "node": 30
-      },
-      {
-        "node": 37
-      },
-      {
-        "node": 44
-      },
-      {
-        "node": 47
-      },
-      {},
-      {
-        "node": 9,
-        "deaths": 1
-      },
-      {
-        "node": 18
-      },
-      {
-        "node": 22
-      },
-      {
-        "node": 31
-      },
-      {
-        "node": 39,
-        "deaths": 1
-      },
-      {
-        "node": 40
-      }
-    ],
-    "summary": {
-      "kills": 13,
-      "deaths": 2
-    }
-  },
-  {
-    "player": "Praetor",
-    "entries": [
-      {
-        "node": 8,
-        "deaths": 1
-      },
-      {
-        "node": 17
-      },
-      {
-        "node": 22
-      },
-      {
-        "node": 31
-      },
-      {},
-      {
-        "node": 42
-      },
-      {
-        "node": 48,
-        "deaths": 1
-      }
-    ],
-    "summary": {
-      "kills": 6,
-      "deaths": 2
-    }
-  },
-  {
-    "player": "Zkittlez",
-    "entries": [
-      {
-        "node": 6
-      },
-      {
-        "node": 15
-      },
-      {},
-      {
-        "node": 2
-      },
-      {
-        "node": 11
-      },
-      {
-        "node": 24
-      },
-      {
-        "node": 33
-      }
-    ],
-    "summary": {
-      "kills": 6,
-      "deaths": 0
-    }
-  },
-  {
-    "player": "JWill",
-    "entries": [
-      {
-        "node": 7
+        "node": 7,
+        "war": 1
       },
       {
         "node": 16,
+        "war": 1
+      },
+      {
+        "node": 22,
+        "war": 1
+      },
+      {
+        "node": 31,
+        "war": 1
+      },
+      {
+        "node": 38,
+        "war": 1
+      },
+      {
+        "node": 49,
+        "war": 1
+      },
+      {},
+      {
+        "node": 9,
+        "war": 2
+      },
+      {
+        "node": 18,
+        "war": 2,
         "deaths": 1
       },
       {
-        "node": 24
+        "node": 21,
+        "war": 2
       },
       {
-        "node": 33
+        "node": 30,
+        "war": 2
       },
       {
-        "node": 49
-      },
-      {},
-      {
-        "node": 7
+        "node": 2,
+        "war": 3
       },
       {
-        "node": 16
+        "node": 11,
+        "war": 3
       },
       {
-        "node": 23
+        "node": 23,
+        "war": 3
       },
       {
-        "node": 32
+        "node": 32,
+        "war": 3
       },
       {
-        "node": 43
-      }
-    ],
-    "summary": {
-      "kills": 10,
-      "deaths": 1
-    }
-  },
-  {
-    "player": "Hazza",
-    "entries": [
-      {
-        "node": 5
+        "node": 37,
+        "war": 3
       },
       {
-        "node": 27
+        "node": 48,
+        "war": 3
       },
       {
-        "node": 36
-      },
-      {},
-      {
-        "node": 4
+        "node": 9,
+        "war": 4
       },
       {
-        "node": 13
+        "node": 18,
+        "war": 4
       },
       {
-        "node": 27
+        "node": 23,
+        "war": 4
       },
       {
-        "node": 36
+        "node": 32,
+        "war": 4
       },
       {
-        "node": 44
-      }
-    ],
-    "summary": {
-      "kills": 8,
-      "deaths": 0
-    }
-  },
-  {
-    "player": "Voltaic",
-    "entries": [
-      {
-        "node": 14
+        "node": 37,
+        "war": 4
       },
       {
-        "node": 26
+        "node": 44,
+        "war": 4
+      },
+      {
+        "node": 7,
+        "war": 5
+      },
+      {
+        "node": 16,
+        "war": 5
+      },
+      {
+        "node": 22,
+        "war": 5
+      },
+      {
+        "node": 31,
+        "war": 5
+      },
+      {
+        "node": 47,
+        "war": 5
+      },
+      {
+        "node": 49,
+        "war": 5
+      },
+      {
+        "node": 6,
+        "war": 6
+      },
+      {
+        "node": 15,
+        "war": 6
+      },
+      {
+        "node": 22,
+        "war": 6
+      },
+      {
+        "node": 31,
+        "war": 6
+      },
+      {
+        "node": 41,
+        "war": 6
+      },
+      {
+        "node": 9,
+        "war": 7
+      },
+      {
+        "node": 18,
+        "war": 7
+      },
+      {
+        "node": 26,
+        "war": 7
       },
       {
         "node": 35,
-        "deaths": 1
+        "war": 7
       },
       {
-        "node": 40
-      },
-      {},
-      {
-        "node": 1
+        "node": 41,
+        "war": 7
       },
       {
-        "node": 10
+        "node": 46,
+        "war": 7
       },
       {
-        "node": 26
+        "node": 8,
+        "war": 8
       },
       {
-        "node": 35
+        "node": 17,
+        "war": 8
       },
       {
-        "node": 37
-      }
-    ],
-    "summary": {
-      "kills": 9,
-      "deaths": 1
-    }
-  },
-  {
-    "player": "Fort",
-    "entries": [
+        "node": 25,
+        "war": 8
+      },
+      {
+        "node": 34,
+        "war": 8
+      },
+      {
+        "node": 38,
+        "war": 8
+      },
       {
         "node": 9,
-        "deaths": 1
+        "war": 9
       },
       {
-        "node": 18
+        "node": 18,
+        "war": 9
       },
       {
-        "node": 19
+        "node": 25,
+        "war": 9
       },
       {
-        "node": 28
+        "node": 34,
+        "war": 9
       },
       {
-        "node": 39
+        "node": 37,
+        "war": 9
       },
       {
-        "node": 43
-      },
-      {
-        "node": 48
-      },
-      {},
-      {
-        "node": 8
-      },
-      {
-        "node": 17
-      },
-      {
-        "node": 25
-      },
-      {
-        "node": 34
-      },
-      {
-        "node": 41
+        "node": 40,
+        "war": 9
       }
     ],
     "summary": {
-      "kills": 12,
-      "deaths": 1
-    }
-  },
-  {
-    "player": "Nomis",
-    "entries": [
-      {
-        "node": 4
-      },
-      {
-        "node": 13
-      },
-      {
-        "node": 20
-      },
-      {
-        "node": 29
-      },
-      {
-        "node": 38
-      },
-      {},
-      {
-        "node": 6
-      },
-      {
-        "node": 15
-      },
-      {
-        "node": 21
-      },
-      {
-        "node": 30
-      },
-      {
-        "node": 38
-      },
-      {
-        "node": 45
-      },
-      {
-        "node": 46
-      },
-      {
-        "node": 50
-      }
-    ],
-    "summary": {
-      "kills": 13,
+      "kills": 6,
       "deaths": 0
-    }
-  },
-  {
-    "player": "Chupa",
-    "entries": [
-      {
-        "node": 2
-      },
-      {
-        "node": 11
-      },
-      {
-        "node": 25
-      },
-      {
-        "node": 34
-      },
-      {
-        "node": 41
-      },
-      {},
-      {
-        "node": 3,
-        "deaths": 1
-      },
-      {
-        "node": 12,
-        "deaths": 1
-      },
-      {
-        "node": 20
-      },
-      {
-        "node": 29,
-        "deaths": 1
-      }
-    ],
-    "summary": {
-      "kills": 9,
-      "deaths": 3
     }
   },
   {
     "player": "Fred",
     "entries": [
       {
-        "node": 6
+        "node": 3,
+        "war": 1
       },
       {
-        "node": 15
-      },
-      {
-        "node": 26
-      },
-      {
-        "node": 35
-      },
-      {
-        "node": 41
-      },
-      {},
-      {
-        "node": 1
-      },
-      {
-        "node": 10
-      },
-      {
-        "node": 19
-      },
-      {
-        "node": 28
-      },
-      {
-        "node": 44
-      },
-      {
-        "node": 1
-      },
-      {
-        "node": 10
-      },
-      {
-        "node": 24
-      },
-      {
-        "node": 33
-      },
-      {
-        "node": 49
-      }
-    ],
-    "summary": {
-      "kills": 10,
-      "deaths": 0
-    }
-  },
-  {
-    "player": "Jay",
-    "entries": [
-      {
-        "node": 9
-      },
-      {
-        "node": 25
-      },
-      {
-        "node": 34
-      },
-      {
-        "node": 44
-      },
-      {},
-      {
-        "node": 4
-      },
-      {
-        "node": 13
-      },
-      {
-        "node": 23
-      },
-      {
-        "node": 32
-      },
-      {
-        "node": 46
-      },
-      {
-        "node": 18
-      },
-      {
-        "node": 20
-      },
-      {
-        "node": 29,
-        "deaths": 1
-      },
-      {
-        "node": 46
-      }
-    ],
-    "summary": {
-      "kills": 9,
-      "deaths": 0
-    }
-  },
-  {
-    "player": "Matty",
-    "entries": [
-      {
-        "node": 7
-      },
-      {
-        "node": 16
-      },
-      {
-        "node": 27
-      },
-      {
-        "node": 36
-      },
-      {},
-      {
-        "node": 6
-      },
-      {
-        "node": 15
-      },
-      {
-        "node": 25
-      },
-      {
-        "node": 34
-      },
-      {
-        "node": 38
-      },
-      {
-        "node": 43
-      },
-      {
-        "node": 48
-      },
-      {
-        "node": 6
-      },
-      {
-        "node": 15
-      },
-      {
-        "node": 25
-      },
-      {
-        "node": 34
-      },
-      {
-        "node": 39
-      },
-      {
-        "node": 45,
-        "deaths": 1
-      },
-      {
-        "node": 50
-      }
-    ],
-    "summary": {
-      "kills": 11,
-      "deaths": 0
-    }
-  },
-  {
-    "player": "Jenx",
-    "entries": [
-      {
-        "node": 18
-      },
-      {
-        "node": 23
-      },
-      {
-        "node": 32
-      },
-      {
-        "node": 45
-      },
-      {},
-      {
-        "node": 9
-      },
-      {
-        "node": 18,
-        "deaths": 1
-      },
-      {
-        "node": 24
-      },
-      {
-        "node": 33
-      },
-      {
-        "node": 9
-      },
-      {
-        "node": 23
-      },
-      {
-        "node": 32
-      }
-    ],
-    "summary": {
-      "kills": 8,
-      "deaths": 1
-    }
-  },
-  {
-    "player": "Zefiro",
-    "entries": [
-      {
-        "node": 8
-      },
-      {
-        "node": 17
-      },
-      {
-        "node": 22
-      },
-      {
-        "node": 31
-      },
-      {
-        "node": 47
-      },
-      {
-        "node": 50
-      },
-      {},
-      {
-        "node": 8
-      },
-      {
-        "node": 17
-      },
-      {
-        "node": 21
-      },
-      {
-        "node": 30
-      },
-      {
-        "node": 41
+        "node": 12,
+        "war": 1
       },
       {
         "node": 49,
+        "war": 1,
+        "deaths": 1
+      },
+      {},
+      {
+        "node": 27,
+        "war": 2
+      },
+      {
+        "node": 36,
+        "war": 2
+      },
+      {
+        "node": 39,
+        "war": 2
+      },
+      {
+        "node": 43,
+        "war": 2,
         "deaths": 1
       },
       {
-        "node": 5
+        "node": 46,
+        "war": 2,
+        "deaths": 1
       },
-      {
-        "node": 14
-      },
-      {
-        "node": 19
-      },
-      {
-        "node": 28
-      },
-      {
-        "node": 38
-      },
-      {
-        "node": 42
-      }
-    ],
-    "summary": {
-      "kills": 12,
-      "deaths": 1
-    }
-  },
-  {
-    "player": "Swan",
-    "entries": [
       {
         "node": 3,
+        "war": 3,
         "deaths": 1
       },
       {
         "node": 12,
-        "deaths": 1
+        "war": 3
       },
       {
-        "node": 29
+        "node": 37,
+        "war": 3
       },
       {
-        "node": 38
-      },
-      {
-        "node": 46
-      },
-      {},
-      {
-        "node": 3
-      },
-      {
-        "node": 12
-      },
-      {
-        "node": 22
-      },
-      {
-        "node": 31
-      },
-      {
-        "node": 50
-      },
-      {
-        "node": 7
-      },
-      {
-        "node": 16
-      },
-      {
-        "node": 22
-      },
-      {
-        "node": 31
-      },
-      {
-        "node": 40
+        "node": 45,
+        "war": 3
       }
     ],
     "summary": {
-      "kills": 10,
-      "deaths": 2
-    }
-  },
-  {
-    "player": "Dion",
-    "entries": [
-      {
-        "node": 4
-      },
-      {
-        "node": 13
-      },
-      {
-        "node": 21
-      },
-      {
-        "node": 30
-      },
-      {
-        "node": 37
-      },
-      {
-        "node": 48
-      },
-      {},
-      {
-        "node": 20
-      },
-      {
-        "node": 29
-      },
-      {
-        "node": 8
-      },
-      {
-        "node": 17
-      },
-      {
-        "node": 21
-      },
-      {
-        "node": 30
-      },
-      {
-        "node": 48
-      }
-    ],
-    "summary": {
-      "kills": 8,
-      "deaths": 0
-    }
-  },
-  {
-    "player": "Cipw",
-    "entries": [
-      {
-        "node": 5
-      },
-      {
-        "node": 14
-      },
-      {
-        "node": 19
-      },
-      {
-        "node": 28
-      },
-      {},
-      {
-        "node": 7,
-        "deaths": 1
-      },
-      {
-        "node": 16
-      },
-      {
-        "node": 37
-      },
-      {
-        "node": 45
-      },
-      {
-        "node": 3
-      },
-      {
-        "node": 12
-      },
-      {
-        "node": 41
-      }
-    ],
-    "summary": {
-      "kills": 8,
+      "kills": 3,
       "deaths": 1
     }
   },
   {
-    "player": "Forgotten",
+    "player": "pauloo",
     "entries": [
       {
-        "node": 2
+        "node": 3,
+        "war": 4
       },
       {
-        "node": 11
+        "node": 12,
+        "war": 4
       },
       {
-        "node": 24
+        "node": 21,
+        "war": 4
       },
       {
-        "node": 33
+        "node": 30,
+        "war": 4
       },
       {
-        "node": 42
-      },
-      {
-        "node": 43
+        "node": 42,
+        "war": 4,
+        "deaths": 1
       },
       {},
       {
-        "node": 2
+        "node": 1,
+        "war": 5
       },
       {
-        "node": 11
+        "node": 10,
+        "war": 5
       },
       {
-        "node": 27
+        "node": 26,
+        "war": 5
       },
       {
-        "node": 36
+        "node": 35,
+        "war": 5
       },
       {
-        "node": 42
+        "node": 39,
+        "war": 5
       },
       {
-        "node": 4
+        "node": 46,
+        "war": 5
       },
       {
-        "node": 13
+        "node": 48,
+        "war": 5
       },
       {
-        "node": 27
+        "node": 1,
+        "war": 6
+      },
+      {
+        "node": 10,
+        "war": 6
+      },
+      {
+        "node": 27,
+        "war": 6
       },
       {
         "node": 36,
+        "war": 6
+      },
+      {
+        "node": 39,
+        "war": 6
+      },
+      {
+        "node": 43,
+        "war": 6
+      },
+      {
+        "node": 8,
+        "war": 7
+      },
+      {
+        "node": 17,
+        "war": 7
+      },
+      {
+        "node": 45,
+        "war": 7
+      },
+      {
+        "node": 4,
+        "war": 8
+      },
+      {
+        "node": 13,
+        "war": 8
+      },
+      {
+        "node": 27,
+        "war": 8
+      },
+      {
+        "node": 36,
+        "war": 8
+      },
+      {
+        "node": 3,
+        "war": 9
+      },
+      {
+        "node": 12,
+        "war": 9,
         "deaths": 1
       },
       {
-        "node": 43
+        "node": 38,
+        "war": 9
+      },
+      {
+        "node": 48,
+        "war": 9
       }
     ],
     "summary": {
-      "kills": 11,
-      "deaths": 0
-    }
-  },
-  {
-    "player": "Scorpii",
-    "entries": [
-      {
-        "node": 1
-      },
-      {
-        "node": 10
-      },
-      {
-        "node": 20
-      },
-      {
-        "node": 39
-      },
-      {
-        "node": 40
-      },
-      {
-        "node": 49
-      },
-      {},
-      {
-        "node": 5
-      },
-      {
-        "node": 14
-      },
-      {
-        "node": 26
-      },
-      {
-        "node": 35
-      },
-      {
-        "node": 39
-      },
-      {
-        "node": 40
-      },
-      {
-        "node": 47
-      },
-      {
-        "node": 2
-      },
-      {
-        "node": 11
-      },
-      {
-        "node": 26
-      },
-      {
-        "node": 35
-      },
-      {
-        "node": 37
-      },
-      {
-        "node": 44
-      },
-      {
-        "node": 47
-      }
-    ],
-    "summary": {
-      "kills": 13,
-      "deaths": 0
+      "kills": 5,
+      "deaths": 1
     }
   }
 ]

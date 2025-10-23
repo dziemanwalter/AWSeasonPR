@@ -1,0 +1,460 @@
+{
+  "nodes": {
+    "1": {
+      "baseValue": 1.067,
+      "currentValue": 1.1472966322154257,
+      "killBonus": 1.07,
+      "deathPenalty": 1.11,
+      "totalKills": 27,
+      "totalDeaths": 2,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "2": {
+      "baseValue": 1.1131,
+      "currentValue": 1.1472966322154257,
+      "killBonus": 1.11,
+      "deathPenalty": 1.06,
+      "totalKills": 27,
+      "totalDeaths": 2,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "3": {
+      "baseValue": 1.0377,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.04,
+      "deathPenalty": 1.14,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "4": {
+      "baseValue": 1.0545,
+      "currentValue": 1.3682415805385642,
+      "killBonus": 1.05,
+      "deathPenalty": 1.12,
+      "totalKills": 27,
+      "totalDeaths": 5,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "5": {
+      "baseValue": 1.0964,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.1,
+      "deathPenalty": 1.08,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "6": {
+      "baseValue": 1.0838,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.08,
+      "deathPenalty": 1.09,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "7": {
+      "baseValue": 1.0754,
+      "currentValue": 1,
+      "killBonus": 1.08,
+      "deathPenalty": 1.1,
+      "totalKills": 27,
+      "totalDeaths": 0,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "8": {
+      "baseValue": 1.0377,
+      "currentValue": 1.1472966322154257,
+      "killBonus": 1.04,
+      "deathPenalty": 1.14,
+      "totalKills": 27,
+      "totalDeaths": 2,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "9": {
+      "baseValue": 1.1886,
+      "currentValue": 1.2209449483231385,
+      "killBonus": 1.19,
+      "deathPenalty": 0.99,
+      "totalKills": 27,
+      "totalDeaths": 3,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "10": {
+      "baseValue": 1.1089,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.11,
+      "deathPenalty": 1.07,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "11": {
+      "baseValue": 1.0838,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.08,
+      "deathPenalty": 1.09,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "12": {
+      "baseValue": 1.0335,
+      "currentValue": 1.2945932644308513,
+      "killBonus": 1.03,
+      "deathPenalty": 1.14,
+      "totalKills": 27,
+      "totalDeaths": 4,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "13": {
+      "baseValue": 1.1048,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.1,
+      "deathPenalty": 1.07,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "14": {
+      "baseValue": 1.155,
+      "currentValue": 1.2209449483231385,
+      "killBonus": 1.16,
+      "deathPenalty": 1.02,
+      "totalKills": 27,
+      "totalDeaths": 3,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "15": {
+      "baseValue": 1.021,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.02,
+      "deathPenalty": 1.16,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "16": {
+      "baseValue": 1.0838,
+      "currentValue": 1,
+      "killBonus": 1.08,
+      "deathPenalty": 1.09,
+      "totalKills": 27,
+      "totalDeaths": 0,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "17": {
+      "baseValue": 1.0419,
+      "currentValue": 1,
+      "killBonus": 1.04,
+      "deathPenalty": 1.13,
+      "totalKills": 27,
+      "totalDeaths": 0,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "18": {
+      "baseValue": 1.155,
+      "currentValue": 1.1472966322154257,
+      "killBonus": 1.16,
+      "deathPenalty": 1.02,
+      "totalKills": 27,
+      "totalDeaths": 2,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "19": {
+      "baseValue": 1.0419,
+      "currentValue": 1,
+      "killBonus": 1.04,
+      "deathPenalty": 1.13,
+      "totalKills": 27,
+      "totalDeaths": 0,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "20": {
+      "baseValue": 1.0796,
+      "currentValue": 1.1472966322154257,
+      "killBonus": 1.08,
+      "deathPenalty": 1.09,
+      "totalKills": 27,
+      "totalDeaths": 2,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "21": {
+      "baseValue": 1.1383,
+      "currentValue": 1.2209449483231385,
+      "killBonus": 1.14,
+      "deathPenalty": 1.04,
+      "totalKills": 27,
+      "totalDeaths": 3,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "22": {
+      "baseValue": 1.1928,
+      "currentValue": 1,
+      "killBonus": 1.19,
+      "deathPenalty": 0.99,
+      "totalKills": 27,
+      "totalDeaths": 0,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "23": {
+      "baseValue": 1.1215,
+      "currentValue": 1,
+      "killBonus": 1.12,
+      "deathPenalty": 1.05,
+      "totalKills": 27,
+      "totalDeaths": 0,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "24": {
+      "baseValue": 1.264,
+      "currentValue": 1,
+      "killBonus": 1.26,
+      "deathPenalty": 0.93,
+      "totalKills": 27,
+      "totalDeaths": 0,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "25": {
+      "baseValue": 1.1969,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.2,
+      "deathPenalty": 0.99,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "26": {
+      "baseValue": 1.1131,
+      "currentValue": 1,
+      "killBonus": 1.11,
+      "deathPenalty": 1.06,
+      "totalKills": 27,
+      "totalDeaths": 0,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "27": {
+      "baseValue": 1.1969,
+      "currentValue": 1.2209449483231385,
+      "killBonus": 1.2,
+      "deathPenalty": 0.99,
+      "totalKills": 27,
+      "totalDeaths": 3,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "28": {
+      "baseValue": 1.1173,
+      "currentValue": 1.1472966322154257,
+      "killBonus": 1.12,
+      "deathPenalty": 1.06,
+      "totalKills": 27,
+      "totalDeaths": 2,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "29": {
+      "baseValue": 1.1089,
+      "currentValue": 1.6628348449694157,
+      "killBonus": 1.11,
+      "deathPenalty": 1.07,
+      "totalKills": 27,
+      "totalDeaths": 9,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "30": {
+      "baseValue": 1.0587,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.06,
+      "deathPenalty": 1.12,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "31": {
+      "baseValue": 1.2388,
+      "currentValue": 1.2945932644308513,
+      "killBonus": 1.24,
+      "deathPenalty": 0.95,
+      "totalKills": 27,
+      "totalDeaths": 4,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "32": {
+      "baseValue": 1.3268,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.33,
+      "deathPenalty": 0.89,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "33": {
+      "baseValue": 1.1299,
+      "currentValue": 1.1472966322154257,
+      "killBonus": 1.13,
+      "deathPenalty": 1.05,
+      "totalKills": 27,
+      "totalDeaths": 2,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "34": {
+      "baseValue": 1.2766,
+      "currentValue": 1,
+      "killBonus": 1.28,
+      "deathPenalty": 0.93,
+      "totalKills": 27,
+      "totalDeaths": 0,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "35": {
+      "baseValue": 1.1299,
+      "currentValue": 1.2209449483231385,
+      "killBonus": 1.13,
+      "deathPenalty": 1.05,
+      "totalKills": 27,
+      "totalDeaths": 3,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "36": {
+      "baseValue": 1.2095,
+      "currentValue": 1.3682415805385642,
+      "killBonus": 1.21,
+      "deathPenalty": 0.98,
+      "totalKills": 27,
+      "totalDeaths": 5,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "37": {
+      "baseValue": 1.1886,
+      "currentValue": 1.1472966322154257,
+      "killBonus": 1.19,
+      "deathPenalty": 0.99,
+      "totalKills": 27,
+      "totalDeaths": 2,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "38": {
+      "baseValue": 1.2053,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.21,
+      "deathPenalty": 0.98,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "39": {
+      "baseValue": 1.2682,
+      "currentValue": 1.1472966322154257,
+      "killBonus": 1.27,
+      "deathPenalty": 0.93,
+      "totalKills": 27,
+      "totalDeaths": 2,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "40": {
+      "baseValue": 1.1425,
+      "currentValue": 1,
+      "killBonus": 1.14,
+      "deathPenalty": 1.03,
+      "totalKills": 27,
+      "totalDeaths": 0,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "41": {
+      "baseValue": 1.3227,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.32,
+      "deathPenalty": 0.89,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "42": {
+      "baseValue": 1.3059,
+      "currentValue": 1.7364831610771285,
+      "killBonus": 1.31,
+      "deathPenalty": 0.9,
+      "totalKills": 27,
+      "totalDeaths": 10,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "43": {
+      "baseValue": 1.2766,
+      "currentValue": 1.2945932644308513,
+      "killBonus": 1.28,
+      "deathPenalty": 0.93,
+      "totalKills": 27,
+      "totalDeaths": 4,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "44": {
+      "baseValue": 1.4023,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.4,
+      "deathPenalty": 0.84,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "45": {
+      "baseValue": 1.2682,
+      "currentValue": 1.2945932644308513,
+      "killBonus": 1.27,
+      "deathPenalty": 0.93,
+      "totalKills": 27,
+      "totalDeaths": 4,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "46": {
+      "baseValue": 1.2305,
+      "currentValue": 1.51553821275399,
+      "killBonus": 1.23,
+      "deathPenalty": 0.96,
+      "totalKills": 27,
+      "totalDeaths": 7,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "47": {
+      "baseValue": 1.2808,
+      "currentValue": 1.0736483161077128,
+      "killBonus": 1.28,
+      "deathPenalty": 0.92,
+      "totalKills": 27,
+      "totalDeaths": 1,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "48": {
+      "baseValue": 1.2556,
+      "currentValue": 1.6628348449694157,
+      "killBonus": 1.26,
+      "deathPenalty": 0.94,
+      "totalKills": 27,
+      "totalDeaths": 9,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "49": {
+      "baseValue": 1.5364,
+      "currentValue": 1.2945932644308513,
+      "killBonus": 1.54,
+      "deathPenalty": 0.77,
+      "totalKills": 27,
+      "totalDeaths": 4,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    },
+    "50": {
+      "baseValue": 1.8632,
+      "currentValue": 2.472966322154257,
+      "killBonus": 1.86,
+      "deathPenalty": 0.63,
+      "totalKills": 27,
+      "totalDeaths": 20,
+      "lastUpdated": "2025-10-23T00:53:48.913Z"
+    }
+  },
+  "settings": {
+    "adjustmentFactor": 0.1,
+    "minValue": 0.1,
+    "maxValue": 5,
+    "updateThreshold": 10
+  }
+}

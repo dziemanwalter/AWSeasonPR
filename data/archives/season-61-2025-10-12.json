@@ -1,0 +1,5596 @@
+{
+  "seasonNumber": 61,
+  "archiveDate": "2025-10-12T21:59:02.769Z",
+  "playerNodes": [
+    {
+      "player": "Brawlgate",
+      "entries": [
+        {
+          "node": 8,
+          "war": 1
+        },
+        {
+          "node": 17,
+          "war": 1
+        },
+        {
+          "node": 23,
+          "war": 1
+        },
+        {
+          "node": 32,
+          "war": 1
+        },
+        {
+          "node": 37,
+          "war": 1
+        },
+        {
+          "node": 46,
+          "war": 1
+        },
+        {
+          "node": 48,
+          "deaths": 1,
+          "war": 1
+        },
+        {},
+        {
+          "node": 1,
+          "war": 1
+        },
+        {
+          "node": 10,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 23,
+          "war": 1
+        },
+        {
+          "node": 32,
+          "war": 1
+        },
+        {
+          "node": 38,
+          "war": 1
+        },
+        {
+          "node": 41,
+          "war": 1
+        },
+        {
+          "node": 45,
+          "war": 1
+        },
+        {
+          "node": 47,
+          "war": 1
+        },
+        {
+          "node": 49,
+          "war": 1
+        },
+        {
+          "node": 6,
+          "war": 1
+        },
+        {
+          "node": 15,
+          "war": 1
+        },
+        {
+          "node": 23,
+          "war": 1
+        },
+        {
+          "node": 32,
+          "war": 1
+        },
+        {
+          "node": 37,
+          "war": 1
+        },
+        {
+          "node": 40,
+          "war": 1
+        },
+        {
+          "node": 44,
+          "war": 1
+        },
+        {
+          "node": 47,
+          "war": 1
+        },
+        {
+          "node": 50,
+          "war": 1
+        },
+        {
+          "node": 5,
+          "war": 8
+        },
+        {
+          "node": 14,
+          "war": 8
+        },
+        {
+          "node": 23,
+          "war": 8
+        },
+        {
+          "node": 32,
+          "war": 8
+        },
+        {
+          "node": 38,
+          "war": 8
+        },
+        {
+          "node": 41,
+          "war": 8
+        },
+        {
+          "node": 44,
+          "war": 8
+        },
+        {
+          "node": 50,
+          "war": 8
+        },
+        {
+          "node": 8,
+          "war": 7
+        },
+        {
+          "node": 17,
+          "war": 7
+        },
+        {
+          "node": 23,
+          "war": 7
+        },
+        {
+          "node": 32,
+          "war": 7
+        },
+        {
+          "node": 37,
+          "war": 7
+        },
+        {
+          "node": 44,
+          "war": 7
+        },
+        {
+          "node": 50,
+          "war": 7
+        },
+        {
+          "node": 6,
+          "war": 9
+        },
+        {
+          "node": 15,
+          "war": 9
+        },
+        {
+          "node": 21,
+          "war": 9,
+          "deaths": 1
+        },
+        {
+          "node": 30,
+          "war": 9
+        },
+        {
+          "node": 38,
+          "war": 9
+        },
+        {
+          "node": 42,
+          "war": 9
+        },
+        {
+          "node": 44,
+          "war": 9
+        },
+        {
+          "node": 48,
+          "war": 9
+        },
+        {
+          "node": 50,
+          "war": 9
+        },
+        {
+          "node": 7,
+          "war": 10
+        },
+        {
+          "node": 16,
+          "war": 10
+        },
+        {
+          "node": 25,
+          "war": 10
+        },
+        {
+          "node": 34,
+          "war": 10
+        },
+        {
+          "node": 38,
+          "war": 10
+        },
+        {
+          "node": 40,
+          "war": 10
+        },
+        {
+          "node": 45,
+          "war": 10
+        },
+        {
+          "node": 47,
+          "war": 10
+        },
+        {
+          "node": 8,
+          "war": 11
+        },
+        {
+          "node": 17,
+          "war": 11
+        },
+        {
+          "node": 25,
+          "war": 11
+        },
+        {
+          "node": 34,
+          "war": 11
+        },
+        {
+          "node": 38,
+          "war": 11
+        },
+        {
+          "node": 40,
+          "war": 11
+        },
+        {
+          "node": 8,
+          "war": 12
+        },
+        {
+          "node": 17,
+          "war": 12
+        },
+        {
+          "node": 23,
+          "war": 12,
+          "deaths": 1
+        },
+        {
+          "node": 32,
+          "war": 12
+        },
+        {
+          "node": 39,
+          "war": 12
+        },
+        {
+          "node": 40,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 16,
+        "deaths": 2
+      }
+    },
+    {
+      "player": "Sokin",
+      "entries": [
+        {
+          "node": 4,
+          "war": 1
+        },
+        {
+          "node": 13,
+          "war": 1
+        },
+        {
+          "node": 24,
+          "war": 1
+        },
+        {
+          "node": 33,
+          "war": 1
+        },
+        {},
+        {
+          "node": 4,
+          "war": 1
+        },
+        {
+          "node": 13,
+          "war": 1
+        },
+        {
+          "node": 42,
+          "war": 1
+        },
+        {
+          "node": 5,
+          "war": 1
+        },
+        {
+          "node": 14,
+          "war": 1
+        },
+        {
+          "node": 19,
+          "war": 1
+        },
+        {
+          "node": 28,
+          "war": 1
+        },
+        {
+          "node": 2,
+          "war": 8
+        },
+        {
+          "node": 11,
+          "war": 8
+        },
+        {
+          "node": 19,
+          "war": 8
+        },
+        {
+          "node": 28,
+          "war": 8
+        },
+        {
+          "node": 3,
+          "war": 7
+        },
+        {
+          "node": 12,
+          "war": 7
+        },
+        {
+          "node": 26,
+          "war": 7
+        },
+        {
+          "node": 35,
+          "war": 7
+        },
+        {
+          "node": 5,
+          "war": 9
+        },
+        {
+          "node": 14,
+          "war": 9
+        },
+        {
+          "node": 26,
+          "war": 9
+        },
+        {
+          "node": 35,
+          "war": 9
+        },
+        {
+          "node": 1,
+          "war": 10
+        },
+        {
+          "node": 10,
+          "war": 10
+        },
+        {
+          "node": 3,
+          "war": 11
+        },
+        {
+          "node": 12,
+          "war": 11
+        },
+        {
+          "node": 24,
+          "war": 11
+        },
+        {
+          "node": 33,
+          "war": 11
+        },
+        {
+          "node": 2,
+          "war": 12
+        },
+        {
+          "node": 11,
+          "war": 12
+        },
+        {
+          "node": 26,
+          "war": 12
+        },
+        {
+          "node": 35,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 7,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "Dreamin",
+      "entries": [
+        {
+          "node": 3,
+          "war": 1
+        },
+        {
+          "node": 12,
+          "war": 1
+        },
+        {
+          "node": 38,
+          "war": 1
+        },
+        {},
+        {
+          "node": 3,
+          "war": 1
+        },
+        {
+          "node": 12,
+          "war": 1
+        },
+        {
+          "node": 24,
+          "war": 1
+        },
+        {
+          "node": 33,
+          "war": 1
+        },
+        {
+          "node": 9,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 18,
+          "war": 1
+        },
+        {
+          "node": 24,
+          "war": 1
+        },
+        {
+          "node": 33,
+          "war": 1
+        },
+        {
+          "node": 3,
+          "war": 8
+        },
+        {
+          "node": 12,
+          "war": 8
+        },
+        {
+          "node": 21,
+          "war": 8
+        },
+        {
+          "node": 30,
+          "war": 8
+        },
+        {
+          "node": 18,
+          "war": 7
+        },
+        {
+          "node": 24,
+          "war": 7
+        },
+        {
+          "node": 33,
+          "war": 7
+        },
+        {
+          "node": 7,
+          "war": 9
+        },
+        {
+          "node": 16,
+          "war": 9
+        },
+        {
+          "node": 19,
+          "war": 9
+        },
+        {
+          "node": 28,
+          "war": 9
+        },
+        {
+          "node": 3,
+          "war": 10
+        },
+        {
+          "node": 12,
+          "war": 10
+        },
+        {
+          "node": 26,
+          "war": 10
+        },
+        {
+          "node": 35,
+          "war": 10
+        },
+        {
+          "node": 7,
+          "war": 11
+        },
+        {
+          "node": 16,
+          "war": 11
+        },
+        {
+          "node": 44,
+          "war": 11
+        },
+        {
+          "node": 3,
+          "war": 12
+        },
+        {
+          "node": 12,
+          "war": 12
+        },
+        {
+          "node": 24,
+          "war": 12
+        },
+        {
+          "node": 33,
+          "war": 12
+        },
+        {
+          "node": 44,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 7,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "Infamous",
+      "entries": [
+        {
+          "node": 5,
+          "war": 1
+        },
+        {
+          "node": 14,
+          "war": 1
+        },
+        {
+          "node": 19,
+          "war": 1
+        },
+        {
+          "node": 28,
+          "war": 1
+        },
+        {},
+        {
+          "node": 5,
+          "war": 1
+        },
+        {
+          "node": 14,
+          "war": 1
+        },
+        {
+          "node": 20,
+          "war": 1
+        },
+        {
+          "node": 29,
+          "war": 1
+        },
+        {
+          "node": 44,
+          "war": 1
+        },
+        {
+          "node": 3,
+          "war": 1
+        },
+        {
+          "node": 12,
+          "war": 1
+        },
+        {
+          "node": 26,
+          "war": 1
+        },
+        {
+          "node": 35,
+          "war": 1
+        },
+        {
+          "node": 42,
+          "war": 1
+        },
+        {
+          "node": 9,
+          "deaths": 1,
+          "war": 8
+        },
+        {
+          "node": 18,
+          "war": 8
+        },
+        {
+          "node": 20,
+          "war": 8
+        },
+        {
+          "node": 29,
+          "war": 8
+        },
+        {
+          "node": 37,
+          "war": 8
+        },
+        {
+          "node": 43,
+          "deaths": 1,
+          "war": 8
+        },
+        {
+          "node": 5,
+          "war": 7
+        },
+        {
+          "node": 14,
+          "war": 7
+        },
+        {
+          "node": 48,
+          "war": 7
+        },
+        {
+          "node": 3,
+          "war": 9
+        },
+        {
+          "node": 12,
+          "war": 9
+        },
+        {
+          "node": 2,
+          "war": 10
+        },
+        {
+          "node": 11,
+          "war": 10
+        },
+        {
+          "node": 20,
+          "war": 10
+        },
+        {
+          "node": 29,
+          "war": 10
+        },
+        {
+          "node": 46,
+          "war": 10
+        },
+        {
+          "node": 11,
+          "war": 11
+        },
+        {
+          "node": 19,
+          "war": 11
+        },
+        {
+          "node": 28,
+          "war": 11
+        },
+        {
+          "node": 37,
+          "war": 11
+        },
+        {
+          "node": 6,
+          "war": 12
+        },
+        {
+          "node": 15,
+          "war": 12
+        },
+        {
+          "node": 21,
+          "war": 12
+        },
+        {
+          "node": 30,
+          "war": 12
+        },
+        {
+          "node": 43,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 9,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "Retlaw",
+      "entries": [
+        {
+          "node": 9,
+          "war": 1
+        },
+        {
+          "node": 18,
+          "war": 1
+        },
+        {
+          "node": 22,
+          "war": 1
+        },
+        {
+          "node": 31,
+          "war": 1
+        },
+        {
+          "node": 44,
+          "war": 1
+        },
+        {},
+        {
+          "node": 9,
+          "war": 1
+        },
+        {
+          "node": 18,
+          "war": 1
+        },
+        {
+          "node": 25,
+          "war": 1
+        },
+        {
+          "node": 34,
+          "war": 1
+        },
+        {
+          "node": 7,
+          "war": 1
+        },
+        {
+          "node": 16,
+          "war": 1
+        },
+        {
+          "node": 22,
+          "war": 1
+        },
+        {
+          "node": 31,
+          "war": 1
+        },
+        {
+          "node": 45,
+          "war": 1
+        },
+        {
+          "node": 8,
+          "war": 8
+        },
+        {
+          "node": 17,
+          "war": 8
+        },
+        {
+          "node": 26,
+          "war": 8
+        },
+        {
+          "node": 35,
+          "war": 8
+        },
+        {
+          "node": 40,
+          "war": 8
+        },
+        {
+          "node": 9,
+          "war": 7
+        },
+        {
+          "node": 27,
+          "war": 7
+        },
+        {
+          "node": 36,
+          "war": 7
+        },
+        {
+          "node": 39,
+          "war": 7
+        },
+        {
+          "node": 40,
+          "war": 7
+        },
+        {
+          "node": 45,
+          "war": 7
+        },
+        {
+          "node": 9,
+          "war": 9
+        },
+        {
+          "node": 22,
+          "war": 9
+        },
+        {
+          "node": 31,
+          "war": 9
+        },
+        {
+          "node": 4,
+          "war": 10
+        },
+        {
+          "node": 13,
+          "war": 10
+        },
+        {
+          "node": 21,
+          "war": 10
+        },
+        {
+          "node": 30,
+          "war": 10
+        },
+        {
+          "node": 39,
+          "war": 10
+        },
+        {
+          "node": 50,
+          "war": 10
+        },
+        {
+          "node": 6,
+          "war": 11
+        },
+        {
+          "node": 15,
+          "war": 11
+        },
+        {
+          "node": 21,
+          "war": 11
+        },
+        {
+          "node": 30,
+          "war": 11
+        },
+        {
+          "node": 45,
+          "war": 11
+        },
+        {
+          "node": 49,
+          "war": 11
+        },
+        {
+          "node": 38,
+          "war": 12
+        },
+        {
+          "node": 46,
+          "war": 12
+        },
+        {
+          "node": 48,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 9,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "King BUk",
+      "entries": [
+        {
+          "node": 20,
+          "war": 1
+        },
+        {
+          "node": 29,
+          "war": 1
+        },
+        {
+          "node": 47,
+          "war": 1
+        },
+        {
+          "node": 49,
+          "war": 1
+        },
+        {},
+        {
+          "node": 27,
+          "war": 1
+        },
+        {
+          "node": 36,
+          "war": 1
+        },
+        {
+          "node": 39,
+          "war": 1
+        },
+        {
+          "node": 11,
+          "war": 1
+        },
+        {
+          "node": 20,
+          "war": 1
+        },
+        {
+          "node": 29,
+          "war": 1
+        },
+        {
+          "node": 46,
+          "war": 1
+        },
+        {
+          "node": 1,
+          "war": 8
+        },
+        {
+          "node": 10,
+          "war": 8
+        },
+        {
+          "node": 24,
+          "war": 8
+        },
+        {
+          "node": 39,
+          "war": 8
+        },
+        {
+          "node": 42,
+          "war": 8
+        },
+        {
+          "node": 46,
+          "war": 8
+        },
+        {
+          "node": 6,
+          "war": 7
+        },
+        {
+          "node": 15,
+          "war": 7
+        },
+        {
+          "node": 25,
+          "war": 7
+        },
+        {
+          "node": 34,
+          "war": 7
+        },
+        {
+          "node": 42,
+          "war": 7
+        },
+        {
+          "node": 46,
+          "war": 7
+        },
+        {
+          "node": 8,
+          "war": 9
+        },
+        {
+          "node": 17,
+          "war": 9
+        },
+        {
+          "node": 20,
+          "war": 9
+        },
+        {
+          "node": 29,
+          "war": 9
+        },
+        {
+          "node": 41,
+          "war": 9
+        },
+        {
+          "node": 46,
+          "war": 9
+        },
+        {
+          "node": 48,
+          "war": 9,
+          "deaths": 1
+        },
+        {
+          "node": 19,
+          "war": 10
+        },
+        {
+          "node": 28,
+          "war": 10
+        },
+        {
+          "node": 37,
+          "war": 10,
+          "deaths": 1
+        },
+        {
+          "node": 41,
+          "war": 10
+        },
+        {
+          "node": 44,
+          "war": 10
+        },
+        {
+          "node": 49,
+          "war": 10
+        },
+        {
+          "node": 1,
+          "war": 11
+        },
+        {
+          "node": 10,
+          "war": 11
+        },
+        {
+          "node": 20,
+          "war": 11
+        },
+        {
+          "node": 29,
+          "war": 11
+        },
+        {
+          "node": 41,
+          "war": 11
+        },
+        {
+          "node": 47,
+          "war": 11
+        },
+        {
+          "node": 9,
+          "war": 12,
+          "deaths": 1
+        },
+        {
+          "node": 18,
+          "war": 12
+        },
+        {
+          "node": 27,
+          "war": 12
+        },
+        {
+          "node": 36,
+          "war": 12
+        },
+        {
+          "node": 42,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 7,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "Andy",
+      "entries": [
+        {
+          "node": 6,
+          "war": 1
+        },
+        {
+          "node": 15,
+          "war": 1
+        },
+        {
+          "node": 26,
+          "war": 1
+        },
+        {
+          "node": 35,
+          "war": 1
+        },
+        {
+          "node": 40,
+          "war": 1
+        },
+        {},
+        {
+          "node": 7,
+          "war": 1
+        },
+        {
+          "node": 16,
+          "war": 1
+        },
+        {
+          "node": 26,
+          "war": 1
+        },
+        {
+          "node": 35,
+          "war": 1
+        },
+        {
+          "node": 1,
+          "war": 1
+        },
+        {
+          "node": 10,
+          "war": 1
+        },
+        {
+          "node": 25,
+          "war": 1
+        },
+        {
+          "node": 34,
+          "war": 1
+        },
+        {
+          "node": 38,
+          "war": 1
+        },
+        {
+          "node": 4,
+          "war": 8
+        },
+        {
+          "node": 13,
+          "war": 8
+        },
+        {
+          "node": 33,
+          "war": 8
+        },
+        {
+          "node": 1,
+          "war": 7
+        },
+        {
+          "node": 10,
+          "war": 7
+        },
+        {
+          "node": 19,
+          "war": 7
+        },
+        {
+          "node": 28,
+          "war": 7
+        },
+        {
+          "node": 1,
+          "war": 9
+        },
+        {
+          "node": 10,
+          "war": 9
+        },
+        {
+          "node": 24,
+          "war": 9
+        },
+        {
+          "node": 33,
+          "war": 9
+        },
+        {
+          "node": 45,
+          "war": 9
+        },
+        {
+          "node": 5,
+          "war": 10
+        },
+        {
+          "node": 14,
+          "war": 10
+        },
+        {
+          "node": 24,
+          "war": 10
+        },
+        {
+          "node": 33,
+          "war": 10
+        },
+        {
+          "node": 9,
+          "war": 11
+        },
+        {
+          "node": 18,
+          "war": 11
+        },
+        {
+          "node": 26,
+          "war": 11
+        },
+        {
+          "node": 35,
+          "war": 11
+        },
+        {
+          "node": 1,
+          "war": 12
+        },
+        {
+          "node": 10,
+          "war": 12
+        },
+        {
+          "node": 19,
+          "war": 12
+        },
+        {
+          "node": 28,
+          "war": 12,
+          "deaths": 1
+        }
+      ],
+      "summary": {
+        "kills": 9,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "Stone",
+      "entries": [
+        {
+          "node": 7,
+          "war": 1
+        },
+        {
+          "node": 16,
+          "war": 1
+        },
+        {
+          "node": 25,
+          "war": 1
+        },
+        {
+          "node": 34,
+          "war": 1
+        },
+        {
+          "node": 42,
+          "war": 1
+        },
+        {
+          "node": 45,
+          "war": 1
+        },
+        {
+          "node": 50,
+          "deaths": 1,
+          "war": 1
+        },
+        {},
+        {
+          "node": 2,
+          "war": 1
+        },
+        {
+          "node": 11,
+          "war": 1
+        },
+        {
+          "node": 19,
+          "war": 1
+        },
+        {
+          "node": 28,
+          "war": 1
+        },
+        {
+          "node": 37,
+          "war": 1
+        },
+        {
+          "node": 40,
+          "war": 1
+        },
+        {
+          "node": 43,
+          "war": 1
+        },
+        {
+          "node": 46,
+          "war": 1
+        },
+        {
+          "node": 48,
+          "war": 1
+        },
+        {
+          "node": 4,
+          "war": 1
+        },
+        {
+          "node": 13,
+          "war": 1
+        },
+        {
+          "node": 27,
+          "war": 1
+        },
+        {
+          "node": 36,
+          "war": 1
+        },
+        {
+          "node": 39,
+          "war": 1
+        },
+        {
+          "node": 41,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 49,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 7,
+          "war": 8
+        },
+        {
+          "node": 16,
+          "war": 8
+        },
+        {
+          "node": 27,
+          "war": 8
+        },
+        {
+          "node": 36,
+          "war": 8
+        },
+        {
+          "node": 45,
+          "war": 8
+        },
+        {
+          "node": 47,
+          "war": 8
+        },
+        {
+          "node": 49,
+          "war": 8
+        },
+        {
+          "node": 7,
+          "war": 7
+        },
+        {
+          "node": 16,
+          "war": 7
+        },
+        {
+          "node": 22,
+          "war": 7
+        },
+        {
+          "node": 31,
+          "war": 7
+        },
+        {
+          "node": 38,
+          "war": 7
+        },
+        {
+          "node": 43,
+          "war": 7
+        },
+        {
+          "node": 47,
+          "war": 7
+        },
+        {
+          "node": 49,
+          "war": 7
+        },
+        {
+          "node": 2,
+          "war": 9
+        },
+        {
+          "node": 11,
+          "war": 9
+        },
+        {
+          "node": 27,
+          "war": 9
+        },
+        {
+          "node": 36,
+          "war": 9
+        },
+        {
+          "node": 37,
+          "war": 9
+        },
+        {
+          "node": 40,
+          "war": 9
+        },
+        {
+          "node": 47,
+          "war": 9,
+          "deaths": 1
+        },
+        {
+          "node": 9,
+          "war": 10
+        },
+        {
+          "node": 18,
+          "war": 10
+        },
+        {
+          "node": 27,
+          "war": 10
+        },
+        {
+          "node": 36,
+          "war": 10
+        },
+        {
+          "node": 42,
+          "war": 10
+        },
+        {
+          "node": 43,
+          "war": 10
+        },
+        {
+          "node": 5,
+          "war": 11
+        },
+        {
+          "node": 14,
+          "war": 11
+        },
+        {
+          "node": 27,
+          "war": 11
+        },
+        {
+          "node": 36,
+          "war": 11
+        },
+        {
+          "node": 39,
+          "war": 11
+        },
+        {
+          "node": 42,
+          "war": 11
+        },
+        {
+          "node": 43,
+          "war": 11
+        },
+        {
+          "node": 46,
+          "war": 11
+        },
+        {
+          "node": 48,
+          "war": 11
+        },
+        {
+          "node": 50,
+          "war": 11
+        },
+        {
+          "node": 7,
+          "war": 12
+        },
+        {
+          "node": 16,
+          "war": 12
+        },
+        {
+          "node": 25,
+          "war": 12
+        },
+        {
+          "node": 34,
+          "war": 12
+        },
+        {
+          "node": 37,
+          "war": 12
+        },
+        {
+          "node": 41,
+          "war": 12
+        },
+        {
+          "node": 45,
+          "war": 12
+        },
+        {
+          "node": 47,
+          "war": 12
+        },
+        {
+          "node": 49,
+          "war": 12
+        },
+        {
+          "node": 50,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 16,
+        "deaths": 1
+      }
+    },
+    {
+      "player": "Skywalker",
+      "entries": [
+        {
+          "node": 2,
+          "war": 1
+        },
+        {
+          "node": 11,
+          "war": 1
+        },
+        {
+          "node": 21,
+          "war": 1
+        },
+        {
+          "node": 30,
+          "war": 1
+        },
+        {
+          "node": 39,
+          "war": 1
+        },
+        {
+          "node": 41,
+          "war": 1
+        },
+        {},
+        {
+          "node": 6,
+          "war": 1
+        },
+        {
+          "node": 15,
+          "war": 1
+        },
+        {
+          "node": 21,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 30,
+          "war": 1
+        },
+        {
+          "node": 50,
+          "war": 1
+        },
+        {
+          "node": 2,
+          "war": 1
+        },
+        {
+          "node": 21,
+          "war": 1
+        },
+        {
+          "node": 30,
+          "war": 1
+        },
+        {
+          "node": 48,
+          "war": 1
+        },
+        {
+          "node": 22,
+          "war": 8
+        },
+        {
+          "node": 31,
+          "war": 8
+        },
+        {
+          "node": 48,
+          "war": 8
+        },
+        {
+          "node": 4,
+          "war": 7
+        },
+        {
+          "node": 13,
+          "war": 7
+        },
+        {
+          "node": 21,
+          "war": 7,
+          "deaths": 1
+        },
+        {
+          "node": 30,
+          "war": 7
+        },
+        {
+          "node": 41,
+          "war": 7
+        },
+        {
+          "node": 4,
+          "war": 9
+        },
+        {
+          "node": 13,
+          "war": 9
+        },
+        {
+          "node": 23,
+          "war": 9
+        },
+        {
+          "node": 32,
+          "war": 9
+        },
+        {
+          "node": 39,
+          "war": 9
+        },
+        {
+          "node": 6,
+          "war": 10
+        },
+        {
+          "node": 15,
+          "war": 10
+        },
+        {
+          "node": 22,
+          "war": 10
+        },
+        {
+          "node": 31,
+          "war": 10
+        },
+        {
+          "node": 4,
+          "war": 11
+        },
+        {
+          "node": 13,
+          "war": 11
+        },
+        {
+          "node": 23,
+          "war": 11
+        },
+        {
+          "node": 32,
+          "war": 11
+        },
+        {
+          "node": 4,
+          "war": 12
+        },
+        {
+          "node": 13,
+          "war": 12
+        },
+        {
+          "node": 20,
+          "war": 12
+        },
+        {
+          "node": 29,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 11,
+        "deaths": 1
+      }
+    },
+    {
+      "player": "Avalon",
+      "entries": [
+        {
+          "node": 1,
+          "war": 1
+        },
+        {
+          "node": 10,
+          "war": 1
+        },
+        {
+          "node": 27,
+          "war": 1
+        },
+        {
+          "node": 36,
+          "war": 1
+        },
+        {
+          "node": 43,
+          "war": 1
+        },
+        {},
+        {
+          "node": 8,
+          "war": 1
+        },
+        {
+          "node": 17,
+          "war": 1
+        },
+        {
+          "node": 22,
+          "war": 1
+        },
+        {
+          "node": 31,
+          "war": 1
+        },
+        {
+          "node": 8,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 17,
+          "war": 1
+        },
+        {
+          "node": 43,
+          "war": 1
+        },
+        {
+          "node": 6,
+          "war": 8
+        },
+        {
+          "node": 15,
+          "war": 8
+        },
+        {
+          "node": 25,
+          "deaths": 1,
+          "war": 8
+        },
+        {
+          "node": 34,
+          "war": 8
+        },
+        {
+          "node": 2,
+          "war": 7
+        },
+        {
+          "node": 11,
+          "war": 7
+        },
+        {
+          "node": 20,
+          "war": 7
+        },
+        {
+          "node": 29,
+          "war": 7
+        },
+        {
+          "node": 18,
+          "war": 9
+        },
+        {
+          "node": 25,
+          "war": 9
+        },
+        {
+          "node": 34,
+          "war": 9
+        },
+        {
+          "node": 43,
+          "war": 9,
+          "deaths": 1
+        },
+        {
+          "node": 8,
+          "war": 10
+        },
+        {
+          "node": 17,
+          "war": 10
+        },
+        {
+          "node": 23,
+          "war": 10
+        },
+        {
+          "node": 32,
+          "war": 10
+        },
+        {
+          "node": 48,
+          "war": 10
+        },
+        {
+          "node": 2,
+          "war": 11
+        },
+        {
+          "node": 22,
+          "war": 11
+        },
+        {
+          "node": 31,
+          "war": 11
+        },
+        {
+          "node": 5,
+          "war": 12
+        },
+        {
+          "node": 14,
+          "war": 12
+        },
+        {
+          "node": 22,
+          "war": 12
+        },
+        {
+          "node": 31,
+          "war": 12,
+          "deaths": 2
+        }
+      ],
+      "summary": {
+        "kills": 9,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "Marshy",
+      "entries": [
+        {
+          "node": 3,
+          "war": 1
+        },
+        {
+          "node": 12,
+          "war": 1
+        },
+        {
+          "node": 23,
+          "war": 1
+        },
+        {
+          "node": 32,
+          "war": 1
+        },
+        {
+          "node": 42,
+          "war": 1
+        },
+        {
+          "node": 45,
+          "war": 1
+        },
+        {
+          "node": 46,
+          "war": 1
+        },
+        {
+          "node": 50,
+          "war": 1
+        },
+        {},
+        {
+          "node": 5,
+          "war": 1
+        },
+        {
+          "node": 14,
+          "war": 1
+        },
+        {
+          "node": 19,
+          "war": 1
+        },
+        {
+          "node": 28,
+          "war": 1
+        },
+        {
+          "node": 47,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 49,
+          "war": 1
+        },
+        {
+          "node": 9,
+          "war": 1
+        },
+        {
+          "node": 18,
+          "war": 1
+        },
+        {
+          "node": 20,
+          "war": 1
+        },
+        {
+          "node": 29,
+          "war": 1
+        },
+        {
+          "node": 37,
+          "war": 1
+        },
+        {
+          "node": 3,
+          "war": 8
+        },
+        {
+          "node": 12,
+          "war": 8
+        },
+        {
+          "node": 21,
+          "war": 8
+        },
+        {
+          "node": 30,
+          "war": 8
+        },
+        {
+          "node": 37,
+          "war": 8
+        },
+        {
+          "node": 41,
+          "war": 8
+        },
+        {
+          "node": 43,
+          "war": 8
+        },
+        {
+          "node": 49,
+          "deaths": 1,
+          "war": 8
+        },
+        {
+          "node": 8,
+          "war": 7
+        },
+        {
+          "node": 17,
+          "war": 7
+        },
+        {
+          "node": 27,
+          "war": 7
+        },
+        {
+          "node": 44,
+          "war": 7
+        },
+        {
+          "node": 17,
+          "war": 9
+        },
+        {
+          "node": 22,
+          "war": 9,
+          "deaths": 1
+        },
+        {
+          "node": 31,
+          "war": 9
+        },
+        {
+          "node": 2,
+          "war": 10
+        },
+        {
+          "node": 11,
+          "war": 10
+        },
+        {
+          "node": 24,
+          "war": 10
+        },
+        {
+          "node": 33,
+          "war": 10
+        },
+        {
+          "node": 40,
+          "war": 10
+        },
+        {
+          "node": 47,
+          "war": 10
+        },
+        {
+          "node": 49,
+          "war": 10
+        },
+        {
+          "node": 50,
+          "war": 10
+        },
+        {
+          "node": 8,
+          "war": 11
+        },
+        {
+          "node": 17,
+          "war": 11
+        },
+        {
+          "node": 22,
+          "war": 11,
+          "deaths": 1
+        },
+        {
+          "node": 31,
+          "war": 11
+        },
+        {
+          "node": 41,
+          "war": 11,
+          "deaths": 1
+        },
+        {
+          "node": 3,
+          "war": 12
+        },
+        {
+          "node": 12,
+          "war": 12
+        },
+        {
+          "node": 21,
+          "war": 12
+        },
+        {
+          "node": 30,
+          "war": 12
+        },
+        {
+          "node": 43,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 14,
+        "deaths": 1
+      }
+    },
+    {
+      "player": "Steel",
+      "entries": [
+        {
+          "node": 1,
+          "war": 1
+        },
+        {
+          "node": 10,
+          "war": 1
+        },
+        {
+          "node": 21,
+          "war": 1
+        },
+        {
+          "node": 30,
+          "war": 1
+        },
+        {
+          "node": 37,
+          "war": 1
+        },
+        {
+          "node": 44,
+          "war": 1
+        },
+        {
+          "node": 47,
+          "war": 1
+        },
+        {},
+        {
+          "node": 9,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 18,
+          "war": 1
+        },
+        {
+          "node": 22,
+          "war": 1
+        },
+        {
+          "node": 31,
+          "war": 1
+        },
+        {
+          "node": 39,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 40,
+          "war": 1
+        },
+        {
+          "node": 2,
+          "war": 1
+        },
+        {
+          "node": 11,
+          "war": 1
+        },
+        {
+          "node": 26,
+          "war": 1
+        },
+        {
+          "node": 35,
+          "war": 1
+        },
+        {
+          "node": 44,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 46,
+          "war": 1
+        },
+        {
+          "node": 48,
+          "war": 1
+        },
+        {
+          "node": 9,
+          "war": 8
+        },
+        {
+          "node": 18,
+          "war": 8
+        },
+        {
+          "node": 24,
+          "war": 8
+        },
+        {
+          "node": 33,
+          "war": 8
+        },
+        {
+          "node": 39,
+          "war": 8
+        },
+        {
+          "node": 9,
+          "war": 7
+        },
+        {
+          "node": 18,
+          "war": 7
+        },
+        {
+          "node": 24,
+          "war": 7
+        },
+        {
+          "node": 33,
+          "war": 7
+        },
+        {
+          "node": 42,
+          "war": 7
+        },
+        {
+          "node": 4,
+          "war": 9
+        },
+        {
+          "node": 13,
+          "war": 9
+        },
+        {
+          "node": 36,
+          "war": 9
+        },
+        {
+          "node": 42,
+          "war": 9
+        },
+        {
+          "node": 45,
+          "war": 9
+        },
+        {
+          "node": 3,
+          "war": 10,
+          "deaths": 1
+        },
+        {
+          "node": 12,
+          "war": 10
+        },
+        {
+          "node": 20,
+          "war": 10
+        },
+        {
+          "node": 29,
+          "war": 10
+        },
+        {
+          "node": 37,
+          "war": 10
+        },
+        {
+          "node": 2,
+          "war": 11
+        },
+        {
+          "node": 11,
+          "war": 11
+        },
+        {
+          "node": 27,
+          "war": 11
+        },
+        {
+          "node": 36,
+          "war": 11
+        },
+        {
+          "node": 45,
+          "war": 11
+        },
+        {
+          "node": 46,
+          "war": 11
+        },
+        {
+          "node": 7,
+          "war": 12
+        },
+        {
+          "node": 16,
+          "war": 12
+        },
+        {
+          "node": 27,
+          "war": 12
+        },
+        {
+          "node": 36,
+          "war": 12
+        },
+        {
+          "node": 38,
+          "war": 12
+        },
+        {
+          "node": 48,
+          "war": 12,
+          "deaths": 1
+        }
+      ],
+      "summary": {
+        "kills": 13,
+        "deaths": 2
+      }
+    },
+    {
+      "player": "Praetor",
+      "entries": [
+        {
+          "node": 8,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 17,
+          "war": 1
+        },
+        {
+          "node": 22,
+          "war": 1
+        },
+        {
+          "node": 31,
+          "war": 1
+        },
+        {},
+        {
+          "node": 42,
+          "war": 1
+        },
+        {
+          "node": 48,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 3,
+          "war": 1
+        },
+        {
+          "node": 12,
+          "war": 1
+        },
+        {
+          "node": 25,
+          "war": 1
+        },
+        {
+          "node": 34,
+          "war": 1
+        },
+        {
+          "node": 42,
+          "war": 1
+        },
+        {
+          "node": 7,
+          "war": 8
+        },
+        {
+          "node": 22,
+          "war": 8
+        },
+        {
+          "node": 31,
+          "war": 8
+        },
+        {
+          "node": 14,
+          "war": 7,
+          "deaths": 1
+        },
+        {
+          "node": 22,
+          "war": 7
+        },
+        {
+          "node": 31,
+          "war": 7
+        },
+        {
+          "node": 9,
+          "war": 9
+        },
+        {
+          "node": 18,
+          "war": 9
+        },
+        {
+          "node": 23,
+          "war": 9
+        },
+        {
+          "node": 32,
+          "war": 9
+        },
+        {
+          "node": 38,
+          "war": 9
+        },
+        {
+          "node": 6,
+          "war": 10
+        },
+        {
+          "node": 15,
+          "war": 10
+        },
+        {
+          "node": 39,
+          "war": 10
+        },
+        {
+          "node": 4,
+          "war": 11
+        },
+        {
+          "node": 13,
+          "war": 11
+        },
+        {
+          "node": 21,
+          "war": 11
+        },
+        {
+          "node": 30,
+          "war": 11
+        },
+        {
+          "node": 4,
+          "war": 12
+        },
+        {
+          "node": 13,
+          "war": 12
+        },
+        {
+          "node": 22,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 6,
+        "deaths": 2
+      }
+    },
+    {
+      "player": "Zkittlez",
+      "entries": [
+        {
+          "node": 6,
+          "war": 1
+        },
+        {
+          "node": 15,
+          "war": 1
+        },
+        {},
+        {
+          "node": 2,
+          "war": 1
+        },
+        {
+          "node": 11,
+          "war": 1
+        },
+        {
+          "node": 24,
+          "war": 1
+        },
+        {
+          "node": 33,
+          "war": 1
+        },
+        {
+          "node": 4,
+          "war": 1
+        },
+        {
+          "node": 13,
+          "war": 1
+        },
+        {
+          "node": 21,
+          "war": 1
+        },
+        {
+          "node": 30,
+          "war": 1
+        },
+        {
+          "node": 47,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 6,
+          "war": 8
+        },
+        {
+          "node": 15,
+          "war": 8
+        },
+        {
+          "node": 5,
+          "war": 7
+        },
+        {
+          "node": 19,
+          "war": 7
+        },
+        {
+          "node": 28,
+          "war": 7
+        },
+        {
+          "node": 38,
+          "war": 7
+        },
+        {
+          "node": 40,
+          "war": 7
+        },
+        {
+          "node": 45,
+          "war": 7
+        },
+        {
+          "node": 1,
+          "war": 9
+        },
+        {
+          "node": 10,
+          "war": 9
+        },
+        {
+          "node": 24,
+          "war": 9
+        },
+        {
+          "node": 33,
+          "war": 9
+        },
+        {
+          "node": 1,
+          "war": 10
+        },
+        {
+          "node": 10,
+          "war": 10
+        },
+        {
+          "node": 25,
+          "war": 10
+        },
+        {
+          "node": 34,
+          "war": 10
+        },
+        {
+          "node": 1,
+          "war": 11
+        },
+        {
+          "node": 10,
+          "war": 11
+        },
+        {
+          "node": 25,
+          "war": 11
+        },
+        {
+          "node": 34,
+          "war": 11
+        },
+        {
+          "node": 1,
+          "war": 12
+        },
+        {
+          "node": 10,
+          "war": 12
+        },
+        {
+          "node": 25,
+          "war": 12
+        },
+        {
+          "node": 34,
+          "war": 12
+        },
+        {
+          "node": 47,
+          "war": 12,
+          "deaths": 1
+        }
+      ],
+      "summary": {
+        "kills": 6,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "JWill",
+      "entries": [
+        {
+          "node": 7,
+          "war": 1
+        },
+        {
+          "node": 16,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 24,
+          "war": 1
+        },
+        {
+          "node": 33,
+          "war": 1
+        },
+        {
+          "node": 49,
+          "war": 1
+        },
+        {},
+        {
+          "node": 7,
+          "war": 1
+        },
+        {
+          "node": 16,
+          "war": 1
+        },
+        {
+          "node": 23,
+          "war": 1
+        },
+        {
+          "node": 32,
+          "war": 1
+        },
+        {
+          "node": 43,
+          "war": 1
+        },
+        {
+          "node": 5,
+          "war": 1
+        },
+        {
+          "node": 14,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 36,
+          "war": 1
+        },
+        {
+          "node": 39,
+          "war": 1
+        },
+        {
+          "node": 43,
+          "deaths": 1,
+          "war": 1
+        },
+        {
+          "node": 49,
+          "war": 1
+        },
+        {
+          "node": 16,
+          "war": 8
+        },
+        {
+          "node": 23,
+          "war": 8
+        },
+        {
+          "node": 32,
+          "war": 8
+        },
+        {
+          "node": 42,
+          "war": 8
+        },
+        {
+          "node": 6,
+          "war": 7
+        },
+        {
+          "node": 15,
+          "war": 7
+        },
+        {
+          "node": 23,
+          "war": 7
+        },
+        {
+          "node": 32,
+          "war": 7,
+          "deaths": 1
+        },
+        {
+          "node": 50,
+          "war": 7
+        },
+        {
+          "node": 8,
+          "war": 9,
+          "deaths": 1
+        },
+        {
+          "node": 25,
+          "war": 9
+        },
+        {
+          "node": 34,
+          "war": 9
+        },
+        {
+          "node": 43,
+          "war": 9
+        },
+        {
+          "node": 50,
+          "war": 9
+        },
+        {
+          "node": 4,
+          "war": 10
+        },
+        {
+          "node": 13,
+          "war": 10
+        },
+        {
+          "node": 23,
+          "war": 10
+        },
+        {
+          "node": 32,
+          "war": 10
+        },
+        {
+          "node": 42,
+          "war": 10
+        },
+        {
+          "node": 7,
+          "war": 11
+        },
+        {
+          "node": 16,
+          "war": 11
+        },
+        {
+          "node": 42,
+          "war": 11
+        },
+        {
+          "node": 49,
+          "war": 11
+        },
+        {
+          "node": 26,
+          "war": 12
+        },
+        {
+          "node": 35,
+          "war": 12
+        },
+        {
+          "node": 42,
+          "war": 12
+        },
+        {
+          "node": 50,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 10,
+        "deaths": 1
+      }
+    },
+    {
+      "player": "Hazza",
+      "entries": [
+        {
+          "node": 5
+        },
+        {
+          "node": 27
+        },
+        {
+          "node": 36
+        },
+        {},
+        {
+          "node": 4
+        },
+        {
+          "node": 13
+        },
+        {
+          "node": 27
+        },
+        {
+          "node": 36
+        },
+        {
+          "node": 44
+        },
+        {
+          "node": 1
+        },
+        {
+          "node": 10
+        },
+        {
+          "node": 24
+        },
+        {
+          "node": 33
+        },
+        {
+          "node": 2,
+          "war": 8
+        },
+        {
+          "node": 11,
+          "war": 8
+        },
+        {
+          "node": 27,
+          "war": 8
+        },
+        {
+          "node": 36,
+          "war": 8
+        },
+        {
+          "node": 44,
+          "war": 8
+        },
+        {
+          "node": 47,
+          "war": 8
+        },
+        {
+          "node": 1,
+          "war": 7
+        },
+        {
+          "node": 10,
+          "war": 7
+        },
+        {
+          "node": 21,
+          "war": 7
+        },
+        {
+          "node": 30,
+          "war": 7
+        },
+        {
+          "node": 37,
+          "war": 7
+        },
+        {
+          "node": 43,
+          "war": 7
+        },
+        {
+          "node": 7,
+          "war": 9
+        },
+        {
+          "node": 16,
+          "war": 9
+        },
+        {
+          "node": 19,
+          "war": 9
+        },
+        {
+          "node": 28,
+          "war": 9
+        },
+        {
+          "node": 44,
+          "war": 9
+        },
+        {
+          "node": 47,
+          "war": 9
+        },
+        {
+          "node": 49,
+          "war": 9
+        },
+        {
+          "node": 7,
+          "war": 10
+        },
+        {
+          "node": 16,
+          "war": 10
+        },
+        {
+          "node": 19,
+          "war": 10
+        },
+        {
+          "node": 28,
+          "war": 10
+        },
+        {
+          "node": 45,
+          "war": 10
+        },
+        {
+          "node": 19,
+          "war": 11
+        },
+        {
+          "node": 28,
+          "war": 11
+        },
+        {
+          "node": 39,
+          "war": 11
+        },
+        {
+          "node": 43,
+          "war": 11
+        },
+        {
+          "node": 9,
+          "war": 12
+        },
+        {
+          "node": 18,
+          "war": 12
+        },
+        {
+          "node": 24,
+          "war": 12
+        },
+        {
+          "node": 33,
+          "war": 12
+        },
+        {
+          "node": 44,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 8,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "Voltaic",
+      "entries": [
+        {
+          "node": 14
+        },
+        {
+          "node": 26
+        },
+        {
+          "node": 35,
+          "deaths": 1
+        },
+        {
+          "node": 40
+        },
+        {},
+        {
+          "node": 1
+        },
+        {
+          "node": 10
+        },
+        {
+          "node": 26
+        },
+        {
+          "node": 35
+        },
+        {
+          "node": 37
+        },
+        {
+          "node": 6
+        },
+        {
+          "node": 15
+        },
+        {
+          "node": 23
+        },
+        {
+          "node": 32
+        },
+        {
+          "node": 40
+        },
+        {
+          "node": 1,
+          "war": 8
+        },
+        {
+          "node": 10,
+          "war": 8
+        },
+        {
+          "node": 20,
+          "war": 8
+        },
+        {
+          "node": 29,
+          "war": 8
+        },
+        {
+          "node": 2,
+          "war": 7
+        },
+        {
+          "node": 11,
+          "war": 7
+        },
+        {
+          "node": 20,
+          "war": 7
+        },
+        {
+          "node": 29,
+          "war": 7
+        },
+        {
+          "node": 41,
+          "war": 7
+        },
+        {
+          "node": 5,
+          "war": 9
+        },
+        {
+          "node": 14,
+          "war": 9
+        },
+        {
+          "node": 20,
+          "war": 9
+        },
+        {
+          "node": 29,
+          "war": 9
+        },
+        {
+          "node": 39,
+          "war": 9
+        },
+        {
+          "node": 21,
+          "war": 10
+        },
+        {
+          "node": 30,
+          "war": 10
+        },
+        {
+          "node": 43,
+          "war": 10
+        },
+        {
+          "node": 5,
+          "war": 11
+        },
+        {
+          "node": 14,
+          "war": 11
+        },
+        {
+          "node": 24,
+          "war": 11
+        },
+        {
+          "node": 33,
+          "war": 11
+        },
+        {
+          "node": 6,
+          "war": 12
+        },
+        {
+          "node": 15,
+          "war": 12
+        },
+        {
+          "node": 31,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 9,
+        "deaths": 1
+      }
+    },
+    {
+      "player": "Fort",
+      "entries": [
+        {
+          "node": 9,
+          "deaths": 1
+        },
+        {
+          "node": 18
+        },
+        {
+          "node": 19
+        },
+        {
+          "node": 28
+        },
+        {
+          "node": 39
+        },
+        {
+          "node": 43
+        },
+        {
+          "node": 48
+        },
+        {},
+        {
+          "node": 8
+        },
+        {
+          "node": 17
+        },
+        {
+          "node": 25
+        },
+        {
+          "node": 34
+        },
+        {
+          "node": 41
+        },
+        {
+          "node": 22
+        },
+        {
+          "node": 31
+        },
+        {
+          "node": 8,
+          "war": 8
+        },
+        {
+          "node": 17,
+          "war": 8
+        },
+        {
+          "node": 25,
+          "war": 8
+        },
+        {
+          "node": 34,
+          "war": 8
+        },
+        {
+          "node": 38,
+          "war": 8
+        },
+        {
+          "node": 46,
+          "war": 8
+        },
+        {
+          "node": 48,
+          "war": 8
+        },
+        {
+          "node": 3,
+          "war": 7
+        },
+        {
+          "node": 12,
+          "war": 7
+        },
+        {
+          "node": 26,
+          "war": 7
+        },
+        {
+          "node": 35,
+          "war": 7
+        },
+        {
+          "node": 39,
+          "war": 7
+        },
+        {
+          "node": 49,
+          "war": 7,
+          "deaths": 1
+        },
+        {
+          "node": 2,
+          "war": 9
+        },
+        {
+          "node": 11,
+          "war": 9
+        },
+        {
+          "node": 27,
+          "war": 9
+        },
+        {
+          "node": 37,
+          "war": 9
+        },
+        {
+          "node": 41,
+          "war": 9
+        },
+        {
+          "node": 9,
+          "war": 10
+        },
+        {
+          "node": 18,
+          "war": 10
+        },
+        {
+          "node": 26,
+          "war": 10
+        },
+        {
+          "node": 35,
+          "war": 10
+        },
+        {
+          "node": 3,
+          "war": 11
+        },
+        {
+          "node": 12,
+          "war": 11
+        },
+        {
+          "node": 23,
+          "war": 11
+        },
+        {
+          "node": 32,
+          "war": 11
+        },
+        {
+          "node": 37,
+          "war": 11
+        },
+        {
+          "node": 44,
+          "war": 11
+        },
+        {
+          "node": 48,
+          "war": 11
+        },
+        {
+          "node": 8,
+          "war": 12
+        },
+        {
+          "node": 17,
+          "war": 12
+        },
+        {
+          "node": 23,
+          "war": 12
+        },
+        {
+          "node": 32,
+          "war": 12
+        },
+        {
+          "node": 39,
+          "war": 12
+        },
+        {
+          "node": 40,
+          "war": 12
+        },
+        {
+          "node": 45,
+          "war": 12
+        },
+        {
+          "node": 49,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 12,
+        "deaths": 1
+      }
+    },
+    {
+      "player": "Nomis",
+      "entries": [
+        {
+          "node": 4
+        },
+        {
+          "node": 13
+        },
+        {
+          "node": 20
+        },
+        {
+          "node": 29
+        },
+        {
+          "node": 38
+        },
+        {},
+        {
+          "node": 6
+        },
+        {
+          "node": 15
+        },
+        {
+          "node": 21
+        },
+        {
+          "node": 30
+        },
+        {
+          "node": 38
+        },
+        {
+          "node": 45
+        },
+        {
+          "node": 46
+        },
+        {
+          "node": 50
+        },
+        {
+          "node": 8
+        },
+        {
+          "node": 17
+        },
+        {
+          "node": 19
+        },
+        {
+          "node": 28
+        },
+        {
+          "node": 41
+        },
+        {
+          "node": 45
+        },
+        {
+          "node": 50
+        },
+        {
+          "node": 4,
+          "war": 8
+        },
+        {
+          "node": 13,
+          "war": 8
+        },
+        {
+          "node": 19,
+          "war": 8
+        },
+        {
+          "node": 28,
+          "war": 8
+        },
+        {
+          "node": 40,
+          "war": 8
+        },
+        {
+          "node": 45,
+          "war": 8
+        },
+        {
+          "node": 50,
+          "war": 8
+        },
+        {
+          "node": 4,
+          "war": 7
+        },
+        {
+          "node": 13,
+          "war": 7
+        },
+        {
+          "node": 25,
+          "war": 7,
+          "deaths": 1
+        },
+        {
+          "node": 34,
+          "war": 7
+        },
+        {
+          "node": 46,
+          "war": 7
+        },
+        {
+          "node": 48,
+          "war": 7,
+          "deaths": 1
+        },
+        {
+          "node": 6,
+          "war": 9
+        },
+        {
+          "node": 15,
+          "war": 9
+        },
+        {
+          "node": 26,
+          "war": 9
+        },
+        {
+          "node": 35,
+          "war": 9
+        },
+        {
+          "node": 40,
+          "war": 9
+        },
+        {
+          "node": 46,
+          "war": 9
+        },
+        {
+          "node": 48,
+          "war": 9
+        },
+        {
+          "node": 8,
+          "war": 10
+        },
+        {
+          "node": 17,
+          "war": 10
+        },
+        {
+          "node": 22,
+          "war": 10
+        },
+        {
+          "node": 31,
+          "war": 10
+        },
+        {
+          "node": 38,
+          "war": 10
+        },
+        {
+          "node": 41,
+          "war": 10,
+          "deaths": 1
+        },
+        {
+          "node": 44,
+          "war": 10,
+          "deaths": 1
+        },
+        {
+          "node": 46,
+          "war": 10
+        },
+        {
+          "node": 48,
+          "war": 10
+        },
+        {
+          "node": 6,
+          "war": 11
+        },
+        {
+          "node": 15,
+          "war": 11
+        },
+        {
+          "node": 26,
+          "war": 11
+        },
+        {
+          "node": 35,
+          "war": 11
+        },
+        {
+          "node": 38,
+          "war": 11
+        },
+        {
+          "node": 40,
+          "war": 11
+        },
+        {
+          "node": 47,
+          "war": 11
+        },
+        {
+          "node": 50,
+          "war": 11
+        },
+        {
+          "node": 5,
+          "war": 12
+        },
+        {
+          "node": 14,
+          "war": 12
+        },
+        {
+          "node": 20,
+          "war": 12
+        },
+        {
+          "node": 29,
+          "war": 12
+        },
+        {
+          "node": 41,
+          "war": 12
+        },
+        {
+          "node": 46,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 13,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "Chupa",
+      "entries": [
+        {
+          "node": 2
+        },
+        {
+          "node": 11
+        },
+        {
+          "node": 25
+        },
+        {
+          "node": 34
+        },
+        {
+          "node": 41
+        },
+        {},
+        {
+          "node": 3,
+          "deaths": 1
+        },
+        {
+          "node": 12,
+          "deaths": 1
+        },
+        {
+          "node": 20
+        },
+        {
+          "node": 29,
+          "deaths": 1
+        },
+        {
+          "node": 7,
+          "war": 8
+        },
+        {
+          "node": 16,
+          "war": 8
+        },
+        {
+          "node": 27,
+          "war": 8
+        },
+        {
+          "node": 38,
+          "war": 8
+        },
+        {
+          "node": 7,
+          "war": 7
+        },
+        {
+          "node": 16,
+          "war": 7
+        },
+        {
+          "node": 36,
+          "war": 7
+        },
+        {
+          "node": 47,
+          "war": 7
+        }
+      ],
+      "summary": {
+        "kills": 9,
+        "deaths": 3
+      }
+    },
+    {
+      "player": "Fred",
+      "entries": [
+        {
+          "node": 6
+        },
+        {
+          "node": 15
+        },
+        {
+          "node": 26
+        },
+        {
+          "node": 35
+        },
+        {
+          "node": 41
+        },
+        {},
+        {
+          "node": 1
+        },
+        {
+          "node": 10
+        },
+        {
+          "node": 19
+        },
+        {
+          "node": 28
+        },
+        {
+          "node": 44
+        },
+        {
+          "node": 1
+        },
+        {
+          "node": 10
+        },
+        {
+          "node": 24
+        },
+        {
+          "node": 33
+        },
+        {
+          "node": 49
+        },
+        {
+          "node": 5,
+          "war": 8
+        },
+        {
+          "node": 14,
+          "war": 8
+        },
+        {
+          "node": 38,
+          "war": 8
+        },
+        {
+          "node": 5,
+          "war": 7
+        },
+        {
+          "node": 14,
+          "war": 7
+        },
+        {
+          "node": 25,
+          "war": 7
+        },
+        {
+          "node": 34,
+          "war": 7
+        },
+        {
+          "node": 44,
+          "war": 7
+        },
+        {
+          "node": 50,
+          "war": 7
+        },
+        {
+          "node": 5,
+          "war": 9
+        },
+        {
+          "node": 14,
+          "war": 9
+        },
+        {
+          "node": 25,
+          "war": 9
+        },
+        {
+          "node": 34,
+          "war": 9
+        },
+        {
+          "node": 39,
+          "war": 9
+        },
+        {
+          "node": 44,
+          "war": 9
+        },
+        {
+          "node": 47,
+          "war": 9
+        },
+        {
+          "node": 49,
+          "war": 9
+        },
+        {
+          "node": 3,
+          "war": 10
+        },
+        {
+          "node": 12,
+          "war": 10
+        },
+        {
+          "node": 27,
+          "war": 10
+        },
+        {
+          "node": 36,
+          "war": 10
+        },
+        {
+          "node": 37,
+          "war": 10
+        },
+        {
+          "node": 44,
+          "war": 10
+        },
+        {
+          "node": 49,
+          "war": 10
+        },
+        {
+          "node": 5,
+          "war": 11
+        },
+        {
+          "node": 14,
+          "war": 11
+        },
+        {
+          "node": 27,
+          "war": 11
+        },
+        {
+          "node": 36,
+          "war": 11
+        },
+        {
+          "node": 38,
+          "war": 11
+        },
+        {
+          "node": 50,
+          "war": 11,
+          "deaths": 1
+        },
+        {
+          "node": 5,
+          "war": 12
+        },
+        {
+          "node": 14,
+          "war": 12
+        },
+        {
+          "node": 25,
+          "war": 12
+        },
+        {
+          "node": 34,
+          "war": 12
+        },
+        {
+          "node": 38,
+          "war": 12
+        },
+        {
+          "node": 41,
+          "war": 12
+        },
+        {
+          "node": 45,
+          "war": 12
+        },
+        {
+          "node": 50,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 10,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "Jay",
+      "entries": [
+        {
+          "node": 9
+        },
+        {
+          "node": 25
+        },
+        {
+          "node": 34
+        },
+        {
+          "node": 44
+        },
+        {},
+        {
+          "node": 4
+        },
+        {
+          "node": 13
+        },
+        {
+          "node": 23
+        },
+        {
+          "node": 32
+        },
+        {
+          "node": 46
+        },
+        {
+          "node": 18
+        },
+        {
+          "node": 20
+        },
+        {
+          "node": 29,
+          "deaths": 1
+        },
+        {
+          "node": 46
+        },
+        {
+          "node": 6,
+          "war": 8
+        },
+        {
+          "node": 15,
+          "war": 8
+        },
+        {
+          "node": 19,
+          "war": 8
+        },
+        {
+          "node": 28,
+          "war": 8
+        },
+        {
+          "node": 41,
+          "war": 8
+        },
+        {
+          "node": 45,
+          "war": 8
+        },
+        {
+          "node": 9,
+          "war": 7
+        },
+        {
+          "node": 27,
+          "war": 7
+        },
+        {
+          "node": 36,
+          "war": 7,
+          "deaths": 1
+        },
+        {
+          "node": 40,
+          "war": 7
+        },
+        {
+          "node": 2,
+          "war": 9
+        },
+        {
+          "node": 11,
+          "war": 9
+        },
+        {
+          "node": 19,
+          "war": 9
+        },
+        {
+          "node": 28,
+          "war": 9
+        },
+        {
+          "node": 40,
+          "war": 9
+        },
+        {
+          "node": 1,
+          "war": 10
+        },
+        {
+          "node": 10,
+          "war": 10
+        },
+        {
+          "node": 24,
+          "war": 10
+        },
+        {
+          "node": 33,
+          "war": 10
+        },
+        {
+          "node": 45,
+          "war": 10
+        },
+        {
+          "node": 7,
+          "war": 11
+        },
+        {
+          "node": 16,
+          "war": 11
+        },
+        {
+          "node": 24,
+          "war": 11
+        },
+        {
+          "node": 33,
+          "war": 11
+        },
+        {
+          "node": 45,
+          "war": 11
+        },
+        {
+          "node": 46,
+          "war": 11
+        },
+        {
+          "node": 3,
+          "war": 12
+        },
+        {
+          "node": 12,
+          "war": 12
+        },
+        {
+          "node": 24,
+          "war": 12
+        },
+        {
+          "node": 33,
+          "war": 12
+        },
+        {
+          "node": 37,
+          "war": 12
+        },
+        {
+          "node": 47,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 9,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "Matty",
+      "entries": [
+        {
+          "node": 7
+        },
+        {
+          "node": 16
+        },
+        {
+          "node": 27
+        },
+        {
+          "node": 36
+        },
+        {},
+        {
+          "node": 6
+        },
+        {
+          "node": 15
+        },
+        {
+          "node": 25
+        },
+        {
+          "node": 34
+        },
+        {
+          "node": 38
+        },
+        {
+          "node": 43
+        },
+        {
+          "node": 48
+        },
+        {
+          "node": 6
+        },
+        {
+          "node": 15
+        },
+        {
+          "node": 25
+        },
+        {
+          "node": 34
+        },
+        {
+          "node": 39
+        },
+        {
+          "node": 45,
+          "deaths": 1
+        },
+        {
+          "node": 50
+        },
+        {
+          "node": 9,
+          "war": 8
+        },
+        {
+          "node": 18,
+          "war": 8
+        },
+        {
+          "node": 23,
+          "war": 8
+        },
+        {
+          "node": 32,
+          "war": 8
+        },
+        {
+          "node": 43,
+          "war": 8
+        },
+        {
+          "node": 50,
+          "war": 8
+        },
+        {
+          "node": 6,
+          "war": 7
+        },
+        {
+          "node": 15,
+          "war": 7
+        },
+        {
+          "node": 26,
+          "war": 7
+        },
+        {
+          "node": 35,
+          "war": 7
+        },
+        {
+          "node": 37,
+          "war": 7
+        },
+        {
+          "node": 43,
+          "war": 7
+        },
+        {
+          "node": 48,
+          "war": 7,
+          "deaths": 1
+        },
+        {
+          "node": 7,
+          "war": 9
+        },
+        {
+          "node": 16,
+          "war": 9
+        },
+        {
+          "node": 26,
+          "war": 9
+        },
+        {
+          "node": 35,
+          "war": 9
+        },
+        {
+          "node": 42,
+          "war": 9
+        },
+        {
+          "node": 45,
+          "war": 9
+        },
+        {
+          "node": 6,
+          "war": 10
+        },
+        {
+          "node": 15,
+          "war": 10
+        },
+        {
+          "node": 26,
+          "war": 10
+        },
+        {
+          "node": 35,
+          "war": 10
+        },
+        {
+          "node": 38,
+          "war": 10
+        },
+        {
+          "node": 41,
+          "war": 10
+        },
+        {
+          "node": 9,
+          "war": 11
+        },
+        {
+          "node": 18,
+          "war": 11
+        },
+        {
+          "node": 19,
+          "war": 11
+        },
+        {
+          "node": 28,
+          "war": 11
+        },
+        {
+          "node": 2,
+          "war": 12
+        },
+        {
+          "node": 11,
+          "war": 12
+        },
+        {
+          "node": 20,
+          "war": 12
+        },
+        {
+          "node": 29,
+          "war": 12
+        },
+        {
+          "node": 42,
+          "war": 12
+        },
+        {
+          "node": 48,
+          "war": 12,
+          "deaths": 1
+        }
+      ],
+      "summary": {
+        "kills": 11,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "Jenx",
+      "entries": [
+        {
+          "node": 18
+        },
+        {
+          "node": 23
+        },
+        {
+          "node": 32
+        },
+        {
+          "node": 45
+        },
+        {},
+        {
+          "node": 9
+        },
+        {
+          "node": 18,
+          "deaths": 1
+        },
+        {
+          "node": 24
+        },
+        {
+          "node": 33
+        },
+        {
+          "node": 9
+        },
+        {
+          "node": 23
+        },
+        {
+          "node": 32
+        },
+        {
+          "node": 8,
+          "war": 8
+        },
+        {
+          "node": 17,
+          "war": 8
+        },
+        {
+          "node": 22,
+          "war": 8
+        },
+        {
+          "node": 31,
+          "war": 8
+        },
+        {
+          "node": 39,
+          "war": 8
+        },
+        {
+          "node": 46,
+          "war": 8
+        },
+        {
+          "node": 8,
+          "war": 7
+        },
+        {
+          "node": 17,
+          "war": 7
+        },
+        {
+          "node": 22,
+          "war": 7
+        },
+        {
+          "node": 31,
+          "war": 7
+        },
+        {
+          "node": 49,
+          "war": 7,
+          "deaths": 1
+        },
+        {
+          "node": 6,
+          "war": 9
+        },
+        {
+          "node": 15,
+          "war": 9,
+          "deaths": 1
+        },
+        {
+          "node": 22,
+          "war": 9
+        },
+        {
+          "node": 31,
+          "war": 9
+        },
+        {
+          "node": 41,
+          "war": 9
+        },
+        {
+          "node": 9,
+          "war": 10
+        },
+        {
+          "node": 18,
+          "war": 10
+        },
+        {
+          "node": 19,
+          "war": 10
+        },
+        {
+          "node": 28,
+          "war": 10
+        },
+        {
+          "node": 39,
+          "war": 10
+        },
+        {
+          "node": 1,
+          "war": 11
+        },
+        {
+          "node": 10,
+          "war": 11
+        },
+        {
+          "node": 23,
+          "war": 11
+        },
+        {
+          "node": 32,
+          "war": 11
+        },
+        {
+          "node": 41,
+          "war": 11
+        },
+        {
+          "node": 44,
+          "war": 11
+        },
+        {
+          "node": 9,
+          "war": 12
+        },
+        {
+          "node": 19,
+          "war": 12
+        },
+        {
+          "node": 28,
+          "war": 12
+        },
+        {
+          "node": 39,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 8,
+        "deaths": 1
+      }
+    },
+    {
+      "player": "Zefiro",
+      "entries": [
+        {
+          "node": 8
+        },
+        {
+          "node": 17
+        },
+        {
+          "node": 22
+        },
+        {
+          "node": 31
+        },
+        {
+          "node": 47
+        },
+        {
+          "node": 50
+        },
+        {},
+        {
+          "node": 8
+        },
+        {
+          "node": 17
+        },
+        {
+          "node": 21
+        },
+        {
+          "node": 30
+        },
+        {
+          "node": 41
+        },
+        {
+          "node": 49,
+          "deaths": 1
+        },
+        {
+          "node": 5
+        },
+        {
+          "node": 14
+        },
+        {
+          "node": 19
+        },
+        {
+          "node": 28
+        },
+        {
+          "node": 38
+        },
+        {
+          "node": 42
+        },
+        {
+          "node": 4,
+          "war": 8
+        },
+        {
+          "node": 13,
+          "war": 8
+        },
+        {
+          "node": 26,
+          "war": 8
+        },
+        {
+          "node": 35,
+          "war": 8
+        },
+        {
+          "node": 49,
+          "war": 8
+        },
+        {
+          "node": 3,
+          "war": 7
+        },
+        {
+          "node": 12,
+          "war": 7
+        },
+        {
+          "node": 19,
+          "war": 7
+        },
+        {
+          "node": 28,
+          "war": 7
+        },
+        {
+          "node": 45,
+          "war": 7
+        },
+        {
+          "node": 8,
+          "war": 9,
+          "deaths": 1
+        },
+        {
+          "node": 17,
+          "war": 9
+        },
+        {
+          "node": 21,
+          "war": 9
+        },
+        {
+          "node": 30,
+          "war": 9
+        },
+        {
+          "node": 8,
+          "war": 10,
+          "deaths": 1
+        },
+        {
+          "node": 17,
+          "war": 10
+        },
+        {
+          "node": 25,
+          "war": 10
+        },
+        {
+          "node": 34,
+          "war": 10
+        },
+        {
+          "node": 8,
+          "war": 11
+        },
+        {
+          "node": 17,
+          "war": 11
+        },
+        {
+          "node": 25,
+          "war": 11
+        },
+        {
+          "node": 34,
+          "war": 11
+        },
+        {
+          "node": 42,
+          "war": 11
+        },
+        {
+          "node": 48,
+          "war": 11
+        },
+        {
+          "node": 8,
+          "war": 12
+        },
+        {
+          "node": 17,
+          "war": 12
+        },
+        {
+          "node": 26,
+          "war": 12
+        },
+        {
+          "node": 35,
+          "war": 12
+        },
+        {
+          "node": 44,
+          "war": 12
+        },
+        {
+          "node": 49,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 12,
+        "deaths": 1
+      }
+    },
+    {
+      "player": "Swan",
+      "entries": [
+        {
+          "node": 3,
+          "deaths": 1
+        },
+        {
+          "node": 12,
+          "deaths": 1
+        },
+        {
+          "node": 29
+        },
+        {
+          "node": 38
+        },
+        {
+          "node": 46
+        },
+        {},
+        {
+          "node": 3
+        },
+        {
+          "node": 12
+        },
+        {
+          "node": 22
+        },
+        {
+          "node": 31
+        },
+        {
+          "node": 50
+        },
+        {
+          "node": 7
+        },
+        {
+          "node": 16
+        },
+        {
+          "node": 22
+        },
+        {
+          "node": 31
+        },
+        {
+          "node": 40
+        },
+        {
+          "node": 3,
+          "war": 8
+        },
+        {
+          "node": 12,
+          "war": 8
+        },
+        {
+          "node": 21,
+          "war": 8
+        },
+        {
+          "node": 30,
+          "war": 8
+        },
+        {
+          "node": 40,
+          "war": 8
+        },
+        {
+          "node": 47,
+          "war": 8
+        },
+        {
+          "node": 2,
+          "war": 7
+        },
+        {
+          "node": 11,
+          "war": 7
+        },
+        {
+          "node": 20,
+          "war": 7
+        },
+        {
+          "node": 29,
+          "war": 7
+        },
+        {
+          "node": 46,
+          "war": 7
+        },
+        {
+          "node": 4,
+          "war": 9
+        },
+        {
+          "node": 13,
+          "war": 9
+        },
+        {
+          "node": 20,
+          "war": 9
+        },
+        {
+          "node": 29,
+          "war": 9
+        },
+        {
+          "node": 46,
+          "war": 9
+        },
+        {
+          "node": 48,
+          "war": 9
+        },
+        {
+          "node": 4,
+          "war": 10
+        },
+        {
+          "node": 13,
+          "war": 10
+        },
+        {
+          "node": 21,
+          "war": 10
+        },
+        {
+          "node": 30,
+          "war": 10
+        },
+        {
+          "node": 46,
+          "war": 10
+        },
+        {
+          "node": 48,
+          "war": 10
+        },
+        {
+          "node": 4,
+          "war": 11
+        },
+        {
+          "node": 13,
+          "war": 11
+        },
+        {
+          "node": 22,
+          "war": 11
+        },
+        {
+          "node": 31,
+          "war": 11
+        },
+        {
+          "node": 40,
+          "war": 11
+        },
+        {
+          "node": 4,
+          "war": 12
+        },
+        {
+          "node": 13,
+          "war": 12
+        },
+        {
+          "node": 22,
+          "war": 12
+        },
+        {
+          "node": 31,
+          "war": 12
+        },
+        {
+          "node": 46,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 10,
+        "deaths": 2
+      }
+    },
+    {
+      "player": "Dion",
+      "entries": [
+        {
+          "node": 4
+        },
+        {
+          "node": 13
+        },
+        {
+          "node": 21
+        },
+        {
+          "node": 30
+        },
+        {
+          "node": 37
+        },
+        {
+          "node": 48
+        },
+        {},
+        {
+          "node": 20
+        },
+        {
+          "node": 29
+        },
+        {
+          "node": 8
+        },
+        {
+          "node": 17
+        },
+        {
+          "node": 21
+        },
+        {
+          "node": 30
+        },
+        {
+          "node": 48
+        },
+        {
+          "node": 10,
+          "war": 8
+        },
+        {
+          "node": 20,
+          "war": 8
+        },
+        {
+          "node": 29,
+          "war": 8
+        },
+        {
+          "node": 4,
+          "war": 7
+        },
+        {
+          "node": 13,
+          "war": 7
+        },
+        {
+          "node": 21,
+          "war": 7
+        },
+        {
+          "node": 30,
+          "war": 7
+        },
+        {
+          "node": 41,
+          "war": 7
+        },
+        {
+          "node": 1,
+          "war": 9
+        },
+        {
+          "node": 10,
+          "war": 9
+        },
+        {
+          "node": 23,
+          "war": 9
+        },
+        {
+          "node": 32,
+          "war": 9
+        },
+        {
+          "node": 37,
+          "war": 9
+        },
+        {
+          "node": 5,
+          "war": 10
+        },
+        {
+          "node": 14,
+          "war": 10
+        },
+        {
+          "node": 28,
+          "war": 10
+        },
+        {
+          "node": 47,
+          "war": 10,
+          "deaths": 1
+        },
+        {
+          "node": 6,
+          "war": 11
+        },
+        {
+          "node": 15,
+          "war": 11
+        },
+        {
+          "node": 21,
+          "war": 11
+        },
+        {
+          "node": 30,
+          "war": 11
+        },
+        {
+          "node": 1,
+          "war": 12
+        },
+        {
+          "node": 10,
+          "war": 12
+        },
+        {
+          "node": 21,
+          "war": 12
+        },
+        {
+          "node": 30,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 8,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "Cipw",
+      "entries": [
+        {
+          "node": 5
+        },
+        {
+          "node": 14
+        },
+        {
+          "node": 19
+        },
+        {
+          "node": 28
+        },
+        {},
+        {
+          "node": 7,
+          "deaths": 1
+        },
+        {
+          "node": 16
+        },
+        {
+          "node": 37
+        },
+        {
+          "node": 45
+        },
+        {
+          "node": 3
+        },
+        {
+          "node": 12
+        },
+        {
+          "node": 41
+        },
+        {
+          "node": 7,
+          "war": 8
+        },
+        {
+          "node": 16,
+          "war": 8
+        },
+        {
+          "node": 27,
+          "war": 8
+        },
+        {
+          "node": 36,
+          "war": 8
+        },
+        {
+          "node": 7,
+          "war": 7
+        },
+        {
+          "node": 16,
+          "war": 7
+        },
+        {
+          "node": 18,
+          "war": 9
+        },
+        {
+          "node": 7,
+          "war": 10
+        },
+        {
+          "node": 23,
+          "war": 10
+        },
+        {
+          "node": 32,
+          "war": 10
+        },
+        {
+          "node": 40,
+          "war": 10
+        },
+        {
+          "node": 43,
+          "war": 10
+        },
+        {
+          "node": 20,
+          "war": 11
+        },
+        {
+          "node": 7,
+          "war": 12
+        },
+        {
+          "node": 16,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 8,
+        "deaths": 1
+      }
+    },
+    {
+      "player": "Forgotten",
+      "entries": [
+        {
+          "node": 2
+        },
+        {
+          "node": 11
+        },
+        {
+          "node": 24
+        },
+        {
+          "node": 33
+        },
+        {
+          "node": 42
+        },
+        {
+          "node": 43
+        },
+        {},
+        {
+          "node": 2
+        },
+        {
+          "node": 11
+        },
+        {
+          "node": 27
+        },
+        {
+          "node": 36
+        },
+        {
+          "node": 42
+        },
+        {
+          "node": 4
+        },
+        {
+          "node": 13
+        },
+        {
+          "node": 27
+        },
+        {
+          "node": 36,
+          "deaths": 1
+        },
+        {
+          "node": 43
+        },
+        {
+          "node": 1,
+          "war": 8
+        },
+        {
+          "node": 24,
+          "war": 8
+        },
+        {
+          "node": 33,
+          "war": 8
+        },
+        {
+          "node": 42,
+          "war": 8
+        },
+        {
+          "node": 18,
+          "war": 7
+        },
+        {
+          "node": 24,
+          "war": 7
+        },
+        {
+          "node": 33,
+          "war": 7
+        },
+        {
+          "node": 39,
+          "war": 7
+        },
+        {
+          "node": 42,
+          "war": 7
+        },
+        {
+          "node": 9,
+          "war": 9
+        },
+        {
+          "node": 24,
+          "war": 9
+        },
+        {
+          "node": 33,
+          "war": 9
+        },
+        {
+          "node": 43,
+          "war": 9
+        },
+        {
+          "node": 16,
+          "war": 10
+        },
+        {
+          "node": 22,
+          "war": 10
+        },
+        {
+          "node": 31,
+          "war": 10
+        },
+        {
+          "node": 42,
+          "war": 10
+        },
+        {
+          "node": 2,
+          "war": 11
+        },
+        {
+          "node": 11,
+          "war": 11
+        },
+        {
+          "node": 29,
+          "war": 11
+        },
+        {
+          "node": 39,
+          "war": 11
+        },
+        {
+          "node": 43,
+          "war": 11
+        },
+        {
+          "node": 18,
+          "war": 12
+        },
+        {
+          "node": 27,
+          "war": 12
+        },
+        {
+          "node": 36,
+          "war": 12,
+          "deaths": 1
+        },
+        {
+          "node": 40,
+          "war": 12
+        },
+        {
+          "node": 43,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 11,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "Scorpii",
+      "entries": [
+        {
+          "node": 1
+        },
+        {
+          "node": 10
+        },
+        {
+          "node": 20
+        },
+        {
+          "node": 39
+        },
+        {
+          "node": 40
+        },
+        {
+          "node": 49
+        },
+        {},
+        {
+          "node": 5
+        },
+        {
+          "node": 14
+        },
+        {
+          "node": 26
+        },
+        {
+          "node": 35
+        },
+        {
+          "node": 39
+        },
+        {
+          "node": 40
+        },
+        {
+          "node": 47
+        },
+        {
+          "node": 2
+        },
+        {
+          "node": 11
+        },
+        {
+          "node": 26
+        },
+        {
+          "node": 35
+        },
+        {
+          "node": 37
+        },
+        {
+          "node": 44
+        },
+        {
+          "node": 47
+        },
+        {
+          "node": 2,
+          "war": 8
+        },
+        {
+          "node": 11,
+          "war": 8
+        },
+        {
+          "node": 25,
+          "war": 8
+        },
+        {
+          "node": 34,
+          "war": 8
+        },
+        {
+          "node": 37,
+          "war": 8
+        },
+        {
+          "node": 44,
+          "war": 8
+        },
+        {
+          "node": 48,
+          "war": 8
+        },
+        {
+          "node": 1,
+          "war": 7
+        },
+        {
+          "node": 10,
+          "war": 7
+        },
+        {
+          "node": 23,
+          "war": 7
+        },
+        {
+          "node": 32,
+          "war": 7
+        },
+        {
+          "node": 38,
+          "war": 7
+        },
+        {
+          "node": 47,
+          "war": 7
+        },
+        {
+          "node": 3,
+          "war": 9
+        },
+        {
+          "node": 12,
+          "war": 9
+        },
+        {
+          "node": 27,
+          "war": 9
+        },
+        {
+          "node": 36,
+          "war": 9
+        },
+        {
+          "node": 38,
+          "war": 9,
+          "deaths": 1
+        },
+        {
+          "node": 50,
+          "war": 9
+        },
+        {
+          "node": 2,
+          "war": 10
+        },
+        {
+          "node": 11,
+          "war": 10
+        },
+        {
+          "node": 20,
+          "war": 10
+        },
+        {
+          "node": 50,
+          "war": 10
+        },
+        {
+          "node": 3,
+          "war": 11
+        },
+        {
+          "node": 12,
+          "war": 11
+        },
+        {
+          "node": 26,
+          "war": 11
+        },
+        {
+          "node": 35,
+          "war": 11
+        },
+        {
+          "node": 37,
+          "war": 11
+        },
+        {
+          "node": 47,
+          "war": 11
+        },
+        {
+          "node": 49,
+          "war": 11
+        },
+        {
+          "node": 6,
+          "war": 12
+        },
+        {
+          "node": 15,
+          "war": 12
+        },
+        {
+          "node": 23,
+          "war": 12
+        },
+        {
+          "node": 32,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 13,
+        "deaths": 0
+      }
+    },
+    {
+      "player": "lillegend",
+      "entries": [
+        {
+          "node": 5,
+          "war": 8
+        },
+        {
+          "node": 14,
+          "war": 8
+        },
+        {
+          "node": 26,
+          "war": 8
+        },
+        {
+          "node": 35,
+          "war": 8
+        },
+        {},
+        {
+          "node": 3,
+          "war": 9
+        },
+        {
+          "node": 12,
+          "war": 9
+        },
+        {
+          "node": 21,
+          "war": 9
+        },
+        {
+          "node": 30,
+          "war": 9
+        },
+        {
+          "node": 5,
+          "war": 10
+        },
+        {
+          "node": 14,
+          "war": 10
+        },
+        {
+          "node": 27,
+          "war": 10
+        },
+        {
+          "node": 36,
+          "war": 10
+        },
+        {
+          "node": 9,
+          "war": 11,
+          "deaths": 1
+        },
+        {
+          "node": 18,
+          "war": 11
+        },
+        {
+          "node": 20,
+          "war": 11
+        },
+        {
+          "node": 29,
+          "war": 11
+        },
+        {
+          "node": 2,
+          "war": 12
+        },
+        {
+          "node": 11,
+          "war": 12
+        },
+        {
+          "node": 19,
+          "war": 12
+        },
+        {
+          "node": 28,
+          "war": 12
+        },
+        {
+          "node": 37,
+          "war": 12
+        }
+      ],
+      "summary": {
+        "kills": 4,
+        "deaths": 0
+      }
+    }
+  ],
+  "battlegroupDeaths": [
+    {
+      "battlegroup": "BG3",
+      "deaths": 1,
+      "war": 1,
+      "season": 60,
+      "timestamp": "2025-09-11T20:57:59.240Z"
+    }
+  ],
+  "customPlayers": [
+    {
+      "name": "lillegend",
+      "battlegroup": "BG3",
+      "addedDate": "2025-09-09T21:07:15.243Z",
+      "hidden": false
+    }
+  ],
+  "hiddenPlayers": [
+    {
+      "name": "Chupa",
+      "battlegroup": "BG3",
+      "hiddenDate": "2025-09-27T21:01:48.748Z",
+      "isCustom": false
+    }
+  ],
+  "totalKills": 304,
+  "totalDeaths": 21,
+  "streakData": ",,,,,,,\r\n,C.Av Streak Ladder,,,,,,\r\n,Rank,Summoner,High Streak,Total Streak,,,\r\n,,,,,,,\r\n,1,Hazz,245,245,,,BG3\r\n,2,DT,227,227,,,BG3\r\n,3,Steel,172,172,,,BG3\r\n,4,cas,155,155,,,BG1\r\n,5,Cipw,154,154,,,BG1\r\n,6,Swedeah,134,134,,,BG3\r\n,7,Enculet,130,130,,,BG2\r\n,8,Fort,123,123,,,BG3\r\n,9,Joel,117,117,,,BG2\r\n,9,Voltaic,117,117,,,BG3\r\n,11,Marshy,114,114,,,BG3\r\n,12,Fiery,110,110,,,BG2\r\n,13,Dreamin,106,106,,,BG2\r\n,14,X,104,104,,,BG2\r\n,Centenniel Streaks,,,,,,\r\n,,,,,,,\r\n,50+ Active Streaks,,,,,,\r\n,,,,,,,\r\n,,Stone,91,26,,,\r\n,New High,Brawlgate,22,22,,,\r\n,,King BUk,49,17,,,\r\n,,Swan,88,17,,,\r\n,,Fort,123,16,,,\r\n,New High,Chupa,16,16,,,\r\n,,Hazza,245,16,,,\r\n,,Matty,99,16,,,\r\n,New High,Infamous,15,15,,,\r\n,,Fred,61,14,,,\r\n,New High,Nomis,14,14,,,\r\n,,Marshy,114,14,,,\r\n,New High,Dion,13,13,,,\r\n,,Dreamin,106,12,,,\r\n,New High,Andy,12,12,,,\r\n,New High,Sokin,10,10,,,\r\n,,Skywalker,81,10,,,\r\n,New High,Zkittlez,10,10,,,\r\n,,Steel,172,10,,,\r\n,,Retlaw,62,10,,,\r\n,,Cipw,154,9,,,\r\n,New High,Praetor,8,8,,,\r\n,New High,Zefiro,7,7,,,\r\n,,Jay,78,7,,,\r\n,,Avalon,3,6,,,\r\n,,Voltaic,117,5,,,\r\n,,Jenx,70,5,,,\r\n,,Scorpii,30,4,,,\r\n,,Jwill,12,0,,,\r\n,,Forgotten,45,0,,,"
+}
