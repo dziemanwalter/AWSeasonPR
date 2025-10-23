@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {/* Navigation Header */}
           <header className="bg-gray-800 border-b border-gray-700 p-4">
             <div className="flex justify-between items-center">
-              <h1 className="text-xl font-bold text-yellow-400">AW Masters Dashboard</h1>
+              <h1 className="text-xl font-bold text-yellow-400">AW Season PR</h1>
               <DropdownNav />
             </div>
           </header>
